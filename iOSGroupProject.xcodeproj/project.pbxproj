@@ -14,6 +14,10 @@
 		3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */; };
 		3F1D073B1EA798EC009A0A10 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */; };
 		3F52DE661EA8729C00883FAF /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F52DE651EA8729C00883FAF /* MenuController.swift */; };
+		3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F74DAC01EAE32230074A729 /* BookScreen.storyboard */; };
+		3F74DAC51EAE32230074A729 /* BookScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC11EAE32230074A729 /* BookScreenController.swift */; };
+		3F74DAC61EAE32230074A729 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC21EAE32230074A729 /* RatingView.swift */; };
+		3F74DAC71EAE32230074A729 /* TimerPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC31EAE32230074A729 /* TimerPageController.swift */; };
 		3F78F0051E8EAEF100091FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F0041E8EAEF100091FBE /* AppDelegate.swift */; };
 		3F78F0071E8EAEF100091FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F0061E8EAEF100091FBE /* ViewController.swift */; };
 		3F78F00A1E8EAEF100091FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F0081E8EAEF100091FBE /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		3F52DE651EA8729C00883FAF /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		3F74DAC01EAE32230074A729 /* BookScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookScreen.storyboard; sourceTree = "<group>"; };
+		3F74DAC11EAE32230074A729 /* BookScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookScreenController.swift; sourceTree = "<group>"; };
+		3F74DAC21EAE32230074A729 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		3F74DAC31EAE32230074A729 /* TimerPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerPageController.swift; sourceTree = "<group>"; };
 		3F78F0011E8EAEF100091FBE /* iOSGroupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSGroupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F78F0041E8EAEF100091FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F78F0061E8EAEF100091FBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +70,17 @@
 			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
+		3F74DAC81EAE32400074A729 /* Book Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3F74DAC01EAE32230074A729 /* BookScreen.storyboard */,
+				3F74DAC11EAE32230074A729 /* BookScreenController.swift */,
+				3F74DAC21EAE32230074A729 /* RatingView.swift */,
+				3F74DAC31EAE32230074A729 /* TimerPageController.swift */,
+			);
+			name = "Book Screen";
+			sourceTree = "<group>";
+		};
 		3F78EFF81E8EAEF000091FBE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,7 @@
 		3F78F0031E8EAEF100091FBE /* iOSGroupProject */ = {
 			isa = PBXGroup;
 			children = (
+				3F74DAC81EAE32400074A729 /* Book Screen */,
 				3F1D07311EA79087009A0A10 /* SWRevealViewController */,
 				3F78F0041E8EAEF100091FBE /* AppDelegate.swift */,
 				3F78F0061E8EAEF100091FBE /* ViewController.swift */,
@@ -162,6 +182,7 @@
 				3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */,
 				3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */,
 				3F78F00A1E8EAEF100091FBE /* Main.storyboard in Resources */,
+				3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,10 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F74DAC61EAE32230074A729 /* RatingView.swift in Sources */,
+				3F74DAC51EAE32230074A729 /* BookScreenController.swift in Sources */,
 				3F1D07371EA798D8009A0A10 /* AchievementsViewController.swift in Sources */,
 				3F52DE661EA8729C00883FAF /* MenuController.swift in Sources */,
 				3F78F0071E8EAEF100091FBE /* ViewController.swift in Sources */,
 				3F1D07351EA798C8009A0A10 /* LibraryViewController.swift in Sources */,
+				3F74DAC71EAE32230074A729 /* TimerPageController.swift in Sources */,
 				3F1D073B1EA798EC009A0A10 /* CreditsViewController.swift in Sources */,
 				3F78F0051E8EAEF100091FBE /* AppDelegate.swift in Sources */,
 				3F1D07301EA7907A009A0A10 /* SWRevealViewController.m in Sources */,
