@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TimerPageController: UIViewController {
     
+    var alarmPlayer: AVAudioPlayer!
+
     @IBOutlet weak var startButton: UIButton!
     
     @IBOutlet weak var timeLabel: UILabel!
@@ -17,6 +20,8 @@ class TimerPageController: UIViewController {
     var time:UIntMax = 3600
     
     var timer = Timer()
+    
+    var alarm: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +50,11 @@ class TimerPageController: UIViewController {
             //stops the timer
             timer.invalidate()
             
+            if alarmPlayer != nil && alarmPlayer.isPlaying {
+                alarmPlayer.stop()
+                alarmPlayer = nil
+            }
+            
             //sets the button to say start
             startButton.setTitle("Start", for: .normal)
         }
@@ -69,20 +79,38 @@ class TimerPageController: UIViewController {
             time -= 1
             
             updateTime()
+            
+            alarm = true
         }
             //stops the timer and sets off the alarm when the timer has run out
         else
         {
-            timerEnd()
-            
-            //sets the view to show the time
-            timeLabel.text = "00:00:00"
+            if alarm
+            {
+                timerEnd()
+                
+                //sets the view to show the time
+                timeLabel.text = "00:00:00"
+                
+                alarm = false
+            }
         }
     }
-    
     func timerEnd()
     {
+        let path = Bundle.main.path(forResource: "Annoying_Alarm_Clock" , ofType:"mp3")!
+        let url = URL(fileURLWithPath: path)
         
+        do {
+            let sound = try AVAudioPlayer(contentsOf: url)
+            self.alarmPlayer = sound
+            sound.numberOfLoops = 10
+            sound.prepareToPlay()
+            sound.play()
+        } catch {
+            print("error loading file")
+            // couldn't load file :(
+        }
     }
     
     func updateTime()

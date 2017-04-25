@@ -18,6 +18,7 @@
 		3F74DAC51EAE32230074A729 /* BookScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC11EAE32230074A729 /* BookScreenController.swift */; };
 		3F74DAC61EAE32230074A729 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC21EAE32230074A729 /* RatingView.swift */; };
 		3F74DAC71EAE32230074A729 /* TimerPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC31EAE32230074A729 /* TimerPageController.swift */; };
+		3F74DACA1EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F74DAC91EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 */; };
 		3F78F0051E8EAEF100091FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F0041E8EAEF100091FBE /* AppDelegate.swift */; };
 		3F78F0071E8EAEF100091FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F0061E8EAEF100091FBE /* ViewController.swift */; };
 		3F78F00A1E8EAEF100091FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F0081E8EAEF100091FBE /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		3F74DAC11EAE32230074A729 /* BookScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookScreenController.swift; sourceTree = "<group>"; };
 		3F74DAC21EAE32230074A729 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		3F74DAC31EAE32230074A729 /* TimerPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerPageController.swift; sourceTree = "<group>"; };
+		3F74DAC91EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Annoying_Alarm_Clock.mp3; sourceTree = "<group>"; };
 		3F78F0011E8EAEF100091FBE /* iOSGroupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSGroupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F78F0041E8EAEF100091FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F78F0061E8EAEF100091FBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		3F74DAC81EAE32400074A729 /* Book Screen */ = {
 			isa = PBXGroup;
 			children = (
+				3F74DAC91EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 */,
 				3F74DAC01EAE32230074A729 /* BookScreen.storyboard */,
 				3F74DAC11EAE32230074A729 /* BookScreenController.swift */,
 				3F74DAC21EAE32230074A729 /* RatingView.swift */,
@@ -182,6 +185,7 @@
 				3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */,
 				3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */,
 				3F78F00A1E8EAEF100091FBE /* Main.storyboard in Resources */,
+				3F74DACA1EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 in Resources */,
 				3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iOSGroupProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CHCI.iOSGroupProject;
@@ -343,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iOSGroupProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CHCI.iOSGroupProject;
