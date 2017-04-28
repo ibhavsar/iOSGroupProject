@@ -31,6 +31,18 @@ class BookScreenController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func openTimerPage(_ sender: Any) {
+        let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+        let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "TimerPage") as? TimerPageController
+        openedTimerPage?.oldTime = 3600
+        openedTimerPage?.modalPresentationStyle = .popover
+        
+        let popoverController = openedTimerPage?.popoverPresentationController
+        popoverController?.sourceView = sender as? UIView
+        popoverController?.permittedArrowDirections = .any
+        
+        present(openedTimerPage!, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

@@ -17,6 +17,8 @@ class TimerPageController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     
+    var oldTime: UIntMax = 3600
+    
     var time:UIntMax = 3600
     
     var timer = Timer()
@@ -27,6 +29,9 @@ class TimerPageController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        time = oldTime
+        
+        updateTime()
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,7 +68,7 @@ class TimerPageController: UIViewController {
     //stops the timer and resets the timer to the default number
     @IBAction func resetTimer(_ sender: Any) {
         timer.invalidate()
-        time = 3600
+        time = oldTime
         
         //sets the button to say start
         startButton.setTitle("Start", for: .normal)
@@ -169,6 +174,14 @@ class TimerPageController: UIViewController {
         }
         
         updateTime()
+    }
+    
+    @IBAction func close(sender: AnyObject) {
+        let tmpController :UIViewController! = self.presentingViewController;
+        
+        self.dismiss(animated: false, completion: {()->Void in
+            tmpController.dismiss(animated: false, completion: nil)
+        })
     }
     
     /*
