@@ -15,6 +15,8 @@ class BookScreenController: UIViewController {
     
     var book = 0
     
+    @IBOutlet weak var timeTotalRead: UILabel!
+    
     @IBOutlet weak var ratingView: RatingView!
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -29,16 +31,24 @@ class BookScreenController: UIViewController {
         }
 
         getData()
+        
         if !books.isEmpty
         {
             ratingView.rating = books[book].value(forKey: "rating") as! Float
+            
+            updateTimeRead()
         }
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        updateTimeRead()
     }
     
     @IBAction func openTimerPage(_ sender: Any) {
@@ -80,28 +90,30 @@ class BookScreenController: UIViewController {
     }
     
     func saveRating() {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        // 1
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
         if !books.isEmpty
         {
             books[book].setValue(ratingView.rating, forKey: "rating")
+            
+            do {
+                try managedContext.save()
+            } catch let error as NSError {
+                print("Could not save. \(error)")
+            }
         }
         else
         {
-            guard let appDelegate =
-                UIApplication.shared.delegate as? AppDelegate else {
-                    return
-            }
-            
-            // 1
-            let managedContext =
-                appDelegate.persistentContainer.viewContext
-            
             // 2
-            let entity =
-                NSEntityDescription.entity(forEntityName: "Book",
-                                           in: managedContext)!
+            let entity = NSEntityDescription.entity(forEntityName: "Book", in: managedContext)!
             
-            let newBook = NSManagedObject(entity: entity,
-                                         insertInto: managedContext)
+            let newBook = NSManagedObject(entity: entity, insertInto: managedContext)
             
             // 3
             newBook.setValue(ratingView.rating, forKey: "rating")
@@ -114,6 +126,13 @@ class BookScreenController: UIViewController {
                 print("Could not save. \(error)")
             }
         }
+    }
+    
+    func updateTimeRead()
+    {
+        let time = books[book].value(forKey: "timeRead") as! UIntMax
+        
+        timeTotalRead.text = (((time/3600) < 10) ?  ("0" + String(time/3600)) : (String(time/3600))) + ":" + ((((time % 3600) / 60) < 10) ?  ("0" + String((time % 3600) / 60)) : (String((time % 3600) / 60))) + ":" + ((((time % 3600) % 60) < 10) ?  ("0" + String((time % 3600) % 60)) : (String((time % 3600) % 60)))
     }
     
     /*

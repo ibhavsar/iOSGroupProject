@@ -33,8 +33,9 @@ class TimerPageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        if book < books.count
+        getData()
+        
+        if !books.isEmpty
         {
             time = books[book].value(forKey: "lastTimeRead") as! UIntMax
             totalTime = time
@@ -149,6 +150,11 @@ class TimerPageController: UIViewController {
             time -= 3600
             totalTime -= 3600
         }
+        else
+        {
+            totalTime -= time
+            time = 0
+        }
         
         updateTime()
     }
@@ -167,6 +173,11 @@ class TimerPageController: UIViewController {
         {
             time -= 1800
             totalTime -= 1800
+        }
+        else
+        {
+            totalTime -= time
+            time = 0
         }
         
         updateTime()
@@ -187,24 +198,91 @@ class TimerPageController: UIViewController {
             time -= 60
             totalTime -= 60
         }
+        else
+        {
+            totalTime -= time
+            time = 0
+        }
         
         updateTime()
     }
     
     @IBAction func close(sender: AnyObject) {
-        saveTimeDone(timeRead: totalTime)
+        saveTimeDone()
+        
+        if alarmPlayer != nil && alarmPlayer.isPlaying {
+            alarmPlayer.stop()
+            alarmPlayer = nil
+        }
         
         let tmpController :UIViewController! = self.presentingViewController;
         
-        self.dismiss(animated: false, completion: {()->Void in
-            tmpController.dismiss(animated: false, completion: nil)
+        self.dismiss(animated: false, completion: {()->Void in tmpController.dismiss(animated: false, completion: nil)
         })
     }
     
-    func saveTimeDone(timeRead: UIntMax) {
-        books[book].setValue((totalTime - time), forKey: "lastTimeRead")
-        totalTime += books[book].value(forKey: "timeRead") as! UIntMax
-        books[book].setValue((totalTime  - time), forKey: "timeRead")
+    func getData()
+    {
+        //1
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        //2
+        let fetchRequest =
+            NSFetchRequest<NSFetchRequestResult>(entityName: "Book")
+        
+        //3
+        do {
+            books = try managedContext.fetch(fetchRequest) as! [Book]
+        } catch let error as NSError {
+            print("Could not fetch. \(error)")
+        }
+    }
+    
+    func saveTimeDone() {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        // 1
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        if !books.isEmpty
+        {
+            books[book].setValue((totalTime), forKey: "lastTimeRead")
+            totalTime += books[book].value(forKey: "timeRead") as! UIntMax
+            books[book].setValue((totalTime - time), forKey: "timeRead")
+            
+            do {
+                try managedContext.save()
+            } catch let error as NSError {
+                print("Could not save. \(error)")
+            }
+        }
+        else
+        {
+            // 2
+            let entity = NSEntityDescription.entity(forEntityName: "Book", in: managedContext)!
+            
+            let newBook = NSManagedObject(entity: entity, insertInto: managedContext)
+            
+            newBook.setValue((totalTime), forKey: "lastTimeRead")
+            newBook.setValue((totalTime  - time), forKey: "timeRead")
+            
+            // 4
+            do {
+                try managedContext.save()
+                books.append(newBook)
+            } catch let error as NSError {
+                print("Could not save. \(error)")
+            }
+        }
     }
     
     /*
