@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import CoreData
 
 class TimerPageController: UIViewController {
     
@@ -17,7 +18,11 @@ class TimerPageController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     
-    var oldTime: UIntMax = 3600
+    var book = 0
+    
+    var books: [NSManagedObject] = []
+    
+    var totalTime: UIntMax = 3600
     
     var time:UIntMax = 3600
     
@@ -29,7 +34,11 @@ class TimerPageController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        time = oldTime
+        if book < books.count
+        {
+            time = books[book].value(forKey: "lastTimeRead") as! UIntMax
+            totalTime = time
+        }
         
         updateTime()
     }
@@ -68,7 +77,7 @@ class TimerPageController: UIViewController {
     //stops the timer and resets the timer to the default number
     @IBAction func resetTimer(_ sender: Any) {
         timer.invalidate()
-        time = oldTime
+        time = books[book].value(forKey: "lastTimeRead") as! UIntMax
         
         //sets the button to say start
         startButton.setTitle("Start", for: .normal)
@@ -127,6 +136,7 @@ class TimerPageController: UIViewController {
     @IBAction func plus1Hour(_ sender: Any) {
         //adds an hour to the time left
         time += 3600
+        totalTime += 3600
         
         updateTime()
     }
@@ -137,6 +147,7 @@ class TimerPageController: UIViewController {
         {
             //removes the hour
             time -= 3600
+            totalTime -= 3600
         }
         
         updateTime()
@@ -145,6 +156,7 @@ class TimerPageController: UIViewController {
     @IBAction func plus30Mins(_ sender: Any) {
         //adds half an hour to the time left
         time += 1800
+        totalTime += 1800
         
         updateTime()
     }
@@ -154,6 +166,7 @@ class TimerPageController: UIViewController {
         if time >= 1800
         {
             time -= 1800
+            totalTime -= 1800
         }
         
         updateTime()
@@ -162,6 +175,7 @@ class TimerPageController: UIViewController {
     @IBAction func plus1Min(_ sender: Any) {
         //adds a min to the time left
         time += 60
+        totalTime += 60
         
         updateTime()
     }
@@ -171,17 +185,26 @@ class TimerPageController: UIViewController {
         if time >= 60
         {
             time -= 60
+            totalTime -= 60
         }
         
         updateTime()
     }
     
     @IBAction func close(sender: AnyObject) {
+        saveTimeDone(timeRead: totalTime)
+        
         let tmpController :UIViewController! = self.presentingViewController;
         
         self.dismiss(animated: false, completion: {()->Void in
             tmpController.dismiss(animated: false, completion: nil)
         })
+    }
+    
+    func saveTimeDone(timeRead: UIntMax) {
+        books[book].setValue((totalTime - time), forKey: "lastTimeRead")
+        totalTime += books[book].value(forKey: "timeRead") as! UIntMax
+        books[book].setValue((totalTime  - time), forKey: "timeRead")
     }
     
     /*
