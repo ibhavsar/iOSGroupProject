@@ -38,6 +38,10 @@ class BookScreenController: UIViewController {
             
             updateTimeRead()
         }
+        else
+        {
+            print("Error Reading file.")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -130,7 +134,14 @@ class BookScreenController: UIViewController {
     
     func updateTimeRead()
     {
-        let time = books[book].value(forKey: "timeRead") as! UIntMax
+        if !books.isEmpty
+        {
+            let time = books[book].value(forKey: "timeRead") as! UIntMax
+        }
+        else
+        {
+            print("Error Reading file.")
+        }
         
         timeTotalRead.text = (((time/3600) < 10) ?  ("0" + String(time/3600)) : (String(time/3600))) + ":" + ((((time % 3600) / 60) < 10) ?  ("0" + String((time % 3600) / 60)) : (String((time % 3600) / 60))) + ":" + ((((time % 3600) % 60) < 10) ?  ("0" + String((time % 3600) % 60)) : (String((time % 3600) % 60)))
     }

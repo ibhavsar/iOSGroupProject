@@ -40,6 +40,10 @@ class TimerPageController: UIViewController {
             time = books[book].value(forKey: "lastTimeRead") as! UIntMax
             totalTime = time
         }
+        else
+        {
+            print("Error Reading file.")
+        }
         
         updateTime()
     }
