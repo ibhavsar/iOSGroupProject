@@ -15,6 +15,8 @@ class BookScreenController: UIViewController {
     
     var book = 0
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var timeTotalRead: UILabel!
     
     @IBOutlet weak var ratingView: RatingView!
@@ -32,11 +34,13 @@ class BookScreenController: UIViewController {
 
         getData()
         
-        if !books.isEmpty
+        if book < books.count
         {
             ratingView.rating = books[book].value(forKey: "rating") as! Float
             
             updateTimeRead()
+            
+            titleLabel.text = books[book].value(forKey: "title") as? String
         }
         else
         {
@@ -53,6 +57,12 @@ class BookScreenController: UIViewController {
         super.viewWillAppear(animated)
         
         updateTimeRead()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        saveRating()
     }
     
     @IBAction func openTimerPage(_ sender: Any) {
@@ -102,7 +112,7 @@ class BookScreenController: UIViewController {
         // 1
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        if !books.isEmpty
+        if book < books.count
         {
             books[book].setValue(ratingView.rating, forKey: "rating")
             
@@ -134,16 +144,16 @@ class BookScreenController: UIViewController {
     
     func updateTimeRead()
     {
-        if !books.isEmpty
+        if book < books.count
         {
             let time = books[book].value(forKey: "timeRead") as! UIntMax
+            
+            timeTotalRead.text = (((time/3600) < 10) ?  ("0" + String(time/3600)) : (String(time/3600))) + ":" + ((((time % 3600) / 60) < 10) ?  ("0" + String((time % 3600) / 60)) : (String((time % 3600) / 60))) + ":" + ((((time % 3600) % 60) < 10) ?  ("0" + String((time % 3600) % 60)) : (String((time % 3600) % 60)))
         }
         else
         {
             print("Error Reading file.")
         }
-        
-        timeTotalRead.text = (((time/3600) < 10) ?  ("0" + String(time/3600)) : (String(time/3600))) + ":" + ((((time % 3600) / 60) < 10) ?  ("0" + String((time % 3600) / 60)) : (String((time % 3600) / 60))) + ":" + ((((time % 3600) % 60) < 10) ?  ("0" + String((time % 3600) % 60)) : (String((time % 3600) % 60)))
     }
     
     /*

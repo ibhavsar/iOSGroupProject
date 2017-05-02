@@ -35,7 +35,7 @@ class TimerPageController: UIViewController {
         
         getData()
         
-        if !books.isEmpty
+        if book < books.count
         {
             time = books[book].value(forKey: "lastTimeRead") as! UIntMax
             totalTime = time
@@ -51,6 +51,12 @@ class TimerPageController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        saveTimeDone()
     }
     
     //starts the timer when the start button is pressed
@@ -212,8 +218,6 @@ class TimerPageController: UIViewController {
     }
     
     @IBAction func close(sender: AnyObject) {
-        saveTimeDone()
-        
         if alarmPlayer != nil && alarmPlayer.isPlaying {
             alarmPlayer.stop()
             alarmPlayer = nil
@@ -257,7 +261,7 @@ class TimerPageController: UIViewController {
         // 1
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        if !books.isEmpty
+        if book < books.count
         {
             books[book].setValue((totalTime), forKey: "lastTimeRead")
             totalTime += books[book].value(forKey: "timeRead") as! UIntMax
