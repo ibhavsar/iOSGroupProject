@@ -9,11 +9,11 @@
 import UIKit
 import CoreData
 
+var bookb: Int? = nil
+    
 class BookScreenController: UIViewController {
 
     var books: [NSManagedObject] = []
-    
-    var book = 0
     
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -31,20 +31,27 @@ class BookScreenController: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-
-        getData()
         
-        if book < books.count
+        if bookb == nil
         {
-            ratingView.rating = books[book].value(forKey: "rating") as! Float
-            
-            updateTimeRead()
-            
-            titleLabel.text = books[book].value(forKey: "title") as? String
+            openBookSelector()
         }
         else
         {
-            print("Error Reading file.")
+            getData()
+            
+            if bookb! < books.count
+            {
+                ratingView.rating = books[bookb!].value(forKey: "rating") as! Float
+                
+                updateTimeRead()
+                
+                titleLabel.text = books[bookb!].value(forKey: "title") as? String
+            }
+            else
+            {
+                print("Error Reading file.")
+            }
         }
     }
 
@@ -55,14 +62,29 @@ class BookScreenController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        updateTimeRead()
+        if books.count == 0
+        {
+            getData()
+        }
+        if bookb != nil
+        {
+            if bookb! < books.count
+            {
+                ratingView.rating = books[bookb!].value(forKey: "rating") as! Float
+                
+                updateTimeRead()
+                
+                titleLabel.text = books[bookb!].value(forKey: "title") as? String
+            }
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-        saveRating()
+        if bookb != nil
+        {
+            saveRating()
+        }
     }
     
     @IBAction func openTimerPage(_ sender: Any) {
@@ -70,7 +92,7 @@ class BookScreenController: UIViewController {
         
         let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
         let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "TimerPage") as? TimerPageController
-        openedTimerPage?.book = book
+        openedTimerPage?.book = bookb!
         openedTimerPage?.modalPresentationStyle = .popover
         
         let popoverController = openedTimerPage?.popoverPresentationController
@@ -78,6 +100,10 @@ class BookScreenController: UIViewController {
         popoverController?.permittedArrowDirections = .any
         
         present(openedTimerPage!, animated: true, completion: nil)
+    }
+    
+    @IBAction func openBooksScreen(_ sender: Any) {
+        openBookSelector()
     }
 
     func getData()
@@ -112,9 +138,9 @@ class BookScreenController: UIViewController {
         // 1
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        if book < books.count
+        if bookb! < books.count
         {
-            books[book].setValue(ratingView.rating, forKey: "rating")
+            books[bookb!].setValue(ratingView.rating, forKey: "rating")
             
             do {
                 try managedContext.save()
@@ -144,9 +170,9 @@ class BookScreenController: UIViewController {
     
     func updateTimeRead()
     {
-        if book < books.count
+        if bookb! < books.count
         {
-            let time = books[book].value(forKey: "timeRead") as! UIntMax
+            let time = books[bookb!].value(forKey: "timeRead") as! UIntMax
             
             timeTotalRead.text = (((time/3600) < 10) ?  ("0" + String(time/3600)) : (String(time/3600))) + ":" + ((((time % 3600) / 60) < 10) ?  ("0" + String((time % 3600) / 60)) : (String((time % 3600) / 60))) + ":" + ((((time % 3600) % 60) < 10) ?  ("0" + String((time % 3600) % 60)) : (String((time % 3600) % 60)))
         }
@@ -154,6 +180,23 @@ class BookScreenController: UIViewController {
         {
             print("Error Reading file.")
         }
+    }
+    
+    func openBookSelector()
+    {
+        let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+        
+        let bookSelection = thisStoryboard.instantiateViewController(withIdentifier: "BookSelection") as? BooksViewerController
+        
+        bookSelection?.modalPresentationStyle = .popover
+        
+        let popoverController = bookSelection?.popoverPresentationController
+        
+        popoverController?.sourceView = self.view as UIView
+        
+        popoverController?.permittedArrowDirections = .any
+        
+        present(bookSelection!, animated: true, completion: nil)
     }
     
     /*

@@ -34,7 +34,7 @@
         <!--Menu Controller-->
         <scene sceneID="wnl-W8-dXo">
             <objects>
-                <tableViewController id="hGD-fw-AYI" customClass="MenuController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="menuController" id="hGD-fw-AYI" customClass="MenuController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5Bf-HF-KLE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,7 +254,7 @@
                 <viewControllerPlaceholder storyboardName="BookScreen" id="jGW-ZY-DbA" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X46-un-aaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3917" y="-2279"/>
+            <point key="canvasLocation" x="2684" y="-2682"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="cPO-Ne-ipf">

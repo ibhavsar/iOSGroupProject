@@ -223,10 +223,7 @@ class TimerPageController: UIViewController {
             alarmPlayer = nil
         }
         
-        let tmpController :UIViewController! = self.presentingViewController;
-        
-        self.dismiss(animated: false, completion: {()->Void in tmpController.dismiss(animated: false, completion: nil)
-        })
+        self.dismiss(animated: false, completion: nil)
     }
     
     func getData()
