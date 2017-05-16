@@ -91,7 +91,7 @@ class AvatarSelectionViewController: UIViewController, UICollectionViewDelegate,
                 print(AvatarName.count)
 
             } catch let error as NSError {
-                print("Could not save" )
+                print("Could not save \(error)")
             }
         }
         else {

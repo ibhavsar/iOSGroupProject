@@ -70,7 +70,7 @@ var userName = ""
                 print("test2")
                 try managedContext.save()
             } catch let error as NSError {
-                print("Could not save" )
+                print("Could not save \(error)")
             }
         }
     

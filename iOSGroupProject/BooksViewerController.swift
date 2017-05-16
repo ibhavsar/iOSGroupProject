@@ -45,7 +45,7 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
             
             if imageData != nil
             {
-                let newImage: UIImage? = UIImage(data: imageData as! Data)
+                let newImage: UIImage? = UIImage(data: imageData! as Data)
                 if newImage != nil
                 {
                     cell.BookPreview.image = newImage

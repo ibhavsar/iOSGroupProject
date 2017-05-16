@@ -49,14 +49,37 @@ class HomeViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "WelcomeData")
+        do {
+            avatarNames = try managedContext.fetch(fetchRequest) as! [WelcomeData]
+            print (avatarNames.count)
+            avatarName = avatarNames[0].value(forKey: "avatarSelected") as! String
+            print(avatarName + "lololol")
+            avatarDisplay.image = UIImage(named: avatarName)
+            
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
