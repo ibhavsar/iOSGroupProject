@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController, UITextFieldDelegate {
     var names: [NSManagedObject] = []
     
     @IBOutlet weak var theirNameField: UITextField!
@@ -27,6 +27,8 @@ class WelcomeViewController: UIViewController {
             UIApplication.shared.delegate as? AppDelegate else {
                 return
         }
+        
+        self.theirNameField.delegate = self;
         
         let managedContext =
             appDelegate.persistentContainer.viewContext
@@ -47,6 +49,12 @@ class WelcomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        self.view.endEditing(true)
+        return true
     }
     
 // for saving to core data

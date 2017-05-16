@@ -65,7 +65,7 @@
                                                                         </attributes>
                                                                     </fragment>
                                                                 </attributedString>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
