@@ -11,7 +11,6 @@
 		3F1562FB1EBB563700303C60 /* BooksViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1562FA1EBB563700303C60 /* BooksViewerController.swift */; };
 		3F1562FD1EBB593400303C60 /* BookViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1562FC1EBB593400303C60 /* BookViewCell.swift */; };
 		3F1562FF1EC23B3E00303C60 /* BookSaving.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1562FE1EC23B3E00303C60 /* BookSaving.storyboard */; };
-		3F1563011EC49BEE00303C60 /* BookSaving.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1563001EC49BEE00303C60 /* BookSaving.storyboard */; };
 		3F1D07301EA7907A009A0A10 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D072F1EA7907A009A0A10 /* SWRevealViewController.m */; };
 		3F1D07351EA798C8009A0A10 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07341EA798C8009A0A10 /* LibraryViewController.swift */; };
 		3F1D07371EA798D8009A0A10 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */; };
@@ -43,7 +42,6 @@
 		3F1562FA1EBB563700303C60 /* BooksViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewerController.swift; sourceTree = "<group>"; };
 		3F1562FC1EBB593400303C60 /* BookViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewCell.swift; sourceTree = "<group>"; };
 		3F1562FE1EC23B3E00303C60 /* BookSaving.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookSaving.storyboard; sourceTree = "<group>"; };
-		3F1563001EC49BEE00303C60 /* BookSaving.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BookSaving.storyboard; path = ../BookSaving.storyboard; sourceTree = "<group>"; };
 		3F1D072C1EA79079009A0A10 /* iOSGroupProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSGroupProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F1D072D1EA7907A009A0A10 /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F1D072E1EA7907A009A0A10 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 		3F78F0031E8EAEF100091FBE /* iOSGroupProject */ = {
 			isa = PBXGroup;
 			children = (
-				3F1563001EC49BEE00303C60 /* BookSaving.storyboard */,
 				3F74DAC81EAE32400074A729 /* Book Screen */,
 				3F1D07311EA79087009A0A10 /* SWRevealViewController */,
 				3F78F0041E8EAEF100091FBE /* AppDelegate.swift */,
@@ -239,8 +236,11 @@
 				3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */,
 				3F74DACA1EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 in Resources */,
 				3F1562FF1EC23B3E00303C60 /* BookSaving.storyboard in Resources */,
+				3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */,
+				3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */,
+				3FCEE8221EC9DE0D00BE725D /* tutorial.storyboard in Resources */,
+				3F1562FF1EC23B3E00303C60 /* BookSaving.storyboard in Resources */,
 				3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */,
-				3F1563011EC49BEE00303C60 /* BookSaving.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
