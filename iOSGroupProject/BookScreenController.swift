@@ -15,6 +15,8 @@ class BookScreenController: UIViewController {
 
     var books: [NSManagedObject] = []
     
+    @IBOutlet weak var Pages: UILabel!
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var timeTotalRead: UILabel!
@@ -75,6 +77,10 @@ class BookScreenController: UIViewController {
                 updateTimeRead()
                 
                 titleLabel.text = books[bookb!].value(forKey: "title") as? String
+                
+                let pages = books[bookb!].value(forKey: "pages")!
+                
+                Pages.text = "000/" + String(describing: pages)
             }
         }
     }

@@ -23,6 +23,7 @@ class WelcomeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nextButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
                 return

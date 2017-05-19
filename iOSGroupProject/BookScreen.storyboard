@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UJD-bY-hla">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UJD-bY-hla">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.01" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gD7-SN-3Hl">
-                                <rect key="frame" x="78.5" y="72" width="218" height="36"/>
+                                <rect key="frame" x="77" y="72" width="221" height="36.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gD7-SN-3Hl" secondAttribute="height" multiplier="109:18" id="fVH-aD-c3a"/>
                                 </constraints>
@@ -146,7 +146,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera Box" translatesAutoresizingMaskIntoConstraints="NO" id="daz-sA-LMJ" userLabel="Cover Photo">
-                                <rect key="frame" x="106" y="118" width="163" height="217.5"/>
+                                <rect key="frame" x="106" y="118.5" width="163" height="217"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="daz-sA-LMJ" secondAttribute="height" multiplier="3:4" id="dVb-K9-Ec7"/>
                                 </constraints>
@@ -349,6 +349,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="1ce-Nd-2ih"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="Pages" destination="bME-BV-sz0" id="gmY-2Z-bwu"/>
                         <outlet property="menuButton" destination="1ce-Nd-2ih" id="eUe-CG-wmW"/>
                         <outlet property="ratingView" destination="klQ-h1-ToG" id="RuA-7Y-8yP"/>
                         <outlet property="timeTotalRead" destination="i8i-ku-tqI" id="eG8-cz-PWW"/>
@@ -567,7 +568,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="50b-Ci-ygO">
                                 <rect key="frame" x="16" y="20" width="343" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H2t-gR-A8A">
                                     <size key="itemSize" width="129" height="199"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -582,7 +583,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="129" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="585AC6E9-0049-4272-B82C-D751327ACD2F" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-HH-zcR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:M5O-HH-zcR:image" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-HH-zcR">
                                                     <rect key="frame" x="9" y="5" width="111.5" height="149"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="M5O-HH-zcR" secondAttribute="height" multiplier="3:4" id="5TF-eK-ZWZ"/>
@@ -614,7 +615,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xJz-4I-24A" firstAttribute="top" secondItem="50b-Ci-ygO" secondAttribute="bottom" id="5nt-3R-WSB"/>
                             <constraint firstItem="50b-Ci-ygO" firstAttribute="leading" secondItem="8Lt-aP-2DG" secondAttribute="leadingMargin" id="ZsU-PJ-a6N"/>
@@ -626,7 +627,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="JcK-am-0dI"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="AvatarCollectionView" destination="50b-Ci-ygO" id="A59-sB-o5K"/>
+                        <outlet property="bookCollectionView" destination="50b-Ci-ygO" id="lto-yM-cug"/>
                         <outlet property="menuButton" destination="JcK-am-0dI" id="zyX-YI-97r"/>
                     </connections>
                 </viewController>
@@ -636,7 +637,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="585AC6E9-0049-4272-B82C-D751327ACD2F" width="81" height="115">
+        <image name="Camera Box" width="81" height="115"/>
+        <image name="emptyStar" width="33" height="31"/>
+        <image name="fullStar" width="33" height="31"/>
+        <image name="imageView:M5O-HH-zcR:image" width="81" height="115">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -1308,9 +1312,6 @@ vgDDANoA3ADemwybEZscmyWbOJs8m0ebUJtVm12bYJtlm3SbeJt/m4eblJuZm5ubnZuim6qbrZuym7qb
 vZvPm9Kb1wAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAJvZA
 </mutableData>
         </image>
-        <image name="Camera Box" width="81" height="115"/>
-        <image name="emptyStar" width="33" height="31"/>
-        <image name="fullStar" width="33" height="31"/>
         <image name="pencil" width="80" height="72"/>
         <image name="x button" width="80" height="80"/>
     </resources>
