@@ -223,6 +223,12 @@
                             <constraint firstItem="bTd-8K-76a" firstAttribute="leading" secondItem="q6W-Q6-Njm" secondAttribute="leading" id="tIP-iG-kaR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="background" destination="bTd-8K-76a" id="pGr-zI-5FP"/>
+                        <outlet property="cameraImage" destination="nF0-Fa-rkm" id="SGy-ud-jhC"/>
+                        <outlet property="nextButton" destination="CNC-gm-4dk" id="jyT-B6-1Mr"/>
+                        <outlet property="textView" destination="hk6-xM-4WY" id="m6a-38-8Xq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iec-FQ-5JZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

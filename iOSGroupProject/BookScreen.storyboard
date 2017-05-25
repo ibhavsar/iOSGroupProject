@@ -350,6 +350,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="Pages" destination="bME-BV-sz0" id="gmY-2Z-bwu"/>
+                        <outlet property="imageView" destination="daz-sA-LMJ" id="387-10-LkI"/>
                         <outlet property="menuButton" destination="1ce-Nd-2ih" id="eUe-CG-wmW"/>
                         <outlet property="ratingView" destination="klQ-h1-ToG" id="RuA-7Y-8yP"/>
                         <outlet property="timeTotalRead" destination="i8i-ku-tqI" id="eG8-cz-PWW"/>

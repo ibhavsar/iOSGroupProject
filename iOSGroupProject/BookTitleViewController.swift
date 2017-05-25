@@ -15,6 +15,8 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var numberOfPages: UITextField!
     @IBOutlet weak var authorName: UITextField!
     
+    var book = 0
+    
     var currentSelectedTextField: UITextField? = nil
     
     var books: [NSManagedObject] = []
@@ -24,6 +26,8 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
         self.hideKeyboardWhenTappedAround()
         
         getData()
+        
+        book = books.count
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
@@ -103,24 +107,30 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
         // 1
         let managedContext =
             appDelegate.persistentContainer.viewContext
-        
-        // 2
-        let entity =
-            NSEntityDescription.entity(forEntityName: "Book", in: managedContext)!
-        
-        let newBook = NSManagedObject(entity: entity, insertInto: managedContext)
-        
-        newBook.setValue(bookTitle.text, forKey: "title")
-        let pages = Int64(numberOfPages.text!)
-        newBook.setValue(pages!, forKey: "pages")
-        newBook.setValue(authorName.text, forKey: "author")
-        
-        // 4
-        do {
-            try managedContext.save()
-            books.append(newBook)
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
+        if book == books.count
+        {
+            // 2
+            let entity =
+                NSEntityDescription.entity(forEntityName: "Book", in: managedContext)!
+            
+            let newBook = NSManagedObject(entity: entity, insertInto: managedContext)
+            
+            newBook.setValue(bookTitle.text, forKey: "title")
+            let pages = Int64(numberOfPages.text!)
+            newBook.setValue(pages!, forKey: "pages")
+            newBook.setValue(authorName.text, forKey: "author")
+            
+            // 4
+            do {
+                try managedContext.save()
+                books.append(newBook)
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+        }
+        else
+        {
+            
         }
     }
     
