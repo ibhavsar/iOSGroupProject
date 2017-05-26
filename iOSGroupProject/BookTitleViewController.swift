@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreData
 
 class BookTitleViewController: UIViewController, UITextFieldDelegate {
     
@@ -15,30 +14,16 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var numberOfPages: UITextField!
     @IBOutlet weak var authorName: UITextField!
     
-    var book = 0
-    
     var currentSelectedTextField: UITextField? = nil
-    
-    var books: [NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
-        getData()
-        
-        book = books.count
-        
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        save()
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -61,17 +46,21 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
     @IBAction func `continue`(_ sender: Any) {
         let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
         
-        let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "TakePic")
+        let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "TakePic") as? PictureViewController
         
-        bookSaving.modalPresentationStyle = .popover
+        bookSaving?.modalPresentationStyle = .popover
         
-        let popoverController = bookSaving.popoverPresentationController
+        bookSaving?.bookTitle = bookTitle.text!
+        bookSaving?.numberOfPages = Int(numberOfPages.text!)!
+        bookSaving?.authorsName = authorName.text!
+        
+        let popoverController = bookSaving?.popoverPresentationController
         
         popoverController?.sourceView = self.view as UIView
         
         popoverController?.permittedArrowDirections = .any
         
-        present(bookSaving, animated: true, completion: nil)
+        present(bookSaving!, animated: true, completion: nil)
     }
     
     func keyboardWillShow(notification: NSNotification) {
@@ -95,66 +84,6 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-    }
-    
-    func save() {
-        
-        guard let appDelegate =
-            UIApplication.shared.delegate as? AppDelegate else {
-                return
-        }
-        
-        // 1
-        let managedContext =
-            appDelegate.persistentContainer.viewContext
-        if book == books.count
-        {
-            // 2
-            let entity =
-                NSEntityDescription.entity(forEntityName: "Book", in: managedContext)!
-            
-            let newBook = NSManagedObject(entity: entity, insertInto: managedContext)
-            
-            newBook.setValue(bookTitle.text, forKey: "title")
-            let pages = Int64(numberOfPages.text!)
-            newBook.setValue(pages!, forKey: "pages")
-            newBook.setValue(authorName.text, forKey: "author")
-            
-            // 4
-            do {
-                try managedContext.save()
-                books.append(newBook)
-            } catch let error as NSError {
-                print("Could not save. \(error), \(error.userInfo)")
-            }
-        }
-        else
-        {
-            
-        }
-    }
-    
-    func getData()
-    {
-        //1
-        guard let appDelegate =
-            UIApplication.shared.delegate as? AppDelegate else {
-                return
-        }
-        
-        let managedContext =
-            appDelegate.persistentContainer.viewContext
-        
-        //2
-        let fetchRequest =
-            NSFetchRequest<NSFetchRequestResult>(entityName: "Book")
-        
-        //3
-        do {
-            books = try managedContext.fetch(fetchRequest) as! [Book]
-        } catch let error as NSError {
-            print("Could not fetch. \(error)")
-        }
     }
     
     /*

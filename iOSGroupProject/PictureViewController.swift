@@ -17,6 +17,10 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
     
     var imagePicker: UIImagePickerController!
     
+    var bookTitle: String = ""
+    var numberOfPages: Int = 0
+    var authorsName: String = ""
+    
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var cameraImage: UIImageView!
     @IBOutlet weak var background: UIImageView!
@@ -42,7 +46,9 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
     }
     
     @IBAction func `continue`(_ sender: Any) {
-        
+        save()
+        self.dismiss(animated: true, completion: nil)
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func back(_ sender: Any) {
@@ -61,7 +67,7 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
         }
         else
         {
-            let alert = UIAlertController(title: "Warning", message: "Could not find a camera.", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "Warning", message: "Could not access a camera.", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
@@ -92,30 +98,31 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
             appDelegate.persistentContainer.viewContext
         if book == books.count
         {
+            
+            // 2
+            let entity =
+                NSEntityDescription.entity(forEntityName: "Book", in: managedContext)!
+            
+            let newBook = NSManagedObject(entity: entity, insertInto: managedContext)
+            
             if cameraImage.isHidden
             {
-                // 2
-                let entity =
-                    NSEntityDescription.entity(forEntityName: "Book", in: managedContext)!
-                
-                let newBook = NSManagedObject(entity: entity, insertInto: managedContext)
-                
                 let imageData = UIImagePNGRepresentation(background.image!) as NSData?
                 
                 newBook.setValue(imageData, forKey: "image")
-                
-                // 4
-                do {
-                    try managedContext.save()
-                    books.append(newBook)
-                } catch let error as NSError {
-                    print("Could not save. \(error), \(error.userInfo)")
-                }
             }
-        }
-        else
-        {
             
+            newBook.setValue(bookTitle, forKey: "title")
+            newBook.setValue(numberOfPages, forKey: "pages")
+            newBook.setValue(authorsName, forKey: "author")
+            
+            // 4
+            do {
+                try managedContext.save()
+                books.append(newBook)
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
         }
     }
     
