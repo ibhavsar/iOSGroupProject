@@ -17,6 +17,8 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
     
     var books: [NSManagedObject] = []
     
+    var newBook: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +35,11 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if newBook
+        {
+            self.dismiss(animated: true, completion: nil)
+        }
         
         getData()
     }
@@ -93,6 +100,8 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
             popoverController?.permittedArrowDirections = .any
             
             present(bookSaving!, animated: true, completion: nil)
+            
+            newBook = true
         }
         else
         {
@@ -124,7 +133,7 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
             print("Could not fetch. \(error)")
         }
     }
-    
+
     /*
     // MARK: - Navigation
 

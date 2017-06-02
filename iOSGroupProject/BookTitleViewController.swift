@@ -14,6 +14,9 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var numberOfPages: UITextField!
     @IBOutlet weak var authorName: UITextField!
     
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+    
     var currentSelectedTextField: UITextField? = nil
     
     override func viewDidLoad() {
@@ -41,6 +44,10 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         currentSelectedTextField = nil
+        if bookTitle.text != "Book Title" && authorName.text != "Name" && bookTitle.text != "" && authorName.text != "" && numberOfPages.text != ""
+        {
+            continueButton.isEnabled = true
+        }
     }
     
     @IBAction func `continue`(_ sender: Any) {
@@ -83,6 +90,7 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func back(_ sender: Any) {
+        (self.presentingViewController as! BooksViewerController).newBook = false
         self.dismiss(animated: true, completion: nil)
     }
     

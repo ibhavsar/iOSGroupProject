@@ -180,7 +180,7 @@
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -754,7 +754,7 @@
         <image name="WhatsYourName" width="228" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uvd-BI-Ule"/>
-        <segue reference="56w-iI-oRM"/>
+        <segue reference="WKq-cf-sEK"/>
+        <segue reference="Dip-PH-Nd7"/>
     </inferredMetricsTieBreakers>
 </document>

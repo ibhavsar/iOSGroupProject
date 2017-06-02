@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2cc-Gu-hg0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2cc-Gu-hg0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-Nl-HIh">
-                                <rect key="frame" x="16" y="109" width="343" height="538"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-Nl-HIh">
+                                <rect key="frame" x="16" y="111" width="343" height="548"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LkH-Tg-L0F">
                                     <size key="itemSize" width="90" height="90"/>
@@ -56,14 +57,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXx-5R-mPa">
-                                <rect key="frame" x="16" y="72" width="343" height="89"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="vXx-5R-mPa">
+                                <rect key="frame" x="16" y="64" width="343" height="39"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Hello, (name) please select an avatar!">
                                         <attributes>
                                             <color key="NSBackgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name=".SFNSDisplay"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <font key="NSFont" size="30" name=".SFNSDisplay"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -72,26 +73,20 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="vXx-5R-mPa" firstAttribute="top" secondItem="8l0-l0-22E" secondAttribute="bottom" constant="8" symbolic="YES" id="KwD-uM-YcD"/>
-                            <constraint firstItem="sZT-Nl-HIh" firstAttribute="top" secondItem="8l0-l0-22E" secondAttribute="bottom" constant="45" id="LH9-Fi-YuM"/>
+                            <constraint firstItem="0KO-iT-1dz" firstAttribute="top" secondItem="sZT-Nl-HIh" secondAttribute="bottom" constant="8" id="87M-tu-iOE"/>
+                            <constraint firstItem="vXx-5R-mPa" firstAttribute="top" secondItem="8l0-l0-22E" secondAttribute="bottom" id="8b5-FR-m47"/>
+                            <constraint firstItem="vXx-5R-mPa" firstAttribute="centerY" secondItem="XUQ-8s-buf" secondAttribute="centerY" multiplier="0.25" id="QRy-Dr-hLp"/>
                             <constraint firstItem="sZT-Nl-HIh" firstAttribute="leading" secondItem="XUQ-8s-buf" secondAttribute="leadingMargin" id="TG6-sU-lwb"/>
-                            <constraint firstItem="0KO-iT-1dz" firstAttribute="top" secondItem="sZT-Nl-HIh" secondAttribute="bottom" constant="20" id="TyF-RR-9Vi"/>
-                            <constraint firstItem="vXx-5R-mPa" firstAttribute="leading" secondItem="sZT-Nl-HIh" secondAttribute="leading" id="UNN-Ds-QZ2"/>
+                            <constraint firstItem="vXx-5R-mPa" firstAttribute="leading" secondItem="XUQ-8s-buf" secondAttribute="leadingMargin" id="VZi-ID-gzR"/>
                             <constraint firstItem="sZT-Nl-HIh" firstAttribute="trailing" secondItem="XUQ-8s-buf" secondAttribute="trailingMargin" id="YJb-lM-eHG"/>
-                            <constraint firstItem="0KO-iT-1dz" firstAttribute="top" secondItem="vXx-5R-mPa" secondAttribute="bottom" constant="506" id="YQg-9c-uV9"/>
-                            <constraint firstItem="vXx-5R-mPa" firstAttribute="trailing" secondItem="sZT-Nl-HIh" secondAttribute="trailing" id="iF5-Yr-KxE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vXx-5R-mPa" secondAttribute="trailing" id="fHz-KK-ZO5"/>
+                            <constraint firstItem="sZT-Nl-HIh" firstAttribute="top" secondItem="vXx-5R-mPa" secondAttribute="bottom" constant="8" id="qaT-Sc-2cZ"/>
+                            <constraint firstItem="vXx-5R-mPa" firstAttribute="centerX" secondItem="XUQ-8s-buf" secondAttribute="centerX" id="zev-aN-EQU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Avatar Selection" id="cjj-sU-8D8">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="Pfu-2J-Y7T">
-                            <connections>
-                                <action selector="DoneAvatarAction:" destination="HDO-0X-16H" id="EoP-wa-oHk"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Avatar Selection" id="cjj-sU-8D8"/>
                     <connections>
                         <outlet property="AvatarCollectionView" destination="sZT-Nl-HIh" id="aDQ-zJ-26S"/>
-                        <outlet property="DoneButton" destination="Pfu-2J-Y7T" id="ty4-U9-dsB"/>
                         <outlet property="avatarLabel" destination="vXx-5R-mPa" id="o03-gE-kCR"/>
                     </connections>
                 </viewController>

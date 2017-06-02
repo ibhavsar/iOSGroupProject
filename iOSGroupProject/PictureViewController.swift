@@ -47,8 +47,11 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
     
     @IBAction func `continue`(_ sender: Any) {
         save()
-        self.dismiss(animated: true, completion: nil)
-        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        
+        self.presentingViewController?.dismiss(animated: false, completion: nil)
+        self.presentingViewController?.dismiss(animated: false, completion: nil)
+        
+        bookb = book
     }
     
     @IBAction func back(_ sender: Any) {
@@ -75,7 +78,20 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
         }
     }
     
-    private func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            // we got back an error!
+            let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        } else {
+            let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
         background.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         

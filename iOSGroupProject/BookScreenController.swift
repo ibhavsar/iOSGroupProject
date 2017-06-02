@@ -66,10 +66,9 @@ class BookScreenController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if books.count == 0
-        {
-            getData()
-        }
+        
+        getData()
+        
         if bookb != nil
         {
             if bookb! < books.count

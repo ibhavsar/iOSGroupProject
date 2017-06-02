@@ -27,13 +27,13 @@
                                 <rect key="frame" x="0.0" y="484" width="414" height="136"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Time Spent Reading Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="7ka-4b-GAO">
-                                <rect key="frame" x="0.0" y="281.66666666666669" width="414" height="136"/>
+                                <rect key="frame" x="0.0" y="282" width="414" height="136"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Time Spent Reading Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="eaz-ob-BJZ">
-                                <rect key="frame" x="0.0" y="90.333333333333314" width="414" height="136"/>
+                                <rect key="frame" x="0.0" y="90" width="414" height="136"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the book's title:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="BR4-gk-i0E">
-                                <rect key="frame" x="20" y="101.33333333333331" width="374" height="54.666666666666686"/>
+                                <rect key="frame" x="20" y="102" width="374" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the number of pages:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="4Oo-7D-ctv">
-                                <rect key="frame" x="20" y="281.66666666666669" width="374" height="62"/>
+                                <rect key="frame" x="20" y="282" width="374" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,7 +64,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="999" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="10" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="He9-JR-Vjn">
-                                <rect key="frame" x="20" y="351.66666666666669" width="374" height="40"/>
+                                <rect key="frame" x="20" y="352" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.96852236989999996" green="0.96868795159999999" blue="0.96851199870000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -77,7 +77,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="kha-f5-ggd">
-                                <rect key="frame" x="134.66666666666669" y="484.33333333333337" width="145.00000000000006" height="62.000000000000114"/>
+                                <rect key="frame" x="135" y="484" width="145" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -86,10 +86,10 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="10" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tOk-xU-bnc">
-                                <rect key="frame" x="20" y="554.33333333333337" width="374" height="40"/>
+                                <rect key="frame" x="20" y="554" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.96852236989999996" green="0.96868795159999999" blue="0.96851199870000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Jamey Doe">
+                                    <fragment content="Name">
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="40"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -102,14 +102,14 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ers-aS-aQy" userLabel="Back Button">
-                                <rect key="frame" x="83.333333333333343" y="639.66666666666663" width="82.000000000000028" height="82"/>
+                                <rect key="frame" x="83" y="640" width="82" height="82"/>
                                 <state key="normal" image="Back Button"/>
                                 <connections>
                                     <action selector="back:" destination="N6V-C1-CzX" eventType="touchUpInside" id="nrD-Q7-iSG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC6-qK-SX9" userLabel="Forward Button">
-                                <rect key="frame" x="248.66666666666669" y="639.66666666666663" width="82.000000000000057" height="82"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC6-qK-SX9" userLabel="Forward Button">
+                                <rect key="frame" x="249" y="640" width="82" height="82"/>
                                 <state key="normal" image="ForwardButton"/>
                                 <connections>
                                     <action selector="continue:" destination="N6V-C1-CzX" eventType="touchUpInside" id="BXL-Od-IbW"/>
@@ -158,7 +158,9 @@
                     </view>
                     <connections>
                         <outlet property="authorName" destination="tOk-xU-bnc" id="q2I-rN-no0"/>
+                        <outlet property="backButton" destination="ers-aS-aQy" id="CfK-tv-xS8"/>
                         <outlet property="bookTitle" destination="tAg-jy-lkL" id="l5k-l8-Edk"/>
+                        <outlet property="continueButton" destination="gC6-qK-SX9" id="T01-mj-ZDX"/>
                         <outlet property="numberOfPages" destination="He9-JR-Vjn" id="mOn-ya-FT2"/>
                     </connections>
                 </viewController>
@@ -182,24 +184,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxQ-Oh-fkJ" userLabel="Back Button">
-                                <rect key="frame" x="83.333333333333343" y="639.66666666666663" width="82.000000000000028" height="82"/>
+                                <rect key="frame" x="83" y="640" width="82" height="82"/>
                                 <state key="normal" image="Back Button"/>
                                 <connections>
                                     <action selector="back:" destination="61v-kG-pKT" eventType="touchUpInside" id="bl6-pS-EIQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNC-gm-4dk" userLabel="Forward Button">
-                                <rect key="frame" x="248.66666666666669" y="639.66666666666663" width="82.000000000000057" height="82"/>
+                                <rect key="frame" x="249" y="640" width="82" height="82"/>
                                 <state key="normal" image="ForwardButton"/>
                                 <connections>
                                     <action selector="continue:" destination="61v-kG-pKT" eventType="touchUpInside" id="haJ-xE-khj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="nF0-Fa-rkm">
-                                <rect key="frame" x="57.666666666666657" y="116.33333333333331" width="299" height="209"/>
+                                <rect key="frame" x="58" y="116" width="299" height="209"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to take a photo of the book's cover" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hk6-xM-4WY">
-                                <rect key="frame" x="36" y="406.66666666666669" width="342" height="70"/>
+                                <rect key="frame" x="36" y="407" width="342" height="70"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
