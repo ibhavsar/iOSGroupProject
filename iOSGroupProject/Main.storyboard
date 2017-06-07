@@ -12,14 +12,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--tutorial-->
-        <scene sceneID="tXR-we-R9e">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="tutorial" storyboardName="tutorial" referencedIdentifier="tutorial" id="wEZ-lI-5xd" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3mQ-nY-HJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-552" y="-305"/>
-        </scene>
         <!--Welcome View Controller-->
         <scene sceneID="raB-FA-jmj">
             <objects>
@@ -94,23 +86,6 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="uvd-BI-Ule"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRN-bo-02z">
-                                <rect key="frame" x="77" y="229" width="227" height="72"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="OK">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="setCounter:" destination="ak3-Qy-udt" eventType="touchUpInside" id="NL5-b3-QC5"/>
-                                    <segue destination="wEZ-lI-5xd" kind="presentation" id="fUk-sc-azN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lto-Ly-Ymt">
                                 <rect key="frame" x="266" y="485" width="38" height="30"/>
                                 <constraints>
@@ -130,28 +105,44 @@
                                     <segue destination="k2d-98-sLb" kind="presentation" identifier="toAvatar" id="qFc-lF-39f"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRN-bo-02z">
+                                <rect key="frame" x="71" y="238" width="227" height="72"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="OK ">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="setCounter:" destination="ak3-Qy-udt" eventType="touchUpInside" id="NL5-b3-QC5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="lto-Ly-Ymt" secondAttribute="trailing" constant="55" id="1eG-gu-Hit"/>
-                            <constraint firstItem="mRN-bo-02z" firstAttribute="firstBaseline" secondItem="0Ez-cu-pZp" secondAttribute="baseline" constant="-166" id="3Es-LA-IH9"/>
+                            <constraint firstItem="mRN-bo-02z" firstAttribute="firstBaseline" secondItem="0Ez-cu-pZp" secondAttribute="baseline" constant="-157" id="3Es-LA-IH9"/>
                             <constraint firstItem="Bjp-wV-cO7" firstAttribute="top" secondItem="2fv-Ut-YnN" secondAttribute="top" constant="318" id="516-RF-afb"/>
                             <constraint firstItem="kog-WR-qNn" firstAttribute="top" secondItem="ATO-eM-7bN" secondAttribute="bottom" constant="43" id="6NJ-tC-KyL"/>
-                            <constraint firstItem="mRN-bo-02z" firstAttribute="top" secondItem="0Ez-cu-pZp" secondAttribute="top" constant="-166" id="7aB-RO-SW9"/>
+                            <constraint firstItem="mRN-bo-02z" firstAttribute="top" secondItem="0Ez-cu-pZp" secondAttribute="top" constant="-157" id="7aB-RO-SW9"/>
                             <constraint firstItem="Bjp-wV-cO7" firstAttribute="top" secondItem="0Ez-cu-pZp" secondAttribute="bottom" constant="-149" id="Bcf-g4-FEH"/>
                             <constraint firstItem="0pW-LC-ajy" firstAttribute="top" secondItem="ATO-eM-7bN" secondAttribute="bottom" constant="122" id="ONt-bD-EHq"/>
-                            <constraint firstItem="mRN-bo-02z" firstAttribute="leading" secondItem="2fv-Ut-YnN" secondAttribute="leadingMargin" constant="61" id="RO9-9M-evt"/>
+                            <constraint firstItem="mRN-bo-02z" firstAttribute="leading" secondItem="2fv-Ut-YnN" secondAttribute="leadingMargin" constant="55" id="RO9-9M-evt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0Ez-cu-pZp" secondAttribute="trailing" constant="68" id="RwZ-UZ-GlW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0pW-LC-ajy" secondAttribute="trailing" constant="68" id="S5t-jP-urX"/>
                             <constraint firstItem="RVC-ex-FzY" firstAttribute="top" secondItem="lto-Ly-Ymt" secondAttribute="bottom" constant="108" id="bN9-RK-e1T"/>
                             <constraint firstItem="Bjp-wV-cO7" firstAttribute="leading" secondItem="0pW-LC-ajy" secondAttribute="leading" id="c6y-db-Uiu"/>
                             <constraint firstItem="kog-WR-qNn" firstAttribute="leading" secondItem="2fv-Ut-YnN" secondAttribute="leading" constant="-3" id="eNV-4k-QA8"/>
-                            <constraint firstItem="0Ez-cu-pZp" firstAttribute="leading" secondItem="mRN-bo-02z" secondAttribute="trailing" constant="-227" id="kwy-Ki-1Yg"/>
-                            <constraint firstItem="mRN-bo-02z" firstAttribute="baseline" secondItem="0Ez-cu-pZp" secondAttribute="firstBaseline" constant="-166" id="lbm-sB-3cs"/>
+                            <constraint firstItem="0Ez-cu-pZp" firstAttribute="leading" secondItem="mRN-bo-02z" secondAttribute="trailing" constant="-221" id="kwy-Ki-1Yg"/>
+                            <constraint firstItem="mRN-bo-02z" firstAttribute="baseline" secondItem="0Ez-cu-pZp" secondAttribute="firstBaseline" constant="-157" id="lbm-sB-3cs"/>
                             <constraint firstItem="0pW-LC-ajy" firstAttribute="leading" secondItem="2fv-Ut-YnN" secondAttribute="leadingMargin" constant="61" id="o4g-os-yCl"/>
                             <constraint firstItem="0Ez-cu-pZp" firstAttribute="top" secondItem="0pW-LC-ajy" secondAttribute="bottom" constant="232" id="tcU-BV-Qz9"/>
                             <constraint firstAttribute="trailing" secondItem="kog-WR-qNn" secondAttribute="trailing" id="w1H-X6-mBV"/>
-                            <constraint firstItem="mRN-bo-02z" firstAttribute="top" secondItem="kog-WR-qNn" secondAttribute="bottom" constant="38" id="za6-xh-3GG"/>
+                            <constraint firstItem="mRN-bo-02z" firstAttribute="top" secondItem="kog-WR-qNn" secondAttribute="bottom" constant="47" id="za6-xh-3GG"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -478,6 +469,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="zii-p2-ZGb" kind="show" id="48x-sb-5ej"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqn-mR-3Gm">
                                 <rect key="frame" x="110" y="305" width="154" height="21"/>
@@ -579,6 +573,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNK-Op-KoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4232" y="-1544"/>
+        </scene>
+        <!--BookScreen-->
+        <scene sceneID="XQJ-tn-GTD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BookScreen" id="zii-p2-ZGb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UR8-Z6-dQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4266" y="-1228"/>
         </scene>
         <!--Achievements View Controller-->
         <scene sceneID="4Uc-iF-UQP">

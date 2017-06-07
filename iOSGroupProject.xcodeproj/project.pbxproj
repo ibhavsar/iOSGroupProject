@@ -35,6 +35,7 @@
 		3FCEE8201EC9DDF200BE725D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */; };
 		3FCEE8281EC9DE3000BE725D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */; };
 		3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCEE8291EC9E0DB00BE725D /* Main.storyboard */; };
+		3FE6BB351EE78C2400231940 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6BB341EE78C2400231940 /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../WelcomeViewController.swift; sourceTree = "<group>"; };
 		3FCEE8291EC9E0DB00BE725D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3FE6BB341EE78C2400231940 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				3F7338061ECB33E600B0DB04 /* BookTitleViewController.swift */,
 				3F7338261ECC77DD00B0DB04 /* BookSaving.storyboard */,
 				3FA5E9851ECDD07000390202 /* PictureViewController.swift */,
+				3FE6BB341EE78C2400231940 /* TutorialViewController.swift */,
 			);
 			name = "Book Screen";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				3F1D07301EA7907A009A0A10 /* SWRevealViewController.m in Sources */,
 				3F1562FD1EBB593400303C60 /* BookViewCell.swift in Sources */,
 				3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */,
+				3FE6BB351EE78C2400231940 /* TutorialViewController.swift in Sources */,
 				3FCEE81A1EC9DDAE00BE725D /* AvatarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

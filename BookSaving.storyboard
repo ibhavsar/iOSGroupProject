@@ -195,8 +195,6 @@
                                 <state key="normal" image="ForwardButton"/>
                                 <connections>
                                     <action selector="continue:" destination="61v-kG-pKT" eventType="touchUpInside" id="haJ-xE-khj"/>
-                                    <action selector="finalNext:" destination="61v-kG-pKT" eventType="touchUpInside" id="hQQ-pz-9SE"/>
-                                    <action selector="tutorialScreen:" destination="61v-kG-pKT" eventType="touchUpInside" id="CHw-p5-nZK"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="nF0-Fa-rkm">
@@ -230,21 +228,19 @@
                     <connections>
                         <outlet property="background" destination="bTd-8K-76a" id="pGr-zI-5FP"/>
                         <outlet property="cameraImage" destination="nF0-Fa-rkm" id="SGy-ud-jhC"/>
-                        <outlet property="finalNext" destination="CNC-gm-4dk" id="Yg7-ro-vqo"/>
                         <outlet property="nextButton" destination="CNC-gm-4dk" id="jyT-B6-1Mr"/>
                         <outlet property="nextLastScreen" destination="CNC-gm-4dk" id="tfC-rE-2vN"/>
                         <outlet property="textView" destination="hk6-xM-4WY" id="m6a-38-8Xq"/>
-                        <segue destination="gUi-Fa-G19" kind="show" identifier="to_tutorial" id="SLs-t0-y88"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iec-FQ-5JZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-7.2463768115942031" y="446.73913043478262"/>
         </scene>
-        <!--tutorial-->
+        <!--TutorialViewController-->
         <scene sceneID="Swy-iZ-Nlh">
             <objects>
-                <viewController title="tutorial" id="gUi-Fa-G19" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tutor" title="tutorial" id="gUi-Fa-G19" userLabel="TutorialViewController" customClass="TutorialViewController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FkT-sX-k2a"/>
                         <viewControllerLayoutGuide type="bottom" id="g0X-Ae-h2S"/>

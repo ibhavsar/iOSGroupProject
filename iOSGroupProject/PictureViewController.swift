@@ -53,7 +53,7 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
         if  goTutorial == true {
             let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
             
-            let tutoriall = thisStoryboard.instantiateViewController(withIdentifier: "TakePic") as? PictureViewController
+            let tutoriall = thisStoryboard.instantiateViewController(withIdentifier: "tutor") as? TutorialViewController
             
             let popoverController = tutoriall?.popoverPresentationController
             
@@ -66,10 +66,10 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
         }
         else {
         
-        self.presentingViewController?.dismiss(animated: false, completion: nil)
-        self.presentingViewController?.dismiss(animated: false, completion: nil)
-        
-        bookb = book
+            self.presentingViewController?.dismiss(animated: false, completion: nil)
+            self.presentingViewController?.dismiss(animated: false, completion: nil)
+            
+            bookb = book
         }
     }
     
@@ -184,15 +184,7 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
         }
     }
     
-    @IBAction func finalNext(_ sender: Any) {
-   //     if tutorialCount = 0 {
-            
-     //   }
-       // else {
-            
-   //     }
-    }
-    /*
+       /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
