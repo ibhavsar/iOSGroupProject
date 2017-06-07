@@ -11,7 +11,7 @@ import CoreData
 
 class WelcomeViewController: UIViewController, UITextFieldDelegate {
     var names: [NSManagedObject] = []
-    
+    var tutorialCount = false
     @IBOutlet weak var theirNameField: UITextField!
     @IBOutlet weak var welcomeImage: UIImageView!
     
@@ -113,6 +113,23 @@ var userName = ""
         }
     }
     
+    @IBAction func setCounter(_ sender: Any) { // opens up tutorial
+        tutorialCount = true
+        let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
+        
+        let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookSave") as? BookTitleViewController
+
+        bookSaving?.tutorial = tutorialCount
+        bookSaving?.modalPresentationStyle = .popover
+        
+        let popoverController = bookSaving?.popoverPresentationController
+        
+        popoverController?.sourceView = self.view as UIView
+        
+        popoverController?.permittedArrowDirections = .any
+        
+        present(bookSaving!, animated: true, completion: nil)    }
+   
     @IBAction func finished(_ sender: Any)
     {
         userName = theirNameField.text!

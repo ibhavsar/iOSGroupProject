@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N6V-C1-CzX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N6V-C1-CzX">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="90" width="414" height="136"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the book's title:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="BR4-gk-i0E">
-                                <rect key="frame" x="20" y="102" width="374" height="54"/>
+                                <rect key="frame" x="20" y="101.66666666666666" width="374" height="54.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Book Title" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="10" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tAg-jy-lkL">
-                                <rect key="frame" x="20" y="164" width="374" height="40"/>
+                                <rect key="frame" x="20" y="164.33333333333334" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.96852236989999996" green="0.96868795159999999" blue="0.96851199870000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -195,12 +195,14 @@
                                 <state key="normal" image="ForwardButton"/>
                                 <connections>
                                     <action selector="continue:" destination="61v-kG-pKT" eventType="touchUpInside" id="haJ-xE-khj"/>
+                                    <action selector="finalNext:" destination="61v-kG-pKT" eventType="touchUpInside" id="hQQ-pz-9SE"/>
+                                    <action selector="tutorialScreen:" destination="61v-kG-pKT" eventType="touchUpInside" id="CHw-p5-nZK"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="nF0-Fa-rkm">
                                 <rect key="frame" x="58" y="116" width="299" height="209"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to take a photo of the book's cover" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hk6-xM-4WY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to take a photo of the book's cover" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="hk6-xM-4WY">
                                 <rect key="frame" x="36" y="407" width="342" height="70"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -228,20 +230,102 @@
                     <connections>
                         <outlet property="background" destination="bTd-8K-76a" id="pGr-zI-5FP"/>
                         <outlet property="cameraImage" destination="nF0-Fa-rkm" id="SGy-ud-jhC"/>
+                        <outlet property="finalNext" destination="CNC-gm-4dk" id="Yg7-ro-vqo"/>
                         <outlet property="nextButton" destination="CNC-gm-4dk" id="jyT-B6-1Mr"/>
+                        <outlet property="nextLastScreen" destination="CNC-gm-4dk" id="tfC-rE-2vN"/>
                         <outlet property="textView" destination="hk6-xM-4WY" id="m6a-38-8Xq"/>
+                        <segue destination="gUi-Fa-G19" kind="show" identifier="to_tutorial" id="SLs-t0-y88"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iec-FQ-5JZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-7.2463768115942031" y="446.73913043478262"/>
         </scene>
+        <!--tutorial-->
+        <scene sceneID="Swy-iZ-Nlh">
+            <objects>
+                <viewController title="tutorial" id="gUi-Fa-G19" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FkT-sX-k2a"/>
+                        <viewControllerLayoutGuide type="bottom" id="g0X-Ae-h2S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xca-ds-uhd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TransparentAppBackground" translatesAutoresizingMaskIntoConstraints="NO" id="bzy-bZ-xgU">
+                                <rect key="frame" x="-10" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HamburgerButton" translatesAutoresizingMaskIntoConstraints="NO" id="aNQ-HB-F53">
+                                <rect key="frame" x="7" y="7" width="49" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="Rts-8V-K1W"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="OEa-wl-TkH">
+                                <rect key="frame" x="15" y="23" width="162" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="y5e-fe-XIm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="completeText" translatesAutoresizingMaskIntoConstraints="NO" id="jNg-pY-2PG">
+                                <rect key="frame" x="87" y="241" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Rz6-Ft-jXR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFu-md-aNd">
+                                <rect key="frame" x="105" y="396" width="204" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="OkButton">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VKD-fI-dKb" kind="show" id="PAS-jE-bq7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OEa-wl-TkH" firstAttribute="leading" secondItem="Xca-ds-uhd" secondAttribute="leadingMargin" constant="-5" id="Ava-IL-2nD"/>
+                            <constraint firstItem="aNQ-HB-F53" firstAttribute="leading" secondItem="Xca-ds-uhd" secondAttribute="leadingMargin" constant="-13" id="Dyi-To-S28"/>
+                            <constraint firstItem="g0X-Ae-h2S" firstAttribute="top" secondItem="bzy-bZ-xgU" secondAttribute="bottom" id="E8q-fz-d9g"/>
+                            <constraint firstItem="bzy-bZ-xgU" firstAttribute="top" secondItem="Xca-ds-uhd" secondAttribute="top" id="JdC-16-bwQ"/>
+                            <constraint firstItem="aNQ-HB-F53" firstAttribute="top" secondItem="Xca-ds-uhd" secondAttribute="topMargin" constant="7" id="L9c-da-RDu"/>
+                            <constraint firstItem="jNg-pY-2PG" firstAttribute="leading" secondItem="Xca-ds-uhd" secondAttribute="leadingMargin" constant="67" id="LBb-eL-jPd"/>
+                            <constraint firstItem="bzy-bZ-xgU" firstAttribute="leading" secondItem="Xca-ds-uhd" secondAttribute="leading" constant="-10" id="QJU-1L-u2I"/>
+                            <constraint firstItem="jNg-pY-2PG" firstAttribute="top" secondItem="OEa-wl-TkH" secondAttribute="bottom" constant="8" symbolic="YES" id="QXW-go-Ci6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jNg-pY-2PG" secondAttribute="trailing" constant="67" id="Rnf-zc-S2d"/>
+                            <constraint firstItem="g0X-Ae-h2S" firstAttribute="top" secondItem="aNQ-HB-F53" secondAttribute="bottom" constant="670" id="ZE2-WU-A3X"/>
+                            <constraint firstAttribute="trailing" secondItem="bzy-bZ-xgU" secondAttribute="trailing" constant="10" id="aXT-kv-pnT"/>
+                            <constraint firstItem="OEa-wl-TkH" firstAttribute="top" secondItem="FkT-sX-k2a" secondAttribute="bottom" constant="3" id="dIj-UM-5hl"/>
+                            <constraint firstItem="jNg-pY-2PG" firstAttribute="top" secondItem="Xca-ds-uhd" secondAttribute="top" constant="241" id="f9N-ad-olZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7EM-aS-LT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.88405797101461" y="446.73913043478262"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="dhW-Qj-hy5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="HomeViewController" id="VKD-fI-dKb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lv-RS-S8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1395" y="556"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Arrow" width="215" height="324"/>
         <image name="Back Button" width="82" height="82"/>
         <image name="Camera" width="299" height="209"/>
         <image name="ForwardButton" width="82" height="82"/>
+        <image name="HamburgerButton" width="39" height="36"/>
+        <image name="OkButton" width="200" height="71"/>
         <image name="Time Spent Reading Rectangle" width="338" height="136"/>
+        <image name="TransparentAppBackground" width="414" height="736"/>
         <image name="blue background" width="414" height="736"/>
+        <image name="completeText" width="324" height="168"/>
     </resources>
 </document>

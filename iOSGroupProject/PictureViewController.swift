@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 class PictureViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    var goTutorial = false
     
     var books: [NSManagedObject] = []
     
@@ -18,6 +19,7 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
     var imagePicker: UIImagePickerController!
     
     var bookTitle: String = ""
+    @IBOutlet weak var toLastScreen: NSLayoutConstraint!
     var numberOfPages: Int = 0
     var authorsName: String = ""
     
@@ -25,6 +27,7 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
     @IBOutlet weak var cameraImage: UIImageView!
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var textView: UILabel!
+    @IBOutlet weak var nextLastScreen: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,11 +50,27 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
     
     @IBAction func `continue`(_ sender: Any) {
         save()
+        if  goTutorial == true {
+            let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
+            
+            let tutoriall = thisStoryboard.instantiateViewController(withIdentifier: "TakePic") as? PictureViewController
+            
+            let popoverController = tutoriall?.popoverPresentationController
+            
+            popoverController?.sourceView = self.view as UIView
+            
+            popoverController?.permittedArrowDirections = .any
+            
+            present(tutoriall!, animated: true, completion: nil)
+  
+        }
+        else {
         
         self.presentingViewController?.dismiss(animated: false, completion: nil)
         self.presentingViewController?.dismiss(animated: false, completion: nil)
         
         bookb = book
+        }
     }
     
     @IBAction func back(_ sender: Any) {
@@ -165,6 +184,14 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
         }
     }
     
+    @IBAction func finalNext(_ sender: Any) {
+   //     if tutorialCount = 0 {
+            
+     //   }
+       // else {
+            
+   //     }
+    }
     /*
     // MARK: - Navigation
 

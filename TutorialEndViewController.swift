@@ -1,5 +1,5 @@
 //
-//  TutorialViewController.swift
+//  TutorialEndViewController.swift
 //  iOSGroupProject
 //
 //  Created by Student on 2017-06-06.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController {
+class TutorialEndViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
