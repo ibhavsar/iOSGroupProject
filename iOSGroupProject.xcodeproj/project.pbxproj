@@ -17,6 +17,24 @@
 		3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */; };
 		3F1D073B1EA798EC009A0A10 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */; };
 		3F52DE661EA8729C00883FAF /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F52DE651EA8729C00883FAF /* MenuController.swift */; };
+		3F6317311EE7522F00E12DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317261EE7522F00E12DF1 /* AppDelegate.swift */; };
+		3F6317321EE7522F00E12DF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6317271EE7522F00E12DF1 /* LaunchScreen.xib */; };
+		3F6317331EE7522F00E12DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6317291EE7522F00E12DF1 /* Main.storyboard */; };
+		3F6317341EE7522F00E12DF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F63172B1EE7522F00E12DF1 /* Images.xcassets */; };
+		3F6317351EE7522F00E12DF1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F63172C1EE7522F00E12DF1 /* Info.plist */; };
+		3F6317361EE7522F00E12DF1 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63172D1EE7522F00E12DF1 /* TodoItem.swift */; };
+		3F6317371EE7522F00E12DF1 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63172E1EE7522F00E12DF1 /* TodoList.swift */; };
+		3F6317381EE7522F00E12DF1 /* TodoSchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63172F1EE7522F00E12DF1 /* TodoSchedulingViewController.swift */; };
+		3F6317391EE7522F00E12DF1 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317301EE7522F00E12DF1 /* TodoTableViewController.swift */; };
+		3F6317471EE7528E00E12DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63173C1EE7528E00E12DF1 /* AppDelegate.swift */; };
+		3F6317481EE7528E00E12DF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F63173D1EE7528E00E12DF1 /* LaunchScreen.xib */; };
+		3F6317491EE7528E00E12DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F63173F1EE7528E00E12DF1 /* Main.storyboard */; };
+		3F63174A1EE7528E00E12DF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6317411EE7528E00E12DF1 /* Images.xcassets */; };
+		3F63174B1EE7528E00E12DF1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F6317421EE7528E00E12DF1 /* Info.plist */; };
+		3F63174C1EE7528E00E12DF1 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317431EE7528E00E12DF1 /* TodoItem.swift */; };
+		3F63174D1EE7528E00E12DF1 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317441EE7528E00E12DF1 /* TodoList.swift */; };
+		3F63174E1EE7528E00E12DF1 /* TodoSchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317451EE7528E00E12DF1 /* TodoSchedulingViewController.swift */; };
+		3F63174F1EE7528E00E12DF1 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317461EE7528E00E12DF1 /* TodoTableViewController.swift */; };
 		3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F74DAC01EAE32230074A729 /* BookScreen.storyboard */; };
 		3F74DAC51EAE32230074A729 /* BookScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC11EAE32230074A729 /* BookScreenController.swift */; };
 		3F74DAC61EAE32230074A729 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC21EAE32230074A729 /* RatingView.swift */; };
@@ -51,6 +69,24 @@
 		3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		3F52DE651EA8729C00883FAF /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		3F6317261EE7522F00E12DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F6317281EE7522F00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3F63172A1EE7522F00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F63172B1EE7522F00E12DF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F63172C1EE7522F00E12DF1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F63172D1EE7522F00E12DF1 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		3F63172E1EE7522F00E12DF1 /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		3F63172F1EE7522F00E12DF1 /* TodoSchedulingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoSchedulingViewController.swift; sourceTree = "<group>"; };
+		3F6317301EE7522F00E12DF1 /* TodoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		3F63173C1EE7528E00E12DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F63173E1EE7528E00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3F6317401EE7528E00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F6317411EE7528E00E12DF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F6317421EE7528E00E12DF1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F6317431EE7528E00E12DF1 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		3F6317441EE7528E00E12DF1 /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		3F6317451EE7528E00E12DF1 /* TodoSchedulingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoSchedulingViewController.swift; sourceTree = "<group>"; };
+		3F6317461EE7528E00E12DF1 /* TodoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		3F74DAC01EAE32230074A729 /* BookScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookScreen.storyboard; sourceTree = "<group>"; };
 		3F74DAC11EAE32230074A729 /* BookScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookScreenController.swift; sourceTree = "<group>"; };
 		3F74DAC21EAE32230074A729 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
@@ -94,6 +130,46 @@
 			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
+		3F6317251EE7522F00E12DF1 /* LocalNotificationsTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				3F6317261EE7522F00E12DF1 /* AppDelegate.swift */,
+				3F6317271EE7522F00E12DF1 /* LaunchScreen.xib */,
+				3F6317291EE7522F00E12DF1 /* Main.storyboard */,
+				3F63172B1EE7522F00E12DF1 /* Images.xcassets */,
+				3F63172C1EE7522F00E12DF1 /* Info.plist */,
+				3F63172D1EE7522F00E12DF1 /* TodoItem.swift */,
+				3F63172E1EE7522F00E12DF1 /* TodoList.swift */,
+				3F63172F1EE7522F00E12DF1 /* TodoSchedulingViewController.swift */,
+				3F6317301EE7522F00E12DF1 /* TodoTableViewController.swift */,
+			);
+			path = LocalNotificationsTutorial;
+			sourceTree = "<group>";
+		};
+		3F63173A1EE7527A00E12DF1 /* Local Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				3F63173B1EE7528E00E12DF1 /* LocalNotificationsTutorial */,
+			);
+			name = "Local Notifications";
+			sourceTree = "<group>";
+		};
+		3F63173B1EE7528E00E12DF1 /* LocalNotificationsTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				3F63173C1EE7528E00E12DF1 /* AppDelegate.swift */,
+				3F63173D1EE7528E00E12DF1 /* LaunchScreen.xib */,
+				3F63173F1EE7528E00E12DF1 /* Main.storyboard */,
+				3F6317411EE7528E00E12DF1 /* Images.xcassets */,
+				3F6317421EE7528E00E12DF1 /* Info.plist */,
+				3F6317431EE7528E00E12DF1 /* TodoItem.swift */,
+				3F6317441EE7528E00E12DF1 /* TodoList.swift */,
+				3F6317451EE7528E00E12DF1 /* TodoSchedulingViewController.swift */,
+				3F6317461EE7528E00E12DF1 /* TodoTableViewController.swift */,
+			);
+			path = LocalNotificationsTutorial;
+			sourceTree = "<group>";
+		};
 		3F74DAC81EAE32400074A729 /* Book Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +195,7 @@
 		3F78F0021E8EAEF100091FBE /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				3F6317251EE7522F00E12DF1 /* LocalNotificationsTutorial */,
 				3F78F0011E8EAEF100091FBE /* iOSGroupProject.app */,
 			);
 			name = Products;
@@ -128,6 +205,7 @@
 		3F78F0031E8EAEF100091FBE /* iOSGroupProject */ = {
 			isa = PBXGroup;
 			children = (
+				3F63173A1EE7527A00E12DF1 /* Local Notifications */,
 				3F74DAC81EAE32400074A729 /* Book Screen */,
 				3F1D07311EA79087009A0A10 /* SWRevealViewController */,
 				3F78F0041E8EAEF100091FBE /* AppDelegate.swift */,
@@ -136,13 +214,8 @@
 				3FCEE82D1EC9E32A00BE725D /* Avatar */,
 				3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */,
 				3FCEE82E1EC9E34700BE725D /* Tutorial */,
-				3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */,
 				3FCEE8291EC9E0DB00BE725D /* Main.storyboard */,
-				3F52DE651EA8729C00883FAF /* MenuController.swift */,
-				3F1D07341EA798C8009A0A10 /* LibraryViewController.swift */,
-				3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */,
-				3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */,
-				3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */,
+				3FB165641ECB280A0013FCA3 /* Hamburger Menu */,
 				3F78F00B1E8EAEF100091FBE /* Assets.xcassets */,
 				3F78F00D1E8EAEF100091FBE /* LaunchScreen.storyboard */,
 				3F78F0101E8EAEF100091FBE /* Info.plist */,
@@ -150,6 +223,19 @@
 				3F78F0021E8EAEF100091FBE /* Products */,
 			);
 			path = iOSGroupProject;
+			sourceTree = "<group>";
+		};
+		3FB165641ECB280A0013FCA3 /* Hamburger Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3F52DE651EA8729C00883FAF /* MenuController.swift */,
+				3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */,
+				3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */,
+				3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */,
+				3F1D07341EA798C8009A0A10 /* LibraryViewController.swift */,
+				3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */,
+			);
+			name = "Hamburger Menu";
 			sourceTree = "<group>";
 		};
 		3FCEE82D1EC9E32A00BE725D /* Avatar */ = {
@@ -232,13 +318,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F63174B1EE7528E00E12DF1 /* Info.plist in Resources */,
 				3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */,
+				3F6317331EE7522F00E12DF1 /* Main.storyboard in Resources */,
 				3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */,
 				3F74DACA1EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 in Resources */,
+				3F6317341EE7522F00E12DF1 /* Images.xcassets in Resources */,
 				3F1562FF1EC23B3E00303C60 /* BookSelection.storyboard in Resources */,
+				3F63174A1EE7528E00E12DF1 /* Images.xcassets in Resources */,
 				3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */,
+				3F6317491EE7528E00E12DF1 /* Main.storyboard in Resources */,
 				3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */,
+				3F6317351EE7522F00E12DF1 /* Info.plist in Resources */,
+				3F6317481EE7528E00E12DF1 /* LaunchScreen.xib in Resources */,
 				3FCEE8221EC9DE0D00BE725D /* tutorial.storyboard in Resources */,
+				3F6317321EE7522F00E12DF1 /* LaunchScreen.xib in Resources */,
 				3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,24 +344,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6317381EE7522F00E12DF1 /* TodoSchedulingViewController.swift in Sources */,
+				3F63174F1EE7528E00E12DF1 /* TodoTableViewController.swift in Sources */,
+				3F63174C1EE7528E00E12DF1 /* TodoItem.swift in Sources */,
 				3F74DAC61EAE32230074A729 /* RatingView.swift in Sources */,
 				3FCEE82C1EC9E2B500BE725D /* TutorialViewController.swift in Sources */,
 				3F74DAC51EAE32230074A729 /* BookScreenController.swift in Sources */,
 				3FCEE8201EC9DDF200BE725D /* HomeViewController.swift in Sources */,
+				3F63174E1EE7528E00E12DF1 /* TodoSchedulingViewController.swift in Sources */,
 				3F1562FB1EBB563700303C60 /* BooksViewerController.swift in Sources */,
 				3FCEE81C1EC9DDB700BE725D /* AvatarSelectionViewController.swift in Sources */,
 				3FCEE8281EC9DE3000BE725D /* WelcomeViewController.swift in Sources */,
+				3F6317471EE7528E00E12DF1 /* AppDelegate.swift in Sources */,
 				3F1D07371EA798D8009A0A10 /* AchievementsViewController.swift in Sources */,
 				3FCEE81E1EC9DDC600BE725D /* AvatarViewController.swift in Sources */,
 				3F0A693F1EB3950500846E35 /* CoreData.xcdatamodeld in Sources */,
+				3F6317391EE7522F00E12DF1 /* TodoTableViewController.swift in Sources */,
 				3F52DE661EA8729C00883FAF /* MenuController.swift in Sources */,
+				3F63174D1EE7528E00E12DF1 /* TodoList.swift in Sources */,
 				3F78F0071E8EAEF100091FBE /* ViewController.swift in Sources */,
 				3F1D07351EA798C8009A0A10 /* LibraryViewController.swift in Sources */,
 				3F74DAC71EAE32230074A729 /* TimerPageController.swift in Sources */,
+				3F6317371EE7522F00E12DF1 /* TodoList.swift in Sources */,
 				3F1D073B1EA798EC009A0A10 /* CreditsViewController.swift in Sources */,
 				3F78F0051E8EAEF100091FBE /* AppDelegate.swift in Sources */,
+				3F6317361EE7522F00E12DF1 /* TodoItem.swift in Sources */,
 				3F1D07301EA7907A009A0A10 /* SWRevealViewController.m in Sources */,
 				3F1562FD1EBB593400303C60 /* BookViewCell.swift in Sources */,
+				3F6317311EE7522F00E12DF1 /* AppDelegate.swift in Sources */,
 				3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */,
 				3FCEE81A1EC9DDAE00BE725D /* AvatarCollectionViewCell.swift in Sources */,
 			);
@@ -276,6 +380,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3F6317271EE7522F00E12DF1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F6317281EE7522F00E12DF1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		3F6317291EE7522F00E12DF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F63172A1EE7522F00E12DF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F63173D1EE7528E00E12DF1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F63173E1EE7528E00E12DF1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		3F63173F1EE7528E00E12DF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F6317401EE7528E00E12DF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		3F78F00D1E8EAEF100091FBE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
