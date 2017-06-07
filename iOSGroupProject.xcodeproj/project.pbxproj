@@ -149,12 +149,12 @@
 		3F63173A1EE7527A00E12DF1 /* Local Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				3F63173B1EE7528E00E12DF1 /* LocalNotificationsTutorial */,
+				3F63173B1EE7528E00E12DF1 /* LocalNotifications */,
 			);
 			name = "Local Notifications";
 			sourceTree = "<group>";
 		};
-		3F63173B1EE7528E00E12DF1 /* LocalNotificationsTutorial */ = {
+		3F63173B1EE7528E00E12DF1 /* LocalNotifications */ = {
 			isa = PBXGroup;
 			children = (
 				3F63173C1EE7528E00E12DF1 /* AppDelegate.swift */,
@@ -167,6 +167,7 @@
 				3F6317451EE7528E00E12DF1 /* TodoSchedulingViewController.swift */,
 				3F6317461EE7528E00E12DF1 /* TodoTableViewController.swift */,
 			);
+			name = LocalNotifications;
 			path = LocalNotificationsTutorial;
 			sourceTree = "<group>";
 		};
