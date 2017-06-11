@@ -428,8 +428,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" image="Achievement Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="fbl-h0-sRO">
-                                <rect key="frame" x="-40" y="430" width="519" height="184"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="Achievement Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="fbl-h0-sRO">
+                                <rect key="frame" x="-40" y="478" width="519" height="136"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="274" id="CPg-CB-Ksd"/>
                                 </constraints>
@@ -507,31 +507,6 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD0-eq-F9a">
-                                <rect key="frame" x="119" y="444" width="169" height="89"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="YD0-eq-F9a" secondAttribute="height" multiplier="146:43" constant="-133.18604651162786" id="e13-uL-dnV"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Achievements">
-                                        <attributes>
-                                            <font key="NSFont" size="24" name="ArialMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="e13-uL-dnV"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="e13-uL-dnV"/>
-                                    </mask>
-                                </variation>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gold Metal" translatesAutoresizingMaskIntoConstraints="NO" id="diT-LQ-tr8">
                                 <rect key="frame" x="197" y="531" width="45" height="70"/>
                                 <constraints>
@@ -601,6 +576,31 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD0-eq-F9a">
+                                <rect key="frame" x="137" y="484" width="151" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YD0-eq-F9a" secondAttribute="height" multiplier="146:43" constant="-133.18604651162786" id="e13-uL-dnV"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Achievements">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="e13-uL-dnV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="e13-uL-dnV"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -625,7 +625,7 @@
                             <constraint firstItem="mZd-a2-bOu" firstAttribute="top" secondItem="tlN-AH-5Ih" secondAttribute="bottom" constant="48" id="ILg-ax-j5N"/>
                             <constraint firstItem="2hg-gY-mYC" firstAttribute="top" secondItem="31v-r7-HoI" secondAttribute="bottom" constant="68" id="IMV-gG-oPT"/>
                             <constraint firstItem="31v-r7-HoI" firstAttribute="leading" secondItem="Ju9-BV-LRO" secondAttribute="leadingMargin" constant="-17" id="K25-oz-Mzq"/>
-                            <constraint firstItem="tk2-5v-LNL" firstAttribute="top" secondItem="fbl-h0-sRO" secondAttribute="bottom" constant="32" id="LSF-5m-805"/>
+                            <constraint firstItem="tk2-5v-LNL" firstAttribute="top" secondItem="fbl-h0-sRO" secondAttribute="bottom" constant="122" id="LSF-5m-805"/>
                             <constraint firstItem="31v-r7-HoI" firstAttribute="centerX" secondItem="2hg-gY-mYC" secondAttribute="centerX" constant="4" id="MzV-D5-nqt"/>
                             <constraint firstItem="FnR-5Y-xwu" firstAttribute="leading" secondItem="Ju9-BV-LRO" secondAttribute="leading" constant="269" id="NVO-1L-J62"/>
                             <constraint firstItem="qbE-ha-axv" firstAttribute="leading" secondItem="Ju9-BV-LRO" secondAttribute="leading" constant="60" id="Pji-j6-JaW"/>
@@ -650,12 +650,12 @@
                             <constraint firstItem="qbE-ha-axv" firstAttribute="top" secondItem="FnR-5Y-xwu" secondAttribute="bottom" constant="38" id="pA4-wl-oG0"/>
                             <constraint firstItem="tk2-5v-LNL" firstAttribute="top" secondItem="fbl-h0-sRO" secondAttribute="bottom" constant="201" id="qXM-Hh-T22"/>
                             <constraint firstItem="fbl-h0-sRO" firstAttribute="trailing" secondItem="mZd-a2-bOu" secondAttribute="trailing" constant="26" id="qlK-fn-Ina"/>
-                            <constraint firstItem="YD0-eq-F9a" firstAttribute="top" secondItem="fbl-h0-sRO" secondAttribute="bottom" constant="-170" id="tvd-iJ-9Xd"/>
+                            <constraint firstItem="YD0-eq-F9a" firstAttribute="top" secondItem="fbl-h0-sRO" secondAttribute="bottom" constant="-130" id="tvd-iJ-9Xd"/>
                             <constraint firstItem="ZEP-R2-Gn4" firstAttribute="leading" secondItem="diT-LQ-tr8" secondAttribute="trailing" constant="41" id="vUn-t8-mbF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fbl-h0-sRO" secondAttribute="trailing" constant="16" id="wFl-c0-ffU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fbl-h0-sRO" secondAttribute="trailing" constant="-85" id="wFl-c0-ffU"/>
                             <constraint firstItem="31v-r7-HoI" firstAttribute="centerX" secondItem="mZd-a2-bOu" secondAttribute="centerX" constant="-2.5" id="x17-bq-Lds"/>
                             <constraint firstItem="mZd-a2-bOu" firstAttribute="leading" secondItem="Ju9-BV-LRO" secondAttribute="leading" constant="-11" id="xxl-LE-tUA"/>
-                            <constraint firstItem="fbl-h0-sRO" firstAttribute="centerX" secondItem="diT-LQ-tr8" secondAttribute="centerX" constant="3.5" id="yC2-oc-ygY"/>
+                            <constraint firstItem="fbl-h0-sRO" firstAttribute="centerX" secondItem="diT-LQ-tr8" secondAttribute="centerX" id="yC2-oc-ygY"/>
                             <constraint firstItem="mZd-a2-bOu" firstAttribute="top" secondItem="2hg-gY-mYC" secondAttribute="bottom" constant="12.5" id="yZO-qU-ZDv"/>
                             <constraint firstItem="HUc-Gk-2n8" firstAttribute="leading" secondItem="Ju9-BV-LRO" secondAttribute="leadingMargin" constant="60" id="zKm-hL-kWQ"/>
                         </constraints>
