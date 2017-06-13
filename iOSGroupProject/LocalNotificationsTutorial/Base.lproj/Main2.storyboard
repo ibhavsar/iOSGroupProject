@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Todo List-->
+        <!--Reminders-->
         <scene sceneID="w0w-us-C0C">
             <objects>
                 <tableViewController id="YcL-h6-URz" customClass="TodoTableViewController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,13 +49,17 @@
                             <outlet property="delegate" destination="YcL-h6-URz" id="DXR-KR-0u9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo List" id="doA-MW-GTp">
+                    <navigationItem key="navigationItem" title="Reminders" id="doA-MW-GTp">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="aU9-zG-YNf" userLabel="Menu Button"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9ma-3u-XhC">
                             <connections>
                                 <segue destination="GxP-4z-ygN" kind="show" id="41e-KJ-lb5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="aU9-zG-YNf" id="Tbv-lN-MWJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmK-pw-3Jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

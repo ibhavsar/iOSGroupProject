@@ -1,9 +1,9 @@
 //
 //  TodoList.swift
-//  LocalNotificationsTutorial
+//  iOSGroupProject
 //
-//  Created by Jason Newell on 2/3/15.
-//
+//  Created by Student on 2017-06-07.
+//  Copyright © 2017 Ishan Student. All rights reserved.
 //
 
 import Foundation

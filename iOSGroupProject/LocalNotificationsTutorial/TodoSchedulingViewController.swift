@@ -1,9 +1,9 @@
 //
 //  TodoSchedulingViewController.swift
-//  TodoNotificationsTutorial
+//  iOSGroupProject
 //
-//  Created by Jason Newell on 1/25/15.
-//  Copyright (c) 2015 Jason Newell. All rights reserved.
+//  Created by Student on 2017-06-07.
+//  Copyright © 2017 Ishan Student. All rights reserved.
 //
 
 import UIKit

@@ -1,9 +1,9 @@
 //
 //  TodoTableViewController.swift
-//  LocalNotificationsTutorial
+//  iOSGroupProject
 //
-//  Created by Jason Newell on 1/30/15.
-//
+//  Created by Student on 2017-06-07.
+//  Copyright © 2017 Ishan Student. All rights reserved.
 //
 
 import UIKit
@@ -11,10 +11,23 @@ import UIKit
 class TodoTableViewController: UITableViewController {
     var todoItems: [TodoItem] = []
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(TodoTableViewController.refreshList), name: NSNotification.Name(rawValue: "TodoListShouldRefresh"), object: nil)
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
+
     }
+    
+   
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

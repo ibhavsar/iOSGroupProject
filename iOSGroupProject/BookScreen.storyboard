@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UJD-bY-hla">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UJD-bY-hla">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -556,7 +556,6 @@
         <!--Books View-->
         <scene sceneID="prj-Ly-aFe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cnY-ow-kmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="BookSelection" id="J3V-hi-S0C" userLabel="Books View" customClass="BooksViewerController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NAM-4i-BqT"/>
@@ -583,7 +582,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="129" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BCAABE05-AF85-4ED8-AEFF-9BC24F880343" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-HH-zcR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:M5O-HH-zcR:image" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-HH-zcR">
                                                     <rect key="frame" x="9" y="5" width="111.5" height="149"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="M5O-HH-zcR" secondAttribute="height" multiplier="3:4" id="5TF-eK-ZWZ"/>
@@ -631,12 +630,16 @@
                         <outlet property="menuButton" destination="JcK-am-0dI" id="zyX-YI-97r"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cnY-ow-kmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1212" y="1637"/>
         </scene>
     </scenes>
     <resources>
-        <image name="BCAABE05-AF85-4ED8-AEFF-9BC24F880343" width="81" height="115">
+        <image name="Camera Box" width="81" height="115"/>
+        <image name="emptyStar" width="33" height="31"/>
+        <image name="fullStar" width="33" height="31"/>
+        <image name="imageView:M5O-HH-zcR:image" width="81" height="115">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -1308,9 +1311,6 @@ vgDDANoA3ADemwybEZscmyWbOJs8m0ebUJtVm12bYJtlm3SbeJt/m4eblJuZm5ubnZuim6qbrZuym7qb
 vZvPm9Kb1wAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAJvZA
 </mutableData>
         </image>
-        <image name="Camera Box" width="81" height="115"/>
-        <image name="emptyStar" width="33" height="31"/>
-        <image name="fullStar" width="33" height="31"/>
         <image name="pencil" width="80" height="72"/>
         <image name="x button" width="80" height="80"/>
     </resources>

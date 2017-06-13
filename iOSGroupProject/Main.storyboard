@@ -401,7 +401,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.92620444300000004" green="0.93612229820000004" blue="0.94110381600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="4Dn-9i-wR6" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ZyZ-mH-xew"/>
+                                            <segue destination="SJu-IF-cZR" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="5VT-Ne-2nb"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -417,13 +417,13 @@
             </objects>
             <point key="canvasLocation" x="908" y="123.68815592203899"/>
         </scene>
-        <!--Main-->
-        <scene sceneID="hRu-0e-C0B">
+        <!--Main2-->
+        <scene sceneID="LFp-u1-JbB">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="4Dn-9i-wR6" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kHW-OE-ig8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Main2" id="SJu-IF-cZR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYE-Fi-SEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="760"/>
+            <point key="canvasLocation" x="677" y="604"/>
         </scene>
         <!--BookScreen-->
         <scene sceneID="Np8-rr-w9e">
