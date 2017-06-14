@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N6V-C1-CzX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N6V-C1-CzX">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -277,7 +277,7 @@
                                     <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VKD-fI-dKb" kind="show" id="PAS-jE-bq7"/>
+                                    <segue destination="eTe-ki-bn7" kind="show" id="Zvg-QB-O2x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -303,13 +303,13 @@
             </objects>
             <point key="canvasLocation" x="831.88405797101461" y="446.73913043478262"/>
         </scene>
-        <!--HomeViewController-->
-        <scene sceneID="dhW-Qj-hy5">
+        <!--HomeView-->
+        <scene sceneID="Zbd-7L-UGZ">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="HomeViewController" id="VKD-fI-dKb" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4lv-RS-S8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="HomeView" id="eTe-ki-bn7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8OV-ad-mWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1395" y="556"/>
+            <point key="canvasLocation" x="1458" y="416"/>
         </scene>
     </scenes>
     <resources>
