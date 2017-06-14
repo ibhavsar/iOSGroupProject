@@ -10,6 +10,8 @@
 		3F0A693F1EB3950500846E35 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A693D1EB3950500846E35 /* CoreData.xcdatamodeld */; };
 		3F1562FB1EBB563700303C60 /* BooksViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1562FA1EBB563700303C60 /* BooksViewerController.swift */; };
 		3F1562FD1EBB593400303C60 /* BookViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1562FC1EBB593400303C60 /* BookViewCell.swift */; };
+		3F1729401EE58753000986DB /* SignatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17293F1EE58753000986DB /* SignatureController.swift */; };
+		3F1729461EE9DC26000986DB /* PagesReadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1729451EE9DC26000986DB /* PagesReadController.swift */; };
 		3F1D07301EA7907A009A0A10 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D072F1EA7907A009A0A10 /* SWRevealViewController.m */; };
 		3F1D07351EA798C8009A0A10 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07341EA798C8009A0A10 /* LibraryViewController.swift */; };
 		3F1D07371EA798D8009A0A10 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */; };
@@ -43,6 +45,8 @@
 		3F0A693E1EB3950500846E35 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		3F1562FA1EBB563700303C60 /* BooksViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewerController.swift; sourceTree = "<group>"; };
 		3F1562FC1EBB593400303C60 /* BookViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewCell.swift; sourceTree = "<group>"; };
+		3F17293F1EE58753000986DB /* SignatureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureController.swift; sourceTree = "<group>"; };
+		3F1729451EE9DC26000986DB /* PagesReadController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagesReadController.swift; sourceTree = "<group>"; };
 		3F1D072C1EA79079009A0A10 /* iOSGroupProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSGroupProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F1D072D1EA7907A009A0A10 /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F1D072E1EA7907A009A0A10 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			children = (
 				3F74DAC91EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 */,
 				3F74DAC01EAE32230074A729 /* BookScreen.storyboard */,
+				3F1729451EE9DC26000986DB /* PagesReadController.swift */,
+				3F17293F1EE58753000986DB /* SignatureController.swift */,
 				3F1562FC1EBB593400303C60 /* BookViewCell.swift */,
 				3F1562FA1EBB563700303C60 /* BooksViewerController.swift */,
 				3F74DAC11EAE32230074A729 /* BookScreenController.swift */,
@@ -261,8 +267,10 @@
 				3FA5E9861ECDD07000390202 /* PictureViewController.swift in Sources */,
 				3FCEE82C1EC9E2B500BE725D /* TutorialViewController.swift in Sources */,
 				3F74DAC51EAE32230074A729 /* BookScreenController.swift in Sources */,
+				3F1729461EE9DC26000986DB /* PagesReadController.swift in Sources */,
 				3FCEE8201EC9DDF200BE725D /* HomeViewController.swift in Sources */,
 				3F1562FB1EBB563700303C60 /* BooksViewerController.swift in Sources */,
+				3F1729401EE58753000986DB /* SignatureController.swift in Sources */,
 				3F7338071ECB33E600B0DB04 /* BookTitleViewController.swift in Sources */,
 				3FCEE81C1EC9DDB700BE725D /* AvatarSelectionViewController.swift in Sources */,
 				3FCEE8281EC9DE3000BE725D /* WelcomeViewController.swift in Sources */,

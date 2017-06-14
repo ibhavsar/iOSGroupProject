@@ -11,7 +11,12 @@
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Tag" inverseName="book" inverseEntity="Tag" syncable="YES"/>
     </entity>
-    <entity name="Tag" representedClassName="Tag" syncable="YES" codeGenerationType="class">
+    <entity name="Signatures" representedClassName="Signatures" syncable="YES" codeGenerationType="class">
+        <attribute name="book" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="day" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="signatureImage" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" parentEntity="Book" syncable="YES" codeGenerationType="class">
         <attribute name="tagID" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="tags" inverseEntity="Book" syncable="YES"/>
     </entity>
@@ -23,5 +28,6 @@
         <element name="Book" positionX="-63" positionY="-18" width="128" height="180"/>
         <element name="Tag" positionX="-54" positionY="18" width="128" height="75"/>
         <element name="WelcomeData" positionX="-54" positionY="36" width="128" height="75"/>
+        <element name="Signatures" positionX="-54" positionY="54" width="128" height="90"/>
     </elements>
 </model>
