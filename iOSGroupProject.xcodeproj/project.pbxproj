@@ -24,6 +24,8 @@
 		3F63174D1EE7528E00E12DF1 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317441EE7528E00E12DF1 /* TodoList.swift */; };
 		3F63174E1EE7528E00E12DF1 /* TodoSchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317451EE7528E00E12DF1 /* TodoSchedulingViewController.swift */; };
 		3F63174F1EE7528E00E12DF1 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317461EE7528E00E12DF1 /* TodoTableViewController.swift */; };
+		3F7338071ECB33E600B0DB04 /* BookTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7338061ECB33E600B0DB04 /* BookTitleViewController.swift */; };
+		3F7338271ECC77DD00B0DB04 /* BookSaving.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7338261ECC77DD00B0DB04 /* BookSaving.storyboard */; };
 		3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F74DAC01EAE32230074A729 /* BookScreen.storyboard */; };
 		3F74DAC51EAE32230074A729 /* BookScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC11EAE32230074A729 /* BookScreenController.swift */; };
 		3F74DAC61EAE32230074A729 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC21EAE32230074A729 /* RatingView.swift */; };
@@ -65,6 +67,8 @@
 		3F6317441EE7528E00E12DF1 /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		3F6317451EE7528E00E12DF1 /* TodoSchedulingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoSchedulingViewController.swift; sourceTree = "<group>"; };
 		3F6317461EE7528E00E12DF1 /* TodoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		3F7338061ECB33E600B0DB04 /* BookTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTitleViewController.swift; sourceTree = "<group>"; };
+		3F7338261ECC77DD00B0DB04 /* BookSaving.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BookSaving.storyboard; path = ../BookSaving.storyboard; sourceTree = "<group>"; };
 		3F74DAC01EAE32230074A729 /* BookScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookScreen.storyboard; sourceTree = "<group>"; };
 		3F74DAC11EAE32230074A729 /* BookScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookScreenController.swift; sourceTree = "<group>"; };
 		3F74DAC21EAE32230074A729 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };

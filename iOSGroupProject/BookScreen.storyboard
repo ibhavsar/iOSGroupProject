@@ -584,7 +584,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="129" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:M5O-HH-zcR:image" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-HH-zcR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0C85A1E2-1E2A-4F07-9D87-CB6593C10953" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-HH-zcR">
                                                     <rect key="frame" x="9" y="5" width="111.5" height="149"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="M5O-HH-zcR" secondAttribute="height" multiplier="3:4" id="5TF-eK-ZWZ"/>
@@ -638,10 +638,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Camera Box" width="81" height="115"/>
-        <image name="emptyStar" width="33" height="31"/>
-        <image name="fullStar" width="33" height="31"/>
-        <image name="imageView:M5O-HH-zcR:image" width="81" height="115">
+        <image name="0C85A1E2-1E2A-4F07-9D87-CB6593C10953" width="81" height="115">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
