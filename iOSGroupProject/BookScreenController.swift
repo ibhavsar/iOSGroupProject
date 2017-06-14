@@ -15,6 +15,11 @@ class BookScreenController: UIViewController {
 
     var books: [NSManagedObject] = []
     
+
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var Pages: UILabel!
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var timeTotalRead: UILabel!
@@ -62,10 +67,9 @@ class BookScreenController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if books.count == 0
-        {
-            getData()
-        }
+        
+        getData()
+        
         if bookb != nil
         {
             if bookb! < books.count
@@ -75,6 +79,29 @@ class BookScreenController: UIViewController {
                 updateTimeRead()
                 
                 titleLabel.text = books[bookb!].value(forKey: "title") as? String
+                
+                let pages = books[bookb!].value(forKey: "pages")!
+                
+                Pages.text = "000/" + String(describing: pages)
+                
+                let imageData = books[bookb!].value(forKey: "image") as? NSData
+                
+                if imageData != nil
+                {
+                    let newImage: UIImage? = UIImage(data: imageData! as Data)
+                    if newImage != nil
+                    {
+                        imageView.image = newImage
+                    }
+                    else
+                    {
+                        imageView.image = nil
+                    }
+                }
+                else
+                {
+                    imageView.image = #imageLiteral(resourceName: "Camera Box")
+                }
             }
         }
     }

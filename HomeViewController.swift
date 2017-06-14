@@ -34,9 +34,7 @@ class HomeViewController: UIViewController {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "WelcomeData")
         do {
             avatarNames = try managedContext.fetch(fetchRequest) as! [WelcomeData]
-            print (avatarNames.count)
             avatarName = avatarNames[0].value(forKey: "avatarSelected") as! String
-            print(avatarName + "lololol")
             avatarDisplay.image = UIImage(named: avatarName)
             
         } catch let error as NSError {
@@ -66,9 +64,7 @@ class HomeViewController: UIViewController {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "WelcomeData")
         do {
             avatarNames = try managedContext.fetch(fetchRequest) as! [WelcomeData]
-            print (avatarNames.count)
             avatarName = avatarNames[0].value(forKey: "avatarSelected") as! String
-            print(avatarName + "lololol")
             avatarDisplay.image = UIImage(named: avatarName)
             
         } catch let error as NSError {

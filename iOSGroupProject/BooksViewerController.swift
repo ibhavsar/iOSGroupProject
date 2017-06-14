@@ -13,15 +13,17 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBOutlet weak var AvatarCollectionView: UICollectionView!
+    @IBOutlet weak var bookCollectionView: UICollectionView!
     
     var books: [NSManagedObject] = []
+    
+    var newBook: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.AvatarCollectionView.delegate = self
-        self.AvatarCollectionView.dataSource = self
+        self.bookCollectionView.delegate = self
+        self.bookCollectionView.dataSource = self
         
         getData()
     }
@@ -29,6 +31,17 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if newBook
+        {
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        getData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -74,12 +87,28 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == books.count
         {
-            save()
+            let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
+            
+            let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookSave") as? BookTitleViewController
+            
+            bookSaving?.modalPresentationStyle = .popover
+            
+            let popoverController = bookSaving?.popoverPresentationController
+            
+            popoverController?.sourceView = self.view as UIView
+            
+            popoverController?.permittedArrowDirections = .any
+            
+            present(bookSaving!, animated: true, completion: nil)
+            
+            newBook = true
         }
-        
-        bookb = indexPath.row as Int
-        
-        self.dismiss(animated: true, completion: nil)
+        else
+        {
+            bookb = indexPath.row
+            
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     func getData()
@@ -104,35 +133,7 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
             print("Could not fetch. \(error)")
         }
     }
-    
-    func save() {
-        
-        guard let appDelegate =
-            UIApplication.shared.delegate as? AppDelegate else {
-                return
-        }
-        
-        // 1
-        let managedContext =
-            appDelegate.persistentContainer.viewContext
-        
-        // 2
-        let entity =
-            NSEntityDescription.entity(forEntityName: "Book",
-                                       in: managedContext)!
-        
-        let person = NSManagedObject(entity: entity,
-                                     insertInto: managedContext)
-        
-        // 4
-        do {
-            try managedContext.save()
-            books.append(person)
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-        }
-    }
-    
+
     /*
     // MARK: - Navigation
 
