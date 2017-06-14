@@ -105,10 +105,11 @@ class AvatarSelectionViewController: UIViewController, UICollectionViewDelegate,
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         var avatarImages = ["Avacado.png", "Bear.png", "Carrot.png", "Cow.png",  "Dinosaur.png", "Dolphin.png", "Elephant.png", "Flamingo.png", "Fox.png", "Hippo.png", "Jellyfish.png", "Monkey.png", "Octopus.png", "Panda.png", "Parrot.png", "Penguin.png", "Pig.png", "Platypus.png", "Popcorn.png", "Pumpkin.png", "Shark.png", "SHEEP.png", "SLOTH.png", "Wolf.png"] // this is the image names
      
+        //single click for avatar selection
         save(name: avatarImages[indexPath.row])
         self.dismiss(animated: true, completion: nil)
         
-        //use for double click
+        //use for double click for avatar selection
 //        if avatarKey == Int(indexPath.row)
 //        {
 //            let selectedAvatar = avatarImages[avatarKey] // avatar image name of one selected (save)

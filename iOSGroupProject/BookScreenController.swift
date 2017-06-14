@@ -15,6 +15,7 @@ class BookScreenController: UIViewController {
 
     var books: [NSManagedObject] = []
     
+
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var Pages: UILabel!
