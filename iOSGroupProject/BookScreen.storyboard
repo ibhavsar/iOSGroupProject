@@ -1613,6 +1613,9 @@ vgDDANoA3ADemwybEZscmyWbOJs8m0ebUJtVm12bYJtlm3SbeJt/m4eblJuZm5ubnZuim6qbrZuym7qb
 vZvPm9Kb1wAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAJvZA
 </mutableData>
         </image>
+        <image name="Camera Box" width="81" height="115"/>
+        <image name="emptyStar" width="33" height="31"/>
+        <image name="fullStar" width="33" height="31"/>
         <image name="pencil" width="80" height="72"/>
         <image name="x button" width="80" height="80"/>
     </resources>

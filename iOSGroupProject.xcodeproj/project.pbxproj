@@ -35,10 +35,9 @@
 		3FCEE81C1EC9DDB700BE725D /* AvatarSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE81B1EC9DDB700BE725D /* AvatarSelectionViewController.swift */; };
 		3FCEE81E1EC9DDC600BE725D /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE81D1EC9DDC600BE725D /* AvatarViewController.swift */; };
 		3FCEE8201EC9DDF200BE725D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */; };
-		3FCEE8221EC9DE0D00BE725D /* tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCEE8211EC9DE0D00BE725D /* tutorial.storyboard */; };
 		3FCEE8281EC9DE3000BE725D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */; };
 		3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCEE8291EC9E0DB00BE725D /* Main.storyboard */; };
-		3FCEE82C1EC9E2B500BE725D /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE82B1EC9E2B500BE725D /* TutorialViewController.swift */; };
+		3FE6BB351EE78C2400231940 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6BB341EE78C2400231940 /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,10 +74,9 @@
 		3FCEE81B1EC9DDB700BE725D /* AvatarSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarSelectionViewController.swift; path = ../AvatarSelectionViewController.swift; sourceTree = "<group>"; };
 		3FCEE81D1EC9DDC600BE725D /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarViewController.swift; path = ../AvatarViewController.swift; sourceTree = "<group>"; };
 		3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
-		3FCEE8211EC9DE0D00BE725D /* tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = tutorial.storyboard; path = ../tutorial.storyboard; sourceTree = "<group>"; };
 		3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../WelcomeViewController.swift; sourceTree = "<group>"; };
 		3FCEE8291EC9E0DB00BE725D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		3FCEE82B1EC9E2B500BE725D /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		3FE6BB341EE78C2400231940 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +115,7 @@
 				3F7338061ECB33E600B0DB04 /* BookTitleViewController.swift */,
 				3F7338261ECC77DD00B0DB04 /* BookSaving.storyboard */,
 				3FA5E9851ECDD07000390202 /* PictureViewController.swift */,
+				3FE6BB341EE78C2400231940 /* TutorialViewController.swift */,
 			);
 			name = "Book Screen";
 			sourceTree = "<group>";
@@ -148,7 +147,6 @@
 				3FCEE82D1EC9E32A00BE725D /* Avatar */,
 				3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */,
 				3FCEE82E1EC9E34700BE725D /* Tutorial */,
-				3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */,
 				3FCEE8291EC9E0DB00BE725D /* Main.storyboard */,
 				3F52DE651EA8729C00883FAF /* MenuController.swift */,
 				3F1D07341EA798C8009A0A10 /* LibraryViewController.swift */,
@@ -178,8 +176,7 @@
 		3FCEE82E1EC9E34700BE725D /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				3FCEE8211EC9DE0D00BE725D /* tutorial.storyboard */,
-				3FCEE82B1EC9E2B500BE725D /* TutorialViewController.swift */,
+				3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */,
 			);
 			name = Tutorial;
 			sourceTree = "<group>";
@@ -250,7 +247,6 @@
 				3F74DACA1EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 in Resources */,
 				3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */,
 				3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */,
-				3FCEE8221EC9DE0D00BE725D /* tutorial.storyboard in Resources */,
 				3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */,
 				3F7338271ECC77DD00B0DB04 /* BookSaving.storyboard in Resources */,
 			);
@@ -265,7 +261,6 @@
 			files = (
 				3F74DAC61EAE32230074A729 /* RatingView.swift in Sources */,
 				3FA5E9861ECDD07000390202 /* PictureViewController.swift in Sources */,
-				3FCEE82C1EC9E2B500BE725D /* TutorialViewController.swift in Sources */,
 				3F74DAC51EAE32230074A729 /* BookScreenController.swift in Sources */,
 				3F1729461EE9DC26000986DB /* PagesReadController.swift in Sources */,
 				3FCEE8201EC9DDF200BE725D /* HomeViewController.swift in Sources */,
@@ -286,6 +281,7 @@
 				3F1D07301EA7907A009A0A10 /* SWRevealViewController.m in Sources */,
 				3F1562FD1EBB593400303C60 /* BookViewCell.swift in Sources */,
 				3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */,
+				3FE6BB351EE78C2400231940 /* TutorialViewController.swift in Sources */,
 				3FCEE81A1EC9DDAE00BE725D /* AvatarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +400,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D9Z874PM38;
 				INFOPLIST_FILE = iOSGroupProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CHCI.iOSGroupProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,7 +417,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D9Z874PM38;
 				INFOPLIST_FILE = iOSGroupProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CHCI.iOSGroupProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";

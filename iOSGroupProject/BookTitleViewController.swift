@@ -10,6 +10,8 @@ import UIKit
 
 class BookTitleViewController: UIViewController, UITextFieldDelegate {
     
+    var tutorial = false
+
     @IBOutlet weak var bookTitle: UITextField!
     @IBOutlet weak var numberOfPages: UITextField!
     @IBOutlet weak var authorName: UITextField!
@@ -56,7 +58,7 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
         let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "TakePic") as? PictureViewController
         
         bookSaving?.modalPresentationStyle = .popover
-        
+        bookSaving?.goTutorial = tutorial
         bookSaving?.bookTitle = bookTitle.text!
         bookSaving?.numberOfPages = Int(numberOfPages.text!)!
         bookSaving?.authorsName = authorName.text!
