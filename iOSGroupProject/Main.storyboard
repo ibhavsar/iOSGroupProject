@@ -787,10 +787,10 @@
             </objects>
             <point key="canvasLocation" x="4266" y="-1228"/>
         </scene>
-        <!--Achievements View Controller-->
+        <!--Achievements-->
         <scene sceneID="4Uc-iF-UQP">
             <objects>
-                <viewController id="GfD-rU-Xem" customClass="AchievementsViewController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Achievements" id="GfD-rU-Xem" customClass="AchievementsViewController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C2q-dZ-mGe"/>
                         <viewControllerLayoutGuide type="bottom" id="VeQ-UR-rf7"/>
@@ -798,18 +798,60 @@
                     <view key="view" contentMode="scaleToFill" id="aJK-YD-Pvt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kfs-XA-hI2">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="60" minimumInteritemSpacing="60" id="4xe-qd-WVG">
+                                    <size key="itemSize" width="120" height="120"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="achieve_collection_cell" id="tn6-tc-3xC" customClass="AchieveCollectionViewCell" customModule="iOSGroupProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MLV-7c-SK6" userLabel="achieveProgressView">
+                                                    <rect key="frame" x="15" y="110" width="90" height="2"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </progressView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qR6-rB-4Tz" userLabel="achieveImageView">
+                                                    <rect key="frame" x="15" y="0.0" width="90" height="90"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="AchieveImageView" destination="qR6-rB-4Tz" id="kOE-42-zeG"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kfs-XA-hI2" secondAttribute="trailing" constant="20" id="Abg-Sh-hrB"/>
+                            <constraint firstItem="kfs-XA-hI2" firstAttribute="leading" secondItem="aJK-YD-Pvt" secondAttribute="leading" constant="20" id="GDe-jG-aTI"/>
+                            <constraint firstItem="kfs-XA-hI2" firstAttribute="top" secondItem="C2q-dZ-mGe" secondAttribute="bottom" id="oQH-7l-uxx"/>
+                            <constraint firstItem="VeQ-UR-rf7" firstAttribute="top" secondItem="kfs-XA-hI2" secondAttribute="bottom" id="ucC-zQ-Qsq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v2d-OO-jVr">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="LRe-yT-4rX"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="AchieveCollectionView" destination="kfs-XA-hI2" id="Quy-ne-DeP"/>
                         <outlet property="menuButton" destination="LRe-yT-4rX" id="hRp-R4-gtx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UY6-qC-bjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3552.8000000000002" y="13.943028485757123"/>
+            <point key="canvasLocation" x="3552.1739130434785" y="13.858695652173914"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="965-Tq-j9n">
