@@ -15,10 +15,10 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var AchieveCollectionView: UICollectionView!
     var achievements = ["BookPhotoUnachieved", "BookwormUnachieved", "PagesUnachieved", "SignaturesUnachieved", "StreakUnachieved", "TagsUnachieved"]
-    var progresses: [String] = []
+    var progresses: [Float] = [0,0,0,0,0,0]
     var books: [NSManagedObject] = []
     var bookPics: [NSManagedObject] = []
-    var progress: Float
+    var progress: Float = 0.0
     var pages = 0
     var imageNum = 0
     var imageCount = 0
@@ -76,12 +76,20 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
             achievements[1] = "Bookworm1"
             case 5:
             achievements[1] = "Bookworm2"
+            case 2..<5:
+            progress = Float(bookNumber/3)
             case 10:
             achievements[1] = "Bookworm3"
+            case 6..<10:
+                progress = Float((bookNumber-5)/4)
             case 25:
             achievements[1] = "Bookworm4"
+            case 26..<50:
+                progress = ((roundf(Float(bookNumber/10)))/3)
             case 50:
             achievements[1] = "Bookworm5"
+            case 51..<100:
+                progress = Float((bookNumber-50)/10)
             case 100:
             achievements[1] = "Bookworm6"
             default:
@@ -91,14 +99,22 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
             switch imageNum {
             case 1:
                 achievements[0] = "BookPhoto1"
+            case 2..<5:
+                progress = Float(imageNum/3)
             case 5:
                 achievements[0] = "BookPhoto2"
+            case 6..<10:
+                progress = Float((imageNum-5)/4)
             case 10:
                 achievements[0] = "BookPhoto3"
             case 25:
                 achievements[0] = "BookPhoto4"
+            case 26..<50:
+                progress = ((roundf(Float(imageNum/10)))/3)
             case 50:
                 achievements[0] = "BookPhoto5"
+            case 51..<100:
+                progress = Float((imageNum-50)/10)
             case 100:
                 achievements[0] = "BookPhoto6"
             default:
@@ -133,7 +149,10 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "achieve_collection_cell", for: indexPath) as! AchieveCollectionViewCell
         cell.AchieveImageView.image = UIImage(named: achievements[indexPath.row])
-       // cell.AchieveProgressView.progress = (make an array of what the progress view should have through funcs)
+        print("\(progresses[indexPath.row])")
+        if progresses[indexPath.row] > 0{
+      cell.progressView.progress = progresses[indexPath.row]
+        }// an array of what the progress view should have
         return cell
     }
     /*
