@@ -17,6 +17,7 @@
 		3F1D07371EA798D8009A0A10 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */; };
 		3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */; };
 		3F1D073B1EA798EC009A0A10 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */; };
+		3F1DC3261EEE3157007E1300 /* AchieveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1DC3251EEE3157007E1300 /* AchieveCollectionViewCell.swift */; };
 		3F52DE661EA8729C00883FAF /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F52DE651EA8729C00883FAF /* MenuController.swift */; };
 		3F6317481EE7528E00E12DF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F63173D1EE7528E00E12DF1 /* LaunchScreen.xib */; };
 		3F6317491EE7528E00E12DF1 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F63173F1EE7528E00E12DF1 /* Main2.storyboard */; };
@@ -62,6 +63,7 @@
 		3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		3F1DC3251EEE3157007E1300 /* AchieveCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchieveCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F52DE651EA8729C00883FAF /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		3F63173E1EE7528E00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3F6317401EE7528E00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
@@ -197,7 +199,12 @@
 				3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */,
 				3FCEE82E1EC9E34700BE725D /* Tutorial */,
 				3FCEE8291EC9E0DB00BE725D /* Main.storyboard */,
-				3FB165641ECB280A0013FCA3 /* Hamburger Menu */,
+				3F1DC3251EEE3157007E1300 /* AchieveCollectionViewCell.swift */,
+				3F52DE651EA8729C00883FAF /* MenuController.swift */,
+				3F1D07341EA798C8009A0A10 /* LibraryViewController.swift */,
+				3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */,
+				3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */,
+				3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */,
 				3F78F00B1E8EAEF100091FBE /* Assets.xcassets */,
 				3F78F00D1E8EAEF100091FBE /* LaunchScreen.storyboard */,
 				3F78F0101E8EAEF100091FBE /* Info.plist */,
@@ -205,19 +212,6 @@
 				3F78F0021E8EAEF100091FBE /* Products */,
 			);
 			path = iOSGroupProject;
-			sourceTree = "<group>";
-		};
-		3FB165641ECB280A0013FCA3 /* Hamburger Menu */ = {
-			isa = PBXGroup;
-			children = (
-				3F52DE651EA8729C00883FAF /* MenuController.swift */,
-				3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */,
-				3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */,
-				3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */,
-				3F1D07341EA798C8009A0A10 /* LibraryViewController.swift */,
-				3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */,
-			);
-			name = "Hamburger Menu";
 			sourceTree = "<group>";
 		};
 		3FCEE82D1EC9E32A00BE725D /* Avatar */ = {
@@ -347,6 +341,7 @@
 				3F1562FD1EBB593400303C60 /* BookViewCell.swift in Sources */,
 				3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */,
 				3FE6BB351EE78C2400231940 /* TutorialViewController.swift in Sources */,
+				3F1DC3261EEE3157007E1300 /* AchieveCollectionViewCell.swift in Sources */,
 				3FCEE81A1EC9DDAE00BE725D /* AvatarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

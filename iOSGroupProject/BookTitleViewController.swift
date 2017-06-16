@@ -47,6 +47,9 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         currentSelectedTextField = nil
         if bookTitle.text != "Book Title" && authorName.text != "Name" && bookTitle.text != "" && authorName.text != "" && numberOfPages.text != ""
+    //    if numberOfPages.text == totalPages {
+            
+      //  }
         {
             continueButton.isEnabled = true
         }
