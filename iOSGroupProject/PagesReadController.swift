@@ -64,7 +64,7 @@ class PagesReadController: UIViewController, UITextFieldDelegate {
                 continueButton.isEnabled = true
             }
         }
-        if textField == hours || textField == mins
+        if (textField == hours || textField == mins) && hours.text != nil && hours.text != "" && mins.text != nil && mins.text != ""
         {
             time = UIntMax(hours.text!)! * 3600 + UIntMax(mins.text!)! * 60
             didChangeTime = true
