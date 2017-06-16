@@ -812,15 +812,7 @@
             </objects>
             <point key="canvasLocation" x="4232" y="-1544"/>
         </scene>
-        <!--BookScreen-->
-        <scene sceneID="XQJ-tn-GTD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="BookScreen" id="zii-p2-ZGb" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UR8-Z6-dQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4266" y="-1228"/>
-        </scene>
-        <!--Achievements-->
+        <!--Achievements View Controller-->
         <scene sceneID="4Uc-iF-UQP">
             <objects>
                 <viewController title="Achievements" id="GfD-rU-Xem" customClass="AchievementsViewController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
