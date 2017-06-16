@@ -206,19 +206,6 @@
 			path = iOSGroupProject;
 			sourceTree = "<group>";
 		};
-		3FB165641ECB280A0013FCA3 /* Hamburger Menu */ = {
-			isa = PBXGroup;
-			children = (
-				3F52DE651EA8729C00883FAF /* MenuController.swift */,
-				3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */,
-				3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */,
-				3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */,
-				3F1D07341EA798C8009A0A10 /* LibraryViewController.swift */,
-				3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */,
-			);
-			name = "Hamburger Menu";
-			sourceTree = "<group>";
-		};
 		3FCEE82D1EC9E32A00BE725D /* Avatar */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,13 +290,11 @@
 				3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */,
 				3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */,
 				3F74DACA1EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 in Resources */,
-				3F1562FF1EC23B3E00303C60 /* BookSelection.storyboard in Resources */,
 				3F63174A1EE7528E00E12DF1 /* Images.xcassets in Resources */,
 				3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */,
 				3F6317491EE7528E00E12DF1 /* Main2.storyboard in Resources */,
 				3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */,
 				3F6317481EE7528E00E12DF1 /* LaunchScreen.xib in Resources */,
-				3FCEE8221EC9DE0D00BE725D /* tutorial.storyboard in Resources */,
 				3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */,
 				3F7338271ECC77DD00B0DB04 /* BookSaving.storyboard in Resources */,
 			);
