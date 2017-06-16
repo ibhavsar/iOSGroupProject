@@ -31,12 +31,6 @@ class BookScreenController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        
         if bookb == nil
         {
             openBookSelector()
@@ -81,8 +75,9 @@ class BookScreenController: UIViewController {
                 titleLabel.text = books[bookb!].value(forKey: "title") as? String
                 
                 let pages = books[bookb!].value(forKey: "pages")!
+                let pagesRead = books[bookb!].value(forKey: "pagesRead")!
                 
-                Pages.text = "000/" + String(describing: pages)
+                Pages.text = String(describing: pagesRead) + "/" + String(describing: pages)
                 
                 let imageData = books[bookb!].value(forKey: "image") as? NSData
                 
@@ -111,6 +106,16 @@ class BookScreenController: UIViewController {
         if bookb != nil
         {
             saveRating()
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
     }
     

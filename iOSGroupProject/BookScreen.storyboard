@@ -15,7 +15,7 @@
         <!--Book Screen-->
         <scene sceneID="xf4-02-foT">
             <objects>
-                <viewController id="gc2-Yw-i88" userLabel="Book Screen" customClass="BookScreenController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookScreenScene" id="gc2-Yw-i88" userLabel="Book Screen" customClass="BookScreenController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hXx-bX-zPI"/>
                         <viewControllerLayoutGuide type="bottom" id="d7j-4P-Qfi"/>

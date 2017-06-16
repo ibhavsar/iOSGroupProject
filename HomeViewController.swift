@@ -88,6 +88,13 @@ class HomeViewController: UIViewController {
      // UIApplication.shared.keyWindow?.rootViewController = storyboard!.instantiateViewController(withIdentifier: "HomeViewController")
     }
     
+    @IBAction func openBookScreen(_ sender: Any) {
+        let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+        let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "BookNavController")
+        
+        self.revealViewController().setFront(openedTimerPage, animated: true)
+    }
+    
     /*
      // MARK: - Navigation
      
