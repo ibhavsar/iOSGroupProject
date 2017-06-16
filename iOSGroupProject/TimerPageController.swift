@@ -29,6 +29,7 @@ class TimerPageController: UIViewController {
     var timer = Timer()
     
     var alarm: Bool = true
+    var didExit: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +38,11 @@ class TimerPageController: UIViewController {
         
         if book < books.count
         {
-            time = books[book].value(forKey: "lastTimeRead") as! UIntMax
-            totalTime = time
+            if books[book].value(forKey: "lastTimeRead") as! UIntMax != 0
+            {
+                time = books[book].value(forKey: "lastTimeRead") as! UIntMax
+                totalTime = time
+            }
         }
         else
         {
@@ -48,15 +52,18 @@ class TimerPageController: UIViewController {
         updateTime()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if didExit
+        {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        saveTimeDone()
     }
     
     //starts the timer when the start button is pressed
@@ -223,7 +230,31 @@ class TimerPageController: UIViewController {
             alarmPlayer = nil
         }
         
-        self.dismiss(animated: false, completion: nil)
+        if totalTime == 0 || (totalTime - time) == 0
+        {
+            self.dismiss(animated: false, completion: nil)
+        }
+        else
+        {
+            didExit = true
+            
+            //stops the timer
+            timer.invalidate()
+            
+            let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+            let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "PagesRead") as? PagesReadController
+            
+            openedTimerPage?.book = book
+            openedTimerPage?.time = time
+            openedTimerPage?.totalTime = totalTime
+            openedTimerPage?.modalPresentationStyle = .popover
+            
+            let popoverController = openedTimerPage?.popoverPresentationController
+            popoverController?.sourceView = sender as? UIView
+            popoverController?.permittedArrowDirections = .any
+            
+            present(openedTimerPage!, animated: true, completion: nil)
+        }
     }
     
     func getData()
@@ -248,48 +279,7 @@ class TimerPageController: UIViewController {
             print("Could not fetch. \(error)")
         }
     }
-    
-    func saveTimeDone() {
         
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        
-        // 1
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
-        if book < books.count
-        {
-            books[book].setValue((totalTime), forKey: "lastTimeRead")
-            totalTime += books[book].value(forKey: "timeRead") as! UIntMax
-            books[book].setValue((totalTime - time), forKey: "timeRead")
-            
-            do {
-                try managedContext.save()
-            } catch let error as NSError {
-                print("Could not save. \(error)")
-            }
-        }
-        else
-        {
-            // 2
-            let entity = NSEntityDescription.entity(forEntityName: "Book", in: managedContext)!
-            
-            let newBook = NSManagedObject(entity: entity, insertInto: managedContext)
-            
-            newBook.setValue((totalTime), forKey: "lastTimeRead")
-            newBook.setValue((totalTime  - time), forKey: "timeRead")
-            
-            // 4
-            do {
-                try managedContext.save()
-                books.append(newBook)
-            } catch let error as NSError {
-                print("Could not save. \(error)")
-            }
-        }
-    }
-    
     /*
      // MARK: - Navigation
      
