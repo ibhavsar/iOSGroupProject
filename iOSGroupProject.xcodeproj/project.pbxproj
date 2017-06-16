@@ -140,6 +140,17 @@
 			path = LocalNotificationsTutorial;
 			sourceTree = "<group>";
 		};
+		3F6496F31EF41B1E00580D05 /* Book Saving */ = {
+			isa = PBXGroup;
+			children = (
+				3F7338061ECB33E600B0DB04 /* BookTitleViewController.swift */,
+				3F7338261ECC77DD00B0DB04 /* BookSaving.storyboard */,
+				3FA5E9851ECDD07000390202 /* PictureViewController.swift */,
+				3FE6BB341EE78C2400231940 /* TutorialViewController.swift */,
+			);
+			name = "Book Saving";
+			sourceTree = "<group>";
+		};
 		3F74DAC81EAE32400074A729 /* Book Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,10 +163,6 @@
 				3F74DAC11EAE32230074A729 /* BookScreenController.swift */,
 				3F74DAC21EAE32230074A729 /* RatingView.swift */,
 				3F74DAC31EAE32230074A729 /* TimerPageController.swift */,
-				3F7338061ECB33E600B0DB04 /* BookTitleViewController.swift */,
-				3F7338261ECC77DD00B0DB04 /* BookSaving.storyboard */,
-				3FA5E9851ECDD07000390202 /* PictureViewController.swift */,
-				3FE6BB341EE78C2400231940 /* TutorialViewController.swift */,
 			);
 			name = "Book Screen";
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 			children = (
 				3F63173A1EE7527A00E12DF1 /* Local Notifications */,
 				3F74DAC81EAE32400074A729 /* Book Screen */,
+				3F6496F31EF41B1E00580D05 /* Book Saving */,
 				3F1D07311EA79087009A0A10 /* SWRevealViewController */,
 				3F78F0041E8EAEF100091FBE /* AppDelegate.swift */,
 				3F0A693D1EB3950500846E35 /* CoreData.xcdatamodeld */,
@@ -226,7 +234,6 @@
 		3FCEE82E1EC9E34700BE725D /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */,
 			);
 			name = Tutorial;
 			sourceTree = "<group>";
@@ -296,13 +303,11 @@
 				3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */,
 				3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */,
 				3F74DACA1EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 in Resources */,
-				3F1562FF1EC23B3E00303C60 /* BookSelection.storyboard in Resources */,
 				3F63174A1EE7528E00E12DF1 /* Images.xcassets in Resources */,
 				3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */,
 				3F6317491EE7528E00E12DF1 /* Main2.storyboard in Resources */,
 				3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */,
 				3F6317481EE7528E00E12DF1 /* LaunchScreen.xib in Resources */,
-				3FCEE8221EC9DE0D00BE725D /* tutorial.storyboard in Resources */,
 				3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */,
 				3F7338271ECC77DD00B0DB04 /* BookSaving.storyboard in Resources */,
 			);
