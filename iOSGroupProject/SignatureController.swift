@@ -189,6 +189,14 @@ class SignatureController: UIViewController {
                 signatures[signature].setValue(imageData, forKey: "signatureImage")
             }
             
+            let date = Date()
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.year, .month, .day], from: date)
+            
+            signatures[signature].setValue(components.day, forKey: "day")
+            signatures[signature].setValue(components.month, forKey: "month")
+            signatures[signature].setValue(components.year, forKey: "year")
+            
             do {
                 try managedContext.save()
             } catch let error as NSError {
@@ -216,6 +224,8 @@ class SignatureController: UIViewController {
             let components = calendar.dateComponents([.year, .month, .day], from: date)
             
             newSignature.setValue(components.day, forKey: "day")
+            newSignature.setValue(components.month, forKey: "month")
+            newSignature.setValue(components.year, forKey: "year")
             
             // 4
             do {
