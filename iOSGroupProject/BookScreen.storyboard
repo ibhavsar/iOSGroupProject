@@ -692,7 +692,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="129" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:M5O-HH-zcR:image" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-HH-zcR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3E8CD290-EEB2-4FF8-83FB-72EFE54F1C23" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-HH-zcR">
                                                     <rect key="frame" x="9" y="5" width="111.5" height="149"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="M5O-HH-zcR" secondAttribute="height" multiplier="3:4" id="5TF-eK-ZWZ"/>

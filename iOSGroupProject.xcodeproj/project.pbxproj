@@ -38,13 +38,13 @@
 		3F78F0071E8EAEF100091FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F0061E8EAEF100091FBE /* ViewController.swift */; };
 		3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F00B1E8EAEF100091FBE /* Assets.xcassets */; };
 		3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F00D1E8EAEF100091FBE /* LaunchScreen.storyboard */; };
+		3F86779A1EF8058700ECD3FC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8677991EF8058700ECD3FC /* WelcomeViewController.swift */; };
 		3FA5E9861ECDD07000390202 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA5E9851ECDD07000390202 /* PictureViewController.swift */; };
 		3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCEE8171EC9DDA400BE725D /* Avatar.storyboard */; };
 		3FCEE81A1EC9DDAE00BE725D /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE8191EC9DDAE00BE725D /* AvatarCollectionViewCell.swift */; };
 		3FCEE81C1EC9DDB700BE725D /* AvatarSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE81B1EC9DDB700BE725D /* AvatarSelectionViewController.swift */; };
 		3FCEE81E1EC9DDC600BE725D /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE81D1EC9DDC600BE725D /* AvatarViewController.swift */; };
 		3FCEE8201EC9DDF200BE725D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */; };
-		3FCEE8281EC9DE3000BE725D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */; };
 		3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCEE8291EC9E0DB00BE725D /* Main.storyboard */; };
 		3FE6BB351EE78C2400231940 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6BB341EE78C2400231940 /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
@@ -86,13 +86,13 @@
 		3F78F00B1E8EAEF100091FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F78F00E1E8EAEF100091FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F78F0101E8EAEF100091FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8677991EF8058700ECD3FC /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3FA5E9851ECDD07000390202 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		3FCEE8171EC9DDA400BE725D /* Avatar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Avatar.storyboard; path = ../Avatar.storyboard; sourceTree = "<group>"; };
 		3FCEE8191EC9DDAE00BE725D /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarCollectionViewCell.swift; path = ../AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
 		3FCEE81B1EC9DDB700BE725D /* AvatarSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarSelectionViewController.swift; path = ../AvatarSelectionViewController.swift; sourceTree = "<group>"; };
 		3FCEE81D1EC9DDC600BE725D /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarViewController.swift; path = ../AvatarViewController.swift; sourceTree = "<group>"; };
 		3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
-		3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../WelcomeViewController.swift; sourceTree = "<group>"; };
 		3FCEE8291EC9E0DB00BE725D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3FE6BB341EE78C2400231940 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +228,7 @@
 		3FCEE82E1EC9E34700BE725D /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				3F8677991EF8058700ECD3FC /* WelcomeViewController.swift */,
 			);
 			name = Tutorial;
 			sourceTree = "<group>";
@@ -326,7 +327,6 @@
 				3F1729401EE58753000986DB /* SignatureController.swift in Sources */,
 				3F7338071ECB33E600B0DB04 /* BookTitleViewController.swift in Sources */,
 				3FCEE81C1EC9DDB700BE725D /* AvatarSelectionViewController.swift in Sources */,
-				3FCEE8281EC9DE3000BE725D /* WelcomeViewController.swift in Sources */,
 				3F1D07371EA798D8009A0A10 /* AchievementsViewController.swift in Sources */,
 				3FCEE81E1EC9DDC600BE725D /* AvatarViewController.swift in Sources */,
 				3F0A693F1EB3950500846E35 /* CoreData.xcdatamodeld in Sources */,
@@ -335,6 +335,7 @@
 				3F78F0071E8EAEF100091FBE /* ViewController.swift in Sources */,
 				3F1D07351EA798C8009A0A10 /* LibraryViewController.swift in Sources */,
 				3F74DAC71EAE32230074A729 /* TimerPageController.swift in Sources */,
+				3F86779A1EF8058700ECD3FC /* WelcomeViewController.swift in Sources */,
 				3F1D073B1EA798EC009A0A10 /* CreditsViewController.swift in Sources */,
 				3F78F0051E8EAEF100091FBE /* AppDelegate.swift in Sources */,
 				3F1D07301EA7907A009A0A10 /* SWRevealViewController.m in Sources */,

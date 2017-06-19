@@ -86,25 +86,29 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
                     }
                 }
             }
-            switch bookNumber {
+            switch bookNumber {// make progresses[]
             case 1:
             achievements[1] = "Bookworm1"
             case 5:
             achievements[1] = "Bookworm2"
             case 2..<5:
-            progress = Float(bookNumber/3)
+            achievements[1] = "Bookworm1"
+            progresses[1] = Float(bookNumber/3)
             case 10:
             achievements[1] = "Bookworm3"
             case 6..<10:
-                progress = Float((bookNumber-5)/4)
+                progresses[1] = Float((bookNumber-5)/4)
+                achievements[1] = "Bookworm2"
             case 25:
             achievements[1] = "Bookworm4"
             case 26..<50:
-                progress = ((roundf(Float(bookNumber/10)))/3)
+                achievements[1] = "Bookworm4"
+                progresses[1] = ((roundf(Float(bookNumber/10)))/3)
             case 50:
             achievements[1] = "Bookworm5"
             case 51..<100:
-                progress = Float((bookNumber-50)/10)
+                achievements[1] = "Bookworm5"
+                progresses[1] = Float((bookNumber-50)/10)
             case 100:
             achievements[1] = "Bookworm6"
             default:
@@ -115,21 +119,25 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
             case 1:
                 achievements[0] = "BookPhoto1"
             case 2..<5:
-                progress = Float(imageNum/3)
+                achievements[0] = "BookPhoto1"
+                progresses[0] = Float(imageNum/3)
             case 5:
                 achievements[0] = "BookPhoto2"
             case 6..<10:
-                progress = Float((imageNum-5)/4)
+                achievements[0] = "BookPhoto2"
+                progresses[0] = Float((imageNum-5)/4)
             case 10:
                 achievements[0] = "BookPhoto3"
             case 25:
                 achievements[0] = "BookPhoto4"
             case 26..<50:
-                progress = ((roundf(Float(imageNum/10)))/3)
+                achievements[0] = "BookPhoto4"
+                progresses[0] = ((roundf(Float(imageNum/10)))/3)
             case 50:
                 achievements[0] = "BookPhoto5"
             case 51..<100:
-                progress = Float((imageNum-50)/10)
+                achievements[0] = "BookPhoto5"
+                progresses[0] = Float((imageNum-50)/10)
             case 100:
                 achievements[0] = "BookPhoto6"
             default:
@@ -140,21 +148,25 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
             case 1:
                 achievements[3] = "Signatures1"
             case 2..<5:
-                progress = Float(imageNum/3)
+                achievements[3] = "Signatures1"
+                progresses[3] = Float(numSigs/3)
             case 5:
                 achievements[3] = "Signatures2"
             case 6..<10:
-                progress = Float((imageNum-5)/4)
+                achievements[3] = "Signatures2"
+                progresses[3] = Float((numSigs-5)/4)
             case 10:
                 achievements[3] = "Signatures3"
             case 25:
                 achievements[3] = "Signatures4"
             case 26..<50:
-                progress = ((roundf(Float(imageNum/10)))/3)
+                achievements[3] = "Signatures4"
+                progresses[3] = ((roundf(Float(numSigs/10)))/3)
             case 50:
                 achievements[3] = "Signatures5"
             case 51..<100:
-                progress = Float((imageNum-50)/10)
+                achievements[3] = "Signatures5"
+                progresses[3] = Float((numSigs-50)/10)
             case 100:
                 achievements[3] = "Signatures6"
             default:
