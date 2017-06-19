@@ -52,8 +52,12 @@ class SignatureController: UIViewController {
         
         if !didChangeTime
         {
-            print("hi")
             timeDif = totalTime - time
+        }
+        
+        if pages > books[book].value(forKeyPath: "pages") as! Int
+        {
+            pages = books[book].value(forKeyPath: "pages") as! Int
         }
         
         timeRead.text = "Time Read: " + (((timeDif/3600) < 10) ?  ("0" + String(timeDif/3600)) : (String(timeDif/3600))) + ":" + ((((timeDif % 3600) / 60) < 10) ?  ("0" + String((timeDif % 3600) / 60)) : (String((timeDif % 3600) / 60))) + ":" + ((((timeDif % 3600) % 60) < 10) ?  ("0" + String((timeDif % 3600) % 60)) : (String((timeDif % 3600) % 60)))
