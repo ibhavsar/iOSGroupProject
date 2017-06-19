@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var changeAvatarButton: UIButton!
     @IBOutlet weak var avatarDisplay: UIImageView!
-    
+    @IBOutlet weak var achieveButton: UIButton!
     @IBOutlet weak var nameLab: UILabel!
     @IBOutlet weak var startReadButton: UIButton!
     @IBOutlet weak var achieveLabel: UILabel!
@@ -85,15 +85,21 @@ class HomeViewController: UIViewController {
     
     @IBAction func changeAvatar(_ sender: Any) {
         self.performSegue(withIdentifier: "toAvatar", sender: self)
-     // UIApplication.shared.keyWindow?.rootViewController = storyboard!.instantiateViewController(withIdentifier: "HomeViewController")
     }
     
     @IBAction func openBookScreen(_ sender: Any) {
         let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
         let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "BookNavController")
-        
         self.revealViewController().setFront(openedTimerPage, animated: true)
     }
+    
+ 
+    @IBAction func toAchieveButton(_ sender: Any) {
+        let thisStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let toachieve = thisStoryboard.instantiateViewController(withIdentifier: "achieveNav")
+        self.revealViewController().setFront(toachieve, animated: true)
+                            }
     
     /*
      // MARK: - Navigation
@@ -103,6 +109,10 @@ class HomeViewController: UIViewController {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
      }
+     let thisStoryboard = UIStoryboard(name: "Main", bundle: nil)
+     let Achievements = thisStoryboard.instantiateViewController(withIdentifier: "Achievements")
+     self.revealViewController().setFront(Achievements, animated: true)
+
      */
     
 }

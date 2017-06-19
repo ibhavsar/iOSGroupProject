@@ -20,6 +20,8 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
     var bookPics: [NSManagedObject] = []
     var progress: Float = 0.0
     var pages = 0
+    var signatures: [NSManagedObject] = []
+    var numSigs = 0
     var imageNum = 0
     var imageCount = 0
     var totalPages = 0
@@ -36,10 +38,22 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
             appDelegate.persistentContainer.viewContext
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Book")
+        let fetchRequest2 = NSFetchRequest<NSFetchRequestResult>(entityName: "Signatures")
         do {
             books = try managedContext.fetch(fetchRequest) as! [Book]
+            books = try managedContext.fetch(fetchRequest) as! [Book]
+            signatures = try managedContext.fetch(fetchRequest2) as! [Signatures]
             bookPics = try managedContext.fetch(fetchRequest) as! [Book]
             print ("\(bookPics.count)")
+            print ("\(signatures.count)")
+            if signatures.count > 0 {
+                for i in 0...(signatures.count - 1) {
+             let numSigss = signatures[i].value(forKey: "day") as! Int
+                    if numSigss != 0 {
+                    numSigs = numSigs + 1
+                    }
+                }
+            }
             if bookPics.count > 0 {
                 for i in 0...(bookPics.count-1) {
                 pages = books[i].value(forKey: "pagesRead") as! Int
@@ -68,6 +82,7 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
                     if imageNu == nil {
                         imageNum = imageNum - 1
                     }
+   
                     }
                 }
             }
@@ -119,6 +134,31 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
                 achievements[0] = "BookPhoto6"
             default:
                 achievements[0] = "BookPhotoUnachieved"
+            }
+            
+            switch numSigs {
+            case 1:
+                achievements[3] = "Signatures1"
+            case 2..<5:
+                progress = Float(imageNum/3)
+            case 5:
+                achievements[3] = "Signatures2"
+            case 6..<10:
+                progress = Float((imageNum-5)/4)
+            case 10:
+                achievements[3] = "Signatures3"
+            case 25:
+                achievements[3] = "Signatures4"
+            case 26..<50:
+                progress = ((roundf(Float(imageNum/10)))/3)
+            case 50:
+                achievements[3] = "Signatures5"
+            case 51..<100:
+                progress = Float((imageNum-50)/10)
+            case 100:
+                achievements[3] = "Signatures6"
+            default:
+                achievements[3] = "SignaturesUnachieved"
 
             }
         } catch let error as NSError {
