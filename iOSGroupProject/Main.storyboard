@@ -532,11 +532,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJ5-oB-qnf" userLabel="achieveButton">
                                 <rect key="frame" x="0.0" y="426" width="375" height="119"/>
-                                <state key="normal" title="Button" image="achieve"/>
+                                <state key="normal" image="achieve"/>
                                 <connections>
                                     <action selector="toAchieveButton:" destination="zIp-c5-cXr" eventType="touchUpInside" id="w7Y-Cj-3z0"/>
-                                    <action selector="toAchieveScreen:" destination="zIp-c5-cXr" eventType="touchUpInside" id="Uib-mD-8kN"/>
-                                    <segue destination="GfD-rU-Xem" kind="showDetail" id="uqd-C3-vNq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="191" translatesAutoresizingMaskIntoConstraints="NO" id="HUc-Gk-2n8">
@@ -662,7 +660,6 @@
                         <outlet property="readingLabel" destination="HUc-Gk-2n8" id="mia-bx-rIc"/>
                         <outlet property="startReadButton" destination="qbE-ha-axv" id="9er-iw-7bM"/>
                         <segue destination="MGC-Q5-ygF" kind="presentation" identifier="toAvatar" id="6Bb-Mf-1ww"/>
-                        <segue destination="GfD-rU-Xem" kind="custom" identifier="toAchieve" customClass="SWRevealViewControllerSeguePushController" id="agX-Yo-1ZC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJK-7i-Db9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -680,7 +677,7 @@
         <!--Achievements-->
         <scene sceneID="4Uc-iF-UQP">
             <objects>
-                <viewController storyboardIdentifier="Achievements" title="Achievements" id="GfD-rU-Xem" customClass="AchievementsViewController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AchievementsViewController" title="Achievements" id="GfD-rU-Xem" customClass="AchievementsViewController" customModule="iOSGroupProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C2q-dZ-mGe"/>
                         <viewControllerLayoutGuide type="bottom" id="VeQ-UR-rf7"/>
@@ -690,7 +687,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kfs-XA-hI2">
-                                <rect key="frame" x="20" y="20" width="335" height="647"/>
+                                <rect key="frame" x="20" y="107" width="335" height="560"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="60" minimumInteritemSpacing="60" id="4xe-qd-WVG">
                                     <size key="itemSize" width="120" height="120"/>
@@ -727,7 +724,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="kfs-XA-hI2" secondAttribute="trailing" constant="20" id="Abg-Sh-hrB"/>
                             <constraint firstItem="kfs-XA-hI2" firstAttribute="leading" secondItem="aJK-YD-Pvt" secondAttribute="leading" constant="20" id="GDe-jG-aTI"/>
-                            <constraint firstItem="kfs-XA-hI2" firstAttribute="top" secondItem="C2q-dZ-mGe" secondAttribute="bottom" id="oQH-7l-uxx"/>
+                            <constraint firstItem="kfs-XA-hI2" firstAttribute="top" secondItem="C2q-dZ-mGe" secondAttribute="bottom" constant="43" id="oQH-7l-uxx"/>
                             <constraint firstItem="VeQ-UR-rf7" firstAttribute="top" secondItem="kfs-XA-hI2" secondAttribute="bottom" id="ucC-zQ-Qsq"/>
                         </constraints>
                     </view>
@@ -741,7 +738,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UY6-qC-bjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3552.1739130434785" y="13.858695652173914"/>
+            <point key="canvasLocation" x="3551.1999999999998" y="13.043478260869566"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="965-Tq-j9n">
@@ -830,7 +827,7 @@
         <!--Navigation Controller-->
         <scene sceneID="CMC-Uw-qWC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v8b-LK-YRa" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="achieveNav" automaticallyAdjustsScrollViewInsets="NO" id="v8b-LK-YRa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q99-4a-fFu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -893,6 +890,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="WKq-cf-sEK"/>
         <segue reference="Dip-PH-Nd7"/>
-        <segue reference="agX-Yo-1ZC"/>
     </inferredMetricsTieBreakers>
 </document>
