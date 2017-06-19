@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var changeAvatarButton: UIButton!
     @IBOutlet weak var avatarDisplay: UIImageView!
     
+    @IBOutlet weak var achieveButton: UIButton!
     @IBOutlet weak var nameLab: UILabel!
     @IBOutlet weak var startReadButton: UIButton!
     @IBOutlet weak var achieveLabel: UILabel!
@@ -94,6 +95,17 @@ class HomeViewController: UIViewController {
         
         self.revealViewController().setFront(openedTimerPage, animated: true)
     }
+    
+ 
+    @IBAction func toAchieveButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toAchieve", sender: self)
+
+            }
+     //   let thisStoryboard = UIStoryboard(name: "Main", bundle: nil)
+      //  let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "Achievements")
+        
+     //   self.revealViewController().setFront(openedTimerPage, animated: true)
+    
     
     /*
      // MARK: - Navigation

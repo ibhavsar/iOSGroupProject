@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UJD-bY-hla">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UJD-bY-hla">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -555,7 +555,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Niq-xt-T65" userLabel="tempImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Read: 00:00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRF-cH-PIg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Read: 00:00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="qRF-cH-PIg">
                                 <rect key="frame" x="13.5" y="10" width="142" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Dot-KP-6Lf"/>
@@ -572,7 +572,7 @@
                                     <action selector="reset:" destination="dmM-II-ZcG" eventType="touchUpInside" id="igE-kB-brr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pages Read:          0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MGX-pF-23F">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pages Read:          0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="MGX-pF-23F">
                                 <rect key="frame" x="219.5" y="10" width="142" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="142" id="J2L-2T-Nvv"/>
@@ -692,7 +692,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="129" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="401A6617-7B62-4DA9-B44C-431348C086EC" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-HH-zcR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3E8CD290-EEB2-4FF8-83FB-72EFE54F1C23" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-HH-zcR">
                                                     <rect key="frame" x="9" y="5" width="111.5" height="149"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="M5O-HH-zcR" secondAttribute="height" multiplier="3:4" id="5TF-eK-ZWZ"/>
@@ -935,7 +935,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="401A6617-7B62-4DA9-B44C-431348C086EC" width="81" height="115">
+        <image name="3E8CD290-EEB2-4FF8-83FB-72EFE54F1C23" width="81" height="115">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -1607,6 +1607,12 @@ vgDDANoA3ADemwybEZscmyWbOJs8m0ebUJtVm12bYJtlm3SbeJt/m4eblJuZm5ubnZuim6qbrZuym7qb
 vZvPm9Kb1wAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAJvZA
 </mutableData>
         </image>
+        <image name="Back Button" width="61" height="61"/>
+        <image name="Camera Box" width="81" height="115"/>
+        <image name="ForwardButton" width="61" height="61"/>
+        <image name="Time Spent Reading Rectangle" width="254" height="102"/>
+        <image name="emptyStar" width="33" height="31"/>
+        <image name="fullStar" width="33" height="31"/>
         <image name="pencil" width="80" height="72"/>
         <image name="x button" width="80" height="80"/>
     </resources>
