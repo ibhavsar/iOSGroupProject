@@ -715,6 +715,7 @@
                                         </view>
                                         <connections>
                                             <outlet property="AchieveImageView" destination="qR6-rB-4Tz" id="kOE-42-zeG"/>
+                                            <outlet property="progressView" destination="MLV-7c-SK6" id="L4a-ks-PF5"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

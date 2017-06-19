@@ -29,7 +29,7 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let appDelegate =
+                guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
                 return
         }
@@ -149,7 +149,7 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
                 achievements[3] = "Signatures1"
             case 2..<5:
                 achievements[3] = "Signatures1"
-                progresses[3] = Float(numSigs/3)
+                progresses[3] = Float(Double(numSigs) * 0.1)
             case 5:
                 achievements[3] = "Signatures2"
             case 6..<10:
@@ -203,7 +203,7 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
         cell.AchieveImageView.image = UIImage(named: achievements[indexPath.row])
         print("\(progresses[indexPath.row])")
         if progresses[indexPath.row] > 0{
-      cell.progressView.progress = progresses[indexPath.row]
+            cell.progressView.progress = progresses[indexPath.row]
         }// an array of what the progress view should have
         return cell
     }
