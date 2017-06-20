@@ -254,7 +254,12 @@ class SignatureController: UIViewController {
         {
             books[book].setValue((totalTime), forKey: "lastTimeRead")
             totalTime += books[book].value(forKey: "timeRead") as! UIntMax
-            books[book].setValue((totalTime - time), forKey: "timeRead")
+            var timeDif: UIntMax = time
+            if !didChangeTime
+            {
+                timeDif = totalTime - time
+            }
+            books[book].setValue(timeDif, forKey: "timeRead")
             books[book].setValue(pages, forKey: "pagesRead")
             
             do {
