@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import CoreData
+import UserNotifications
 
 class TimerPageController: UIViewController {
     
@@ -19,16 +20,15 @@ class TimerPageController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     
     var book = 0
-    
     var books: [NSManagedObject] = []
     
     var totalTime: UIntMax = 3600
-    
     var time:UIntMax = 3600
     
     var timer = Timer()
     
     var alarm: Bool = true
+    var Uuid: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +61,16 @@ class TimerPageController: UIViewController {
         //runs the start function if set to start
         if startButton.title(for: .normal) == "Start"
         {
+            let notification = UILocalNotification()
+            notification.alertBody = "Finished Reading!"
+            notification.alertAction = "open"
+            notification.fireDate = NSDate(timeIntervalSinceNow: Double(time)) as Date
+            notification.soundName = UILocalNotificationDefaultSoundName
+            Uuid = UUID().uuidString
+            notification.userInfo = ["UUID": Uuid]
+            
+            UIApplication.shared.scheduleLocalNotification(notification)
+            
             //starts the timer
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateCounter), userInfo: nil, repeats: true)
             
@@ -71,6 +81,7 @@ class TimerPageController: UIViewController {
         {
             //stops the timer
             timer.invalidate()
+            closeNotification()
             
             if alarmPlayer != nil && alarmPlayer.isPlaying {
                 alarmPlayer.stop()
@@ -222,6 +233,10 @@ class TimerPageController: UIViewController {
         
         if totalTime == 0 || (totalTime - time) == 0
         {
+            //stops the timer
+            timer.invalidate()
+            closeNotification()
+            
             let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
             
             let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookNavController")
@@ -234,6 +249,7 @@ class TimerPageController: UIViewController {
         {
             //stops the timer
             timer.invalidate()
+            closeNotification()
             
             let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
             let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "PagesRead") as? PagesReadController
@@ -266,6 +282,22 @@ class TimerPageController: UIViewController {
             books = try managedContext.fetch(fetchRequest) as! [Book]
         } catch let error as NSError {
             print("Could not fetch. \(error)")
+        }
+    }
+    
+    func closeNotification()
+    {
+        let scheduledNotifications: [UILocalNotification]? = UIApplication.shared.scheduledLocalNotifications
+        guard scheduledNotifications != nil else {return}
+        
+        for notification in scheduledNotifications! {
+            if (notification.userInfo!["UUID"] as? String != nil)
+            {
+                if (notification.userInfo!["UUID"] as! String == Uuid) {
+                    UIApplication.shared.cancelLocalNotification(notification)
+                    break
+                }
+            }
         }
     }
         
