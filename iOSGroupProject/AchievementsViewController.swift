@@ -93,22 +93,27 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
             achievements[1] = "Bookworm2"
             case 2..<5:
             achievements[1] = "Bookworm1"
-            progresses[1] = Float(bookNumber/3)
+            progresses[1] = Float(Double(bookNumber) / 5)
+            print("This is \(bookNumber)")
+            print("This is \(progresses[1])")
             case 10:
             achievements[1] = "Bookworm3"
             case 6..<10:
-                progresses[1] = Float((bookNumber-5)/4)
+                progresses[1] = Float(Double(bookNumber-5) / 5)
+                achievements[1] = "Bookworm2"
+            case 11..<25:
+                progresses[1] = Float(Double(bookNumber-10) / 14)
                 achievements[1] = "Bookworm2"
             case 25:
             achievements[1] = "Bookworm4"
             case 26..<50:
                 achievements[1] = "Bookworm4"
-                progresses[1] = ((roundf(Float(bookNumber/10)))/3)
+                progresses[1] = Float(Double(bookNumber-25) / 24)
             case 50:
             achievements[1] = "Bookworm5"
             case 51..<100:
                 achievements[1] = "Bookworm5"
-                progresses[1] = Float((bookNumber-50)/10)
+                progresses[1] = Float(Double(bookNumber-50) / 50)
             case 100:
             achievements[1] = "Bookworm6"
             default:
@@ -120,24 +125,27 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
                 achievements[0] = "BookPhoto1"
             case 2..<5:
                 achievements[0] = "BookPhoto1"
-                progresses[0] = Float(imageNum/3)
+                progresses[0] = Float(Double(imageNum) / 5)
             case 5:
                 achievements[0] = "BookPhoto2"
             case 6..<10:
                 achievements[0] = "BookPhoto2"
-                progresses[0] = Float((imageNum-5)/4)
+                progresses[0] = Float(Double(imageNum-5) / 5)
             case 10:
+                achievements[0] = "BookPhoto3"
+            case 11..<25:
+                progresses[0] = Float(Double(imageNum-10) / 14)
                 achievements[0] = "BookPhoto3"
             case 25:
                 achievements[0] = "BookPhoto4"
             case 26..<50:
                 achievements[0] = "BookPhoto4"
-                progresses[0] = ((roundf(Float(imageNum/10)))/3)
+                progresses[0] = Float(Double(imageNum-25) / 24)
             case 50:
                 achievements[0] = "BookPhoto5"
             case 51..<100:
                 achievements[0] = "BookPhoto5"
-                progresses[0] = Float((imageNum-50)/10)
+                progresses[0] = Float(Double(imageNum-50) / 50)
             case 100:
                 achievements[0] = "BookPhoto6"
             default:
@@ -149,24 +157,27 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
                 achievements[3] = "Signatures1"
             case 2..<5:
                 achievements[3] = "Signatures1"
-                progresses[3] = Float(Double(numSigs) * 0.1)
+                progresses[3] = Float(Double(numSigs) / 5)
             case 5:
                 achievements[3] = "Signatures2"
             case 6..<10:
                 achievements[3] = "Signatures2"
-                progresses[3] = Float((numSigs-5)/4)
+                progresses[3] = Float(Double(numSigs-5) / 5)
+            case 11..<25:
+                progresses[3] = Float(Double(numSigs-10) / 14)
+                achievements[3] = "Signatures3"
             case 10:
                 achievements[3] = "Signatures3"
             case 25:
                 achievements[3] = "Signatures4"
             case 26..<50:
                 achievements[3] = "Signatures4"
-                progresses[3] = ((roundf(Float(numSigs/10)))/3)
+                progresses[3] = Float(Double(numSigs-25) / 24)
             case 50:
                 achievements[3] = "Signatures5"
             case 51..<100:
                 achievements[3] = "Signatures5"
-                progresses[3] = Float((numSigs-50)/10)
+                progresses[3] = Float(Double(numSigs-50) / 50)
             case 100:
                 achievements[3] = "Signatures6"
             default:
