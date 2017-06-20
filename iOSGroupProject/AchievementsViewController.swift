@@ -22,6 +22,8 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
     var pages = 0
     var signatures: [NSManagedObject] = []
     var numSigs = 0
+    var prevSig = 0
+    var streak = 0
     var imageNum = 0
     var imageCount = 0
     var totalPages = 0
@@ -49,8 +51,16 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
             if signatures.count > 0 {
                 for i in 0...(signatures.count - 1) {
              let numSigss = signatures[i].value(forKey: "day") as! Int
-                    if numSigss != 0 {
+                    if i > 0 {
+             prevSig = signatures[i-1].value(forKey: "day") as! Int
+                    }
+                    if numSigss != 0 && streak != 1{
                     numSigs = numSigs + 1
+                    streak = 1
+                    }
+                    if numSigss - prevSig == 0 {
+                        streak = streak + 1
+                        print("\(streak)")
                     }
                 }
             }
@@ -86,7 +96,7 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
                     }
                 }
             }
-            switch bookNumber {// make progresses[]
+            switch bookNumber {
             case 1:
             achievements[1] = "Bookworm1"
             case 5:
@@ -182,7 +192,38 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
                 achievements[3] = "Signatures6"
             default:
                 achievements[3] = "SignaturesUnachieved"
-
+            }
+            
+            switch streak {
+            case 1:
+                achievements[4] = "Streak1"
+            case 2:
+                achievements[4] = "Streak1"
+                progresses[4] = Float(0.5)
+            case 3:
+                achievements[4] = "Streak2"
+            case 4..<7:
+                achievements[4] = "Streak2"
+                progresses[4] = Float(Double(streak-3) / 4)
+            case 8..<14:
+                progresses[4] = Float(Double(streak-7) / 6)
+                achievements[4] = "Streak3"
+            case 7:
+                achievements[4] = "Streak3"
+            case 14:
+                achievements[4] = "Streak4"
+            case 15..<30:
+                achievements[4] = "Streak4"
+                progresses[4] = Float(Double(streak-14) / 16)
+            case 30:
+                achievements[4] = "Streak5"
+            case 31..<60:
+                achievements[4] = "Streak5"
+                progresses[4] = Float(Double(streak-30) / 29)
+            case 60:
+                achievements[4] = "Streak6"
+            default:
+                achievements[4] = "StreakUnachieved"
             }
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
