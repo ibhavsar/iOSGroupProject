@@ -106,18 +106,16 @@ class PagesReadController: UIViewController, UITextFieldDelegate {
         {
             print("Error could not save pages.")
         }
-        openedTimerPage?.modalPresentationStyle = .popover
         
-        let popoverController = openedTimerPage?.popoverPresentationController
-        popoverController?.sourceView = sender as? UIView
-        popoverController?.permittedArrowDirections = .any
-        
-        present(openedTimerPage!, animated: true, completion: nil)
+        self.revealViewController().setFront(openedTimerPage, animated: true)
     }
     
     @IBAction func back(_ sender: Any) {
-        (self.presentingViewController as! TimerPageController).didExit = false
-        self.dismiss(animated: true, completion: nil)
+        let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+        let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "TimerPage") as? TimerPageController
+        openedTimerPage?.book = book
+        
+        self.revealViewController().setFront(openedTimerPage, animated: true)
     }
     
     /*

@@ -27,13 +27,13 @@
                                 <rect key="frame" x="0.0" y="484" width="414" height="136"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Time Spent Reading Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="7ka-4b-GAO">
-                                <rect key="frame" x="0.0" y="281.66666666666669" width="414" height="136"/>
+                                <rect key="frame" x="0.0" y="282" width="414" height="136"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Time Spent Reading Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="eaz-ob-BJZ">
-                                <rect key="frame" x="0.0" y="90.333333333333314" width="414" height="136"/>
+                                <rect key="frame" x="0.0" y="90" width="414" height="136"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the book's title:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="BR4-gk-i0E">
-                                <rect key="frame" x="20" y="99.333333333333343" width="374" height="54.333333333333343"/>
+                                <rect key="frame" x="20" y="99" width="374" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZrZ-4X-3Yf">
                                         <variation key="heightClass=compact-widthClass=compact" constant="28"/>
@@ -60,7 +60,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Book Title" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="10" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tAg-jy-lkL">
-                                <rect key="frame" x="20" y="161.66666666666666" width="374" height="40"/>
+                                <rect key="frame" x="20" y="162" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.96852236989999996" green="0.96868795159999999" blue="0.96851199870000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -73,7 +73,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the number of pages:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="4Oo-7D-ctv">
-                                <rect key="frame" x="20" y="283.66666666666669" width="374" height="62"/>
+                                <rect key="frame" x="20" y="284" width="374" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3wB-8h-r5O">
                                         <variation key="heightClass=compact-widthClass=compact" constant="25"/>
@@ -100,7 +100,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="999" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="10" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="He9-JR-Vjn">
-                                <rect key="frame" x="20" y="353.66666666666669" width="374" height="40"/>
+                                <rect key="frame" x="20" y="354" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.96852236989999996" green="0.96868795159999999" blue="0.96851199870000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -113,7 +113,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="kha-f5-ggd">
-                                <rect key="frame" x="135.66666666666663" y="487.99999999999994" width="144.33333333333337" height="61.666666666666572"/>
+                                <rect key="frame" x="135" y="488" width="145" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MAo-rk-Yfr">
                                         <variation key="heightClass=compact-widthClass=compact" constant="25"/>
@@ -140,7 +140,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="10" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tOk-xU-bnc">
-                                <rect key="frame" x="20" y="557.66666666666663" width="374" height="40"/>
+                                <rect key="frame" x="20" y="558" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.96852236989999996" green="0.96868795159999999" blue="0.96851199870000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -153,14 +153,14 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ers-aS-aQy" userLabel="Back Button">
-                                <rect key="frame" x="83.333333333333343" y="639.66666666666663" width="82.000000000000028" height="82"/>
+                                <rect key="frame" x="83" y="640" width="82" height="82"/>
                                 <state key="normal" image="Back Button"/>
                                 <connections>
                                     <action selector="back:" destination="N6V-C1-CzX" eventType="touchUpInside" id="nrD-Q7-iSG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC6-qK-SX9" userLabel="Forward Button">
-                                <rect key="frame" x="248.66666666666669" y="639.66666666666663" width="82.000000000000057" height="82"/>
+                                <rect key="frame" x="249" y="640" width="82" height="82"/>
                                 <state key="normal" image="ForwardButton"/>
                                 <connections>
                                     <action selector="continue:" destination="N6V-C1-CzX" eventType="touchUpInside" id="BXL-Od-IbW"/>
@@ -265,24 +265,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxQ-Oh-fkJ" userLabel="Back Button">
-                                <rect key="frame" x="83.333333333333343" y="639.66666666666663" width="82.000000000000028" height="82"/>
+                                <rect key="frame" x="83" y="640" width="82" height="82"/>
                                 <state key="normal" image="Back Button"/>
                                 <connections>
                                     <action selector="back:" destination="61v-kG-pKT" eventType="touchUpInside" id="bl6-pS-EIQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNC-gm-4dk" userLabel="Forward Button">
-                                <rect key="frame" x="248.66666666666669" y="639.66666666666663" width="82.000000000000057" height="82"/>
+                                <rect key="frame" x="249" y="640" width="82" height="82"/>
                                 <state key="normal" image="ForwardButton"/>
                                 <connections>
                                     <action selector="continue:" destination="61v-kG-pKT" eventType="touchUpInside" id="haJ-xE-khj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="nF0-Fa-rkm">
-                                <rect key="frame" x="57.666666666666657" y="116.33333333333331" width="299" height="209"/>
+                                <rect key="frame" x="58" y="116" width="299" height="209"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to take a photo of the book's cover" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="hk6-xM-4WY">
-                                <rect key="frame" x="36" y="406.66666666666669" width="342" height="70"/>
+                                <rect key="frame" x="36" y="407" width="342" height="70"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>

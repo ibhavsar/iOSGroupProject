@@ -29,7 +29,6 @@ class TimerPageController: UIViewController {
     var timer = Timer()
     
     var alarm: Bool = true
-    var didExit: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,15 +49,6 @@ class TimerPageController: UIViewController {
         }
         
         updateTime()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        if didExit
-        {
-            self.dismiss(animated: true, completion: nil)
-        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -232,12 +222,16 @@ class TimerPageController: UIViewController {
         
         if totalTime == 0 || (totalTime - time) == 0
         {
-            self.dismiss(animated: false, completion: nil)
+            let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+            
+            let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookNavController")
+            
+            (bookSaving.childViewControllers[0] as! BookScreenController).book = book
+            
+            self.revealViewController().setFront(bookSaving, animated: true)
         }
         else
         {
-            didExit = true
-            
             //stops the timer
             timer.invalidate()
             
@@ -247,13 +241,8 @@ class TimerPageController: UIViewController {
             openedTimerPage?.book = book
             openedTimerPage?.time = time
             openedTimerPage?.totalTime = totalTime
-            openedTimerPage?.modalPresentationStyle = .popover
-            
-            let popoverController = openedTimerPage?.popoverPresentationController
-            popoverController?.sourceView = sender as? UIView
-            popoverController?.permittedArrowDirections = .any
-            
-            present(openedTimerPage!, animated: true, completion: nil)
+
+            self.revealViewController().setFront(openedTimerPage, animated: true)
         }
     }
     

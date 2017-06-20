@@ -315,13 +315,24 @@ class SignatureController: UIViewController {
     @IBAction func `continue`(_ sender: Any) {
         save()
         saveTimeDone()
-        self.presentingViewController?.dismiss(animated: false, completion: nil)
-        self.presentingViewController?.dismiss(animated: false, completion: nil)
-        self.dismiss(animated: false, completion: nil)
+        let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+        
+        let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookNavController")
+        
+        (bookSaving.childViewControllers[0] as! BookScreenController).book = book
+        
+        self.revealViewController().setFront(bookSaving, animated: true)
     }
     
     @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+        let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "PagesRead") as? PagesReadController
+        
+        openedTimerPage?.book = book
+        openedTimerPage?.time = time
+        openedTimerPage?.totalTime = totalTime
+        
+        self.revealViewController().setFront(openedTimerPage, animated: true)
     }
     
     /*

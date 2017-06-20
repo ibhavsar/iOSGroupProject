@@ -17,8 +17,6 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
     
     var books: [NSManagedObject] = []
     
-    var newBook: Bool = false
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,11 +33,6 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        if newBook
-        {
-            self.dismiss(animated: true, completion: nil)
-        }
         
         getData()
     }
@@ -91,23 +84,17 @@ class BooksViewerController: UIViewController, UICollectionViewDelegate, UIColle
             
             let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookSave") as? BookTitleViewController
             
-            bookSaving?.modalPresentationStyle = .popover
-            
-            let popoverController = bookSaving?.popoverPresentationController
-            
-            popoverController?.sourceView = self.view as UIView
-            
-            popoverController?.permittedArrowDirections = .any
-            
-            present(bookSaving!, animated: true, completion: nil)
-            
-            newBook = true
+            self.revealViewController().setFront(bookSaving, animated: true)
         }
         else
         {
-            bookb = indexPath.row
+            let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
             
-            self.dismiss(animated: true, completion: nil)
+            let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookNavController")
+        
+            (bookSaving.childViewControllers[0] as! BookScreenController).book = indexPath.row
+            
+            self.revealViewController().setFront(bookSaving, animated: true)
         }
     }
     
