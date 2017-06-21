@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-
 class HomeViewController: UIViewController {
     var avatarNames: [NSManagedObject] = []
     var avatarName = ""

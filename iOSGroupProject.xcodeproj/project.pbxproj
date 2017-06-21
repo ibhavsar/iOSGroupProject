@@ -17,6 +17,7 @@
 		3F1D07371EA798D8009A0A10 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */; };
 		3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */; };
 		3F1D073B1EA798EC009A0A10 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */; };
+		3F490C1E1EF94FA400A3F3C2 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F490C1D1EF94FA400A3F3C2 /* Calendar.storyboard */; };
 		3F52DE661EA8729C00883FAF /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F52DE651EA8729C00883FAF /* MenuController.swift */; };
 		3F6317481EE7528E00E12DF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F63173D1EE7528E00E12DF1 /* LaunchScreen.xib */; };
 		3F6317491EE7528E00E12DF1 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F63173F1EE7528E00E12DF1 /* Main2.storyboard */; };
@@ -37,6 +38,7 @@
 		3F78F0071E8EAEF100091FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F0061E8EAEF100091FBE /* ViewController.swift */; };
 		3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F00B1E8EAEF100091FBE /* Assets.xcassets */; };
 		3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F00D1E8EAEF100091FBE /* LaunchScreen.storyboard */; };
+		3F8FC8C11EF98D86000ACD28 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8FC8C01EF98D86000ACD28 /* CustomCell.swift */; };
 		3FA5E9861ECDD07000390202 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA5E9851ECDD07000390202 /* PictureViewController.swift */; };
 		3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCEE8171EC9DDA400BE725D /* Avatar.storyboard */; };
 		3FCEE81A1EC9DDAE00BE725D /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE8191EC9DDAE00BE725D /* AvatarCollectionViewCell.swift */; };
@@ -46,6 +48,7 @@
 		3FCEE8281EC9DE3000BE725D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */; };
 		3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCEE8291EC9E0DB00BE725D /* Main.storyboard */; };
 		3FE6BB351EE78C2400231940 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6BB341EE78C2400231940 /* TutorialViewController.swift */; };
+		C2704AC5D2760375DA73AEBD /* Pods_iOSGroupProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE210B3E1C550A9EEAD1457 /* Pods_iOSGroupProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,7 @@
 		3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		3F490C1D1EF94FA400A3F3C2 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		3F52DE651EA8729C00883FAF /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		3F63173E1EE7528E00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3F6317401EE7528E00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 		3F78F00B1E8EAEF100091FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F78F00E1E8EAEF100091FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F78F0101E8EAEF100091FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8FC8C01EF98D86000ACD28 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		3FA5E9851ECDD07000390202 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		3FCEE8171EC9DDA400BE725D /* Avatar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Avatar.storyboard; path = ../Avatar.storyboard; sourceTree = "<group>"; };
 		3FCEE8191EC9DDAE00BE725D /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarCollectionViewCell.swift; path = ../AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -93,6 +98,9 @@
 		3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../WelcomeViewController.swift; sourceTree = "<group>"; };
 		3FCEE8291EC9E0DB00BE725D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3FE6BB341EE78C2400231940 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		7CE210B3E1C550A9EEAD1457 /* Pods_iOSGroupProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSGroupProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B86874D93F3D8CCF985052 /* Pods-iOSGroupProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSGroupProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSGroupProject/Pods-iOSGroupProject.release.xcconfig"; sourceTree = "<group>"; };
+		DB1A247C72D785AB317AF08E /* Pods-iOSGroupProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSGroupProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSGroupProject/Pods-iOSGroupProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +108,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2704AC5D2760375DA73AEBD /* Pods_iOSGroupProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3272A97587FB84D239634DAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB1A247C72D785AB317AF08E /* Pods-iOSGroupProject.debug.xcconfig */,
+				D0B86874D93F3D8CCF985052 /* Pods-iOSGroupProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3F1D07311EA79087009A0A10 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +132,15 @@
 				3F1D072D1EA7907A009A0A10 /* SidebarMenu-Bridging-Header.h */,
 			);
 			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		3F490C1F1EF951E300A3F3C2 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				3F8FC8C01EF98D86000ACD28 /* CustomCell.swift */,
+				3F490C1D1EF94FA400A3F3C2 /* Calendar.storyboard */,
+			);
+			name = Calendar;
 			sourceTree = "<group>";
 		};
 		3F63173A1EE7527A00E12DF1 /* Local Notifications */ = {
@@ -164,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				3F78F0031E8EAEF100091FBE /* iOSGroupProject */,
+				3272A97587FB84D239634DAE /* Pods */,
+				6A14520A87889C78906CC278 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +208,7 @@
 		3F78F0031E8EAEF100091FBE /* iOSGroupProject */ = {
 			isa = PBXGroup;
 			children = (
+				3F490C1F1EF951E300A3F3C2 /* Calendar */,
 				3F63173A1EE7527A00E12DF1 /* Local Notifications */,
 				3F74DAC81EAE32400074A729 /* Book Screen */,
 				3F1D07311EA79087009A0A10 /* SWRevealViewController */,
@@ -226,9 +256,16 @@
 		3FCEE82E1EC9E34700BE725D /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				3FCEE8271EC9DE3000BE725D /* WelcomeViewController.swift */,
 			);
 			name = Tutorial;
+			sourceTree = "<group>";
+		};
+		6A14520A87889C78906CC278 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CE210B3E1C550A9EEAD1457 /* Pods_iOSGroupProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F78F0131E8EAEF100091FBE /* Build configuration list for PBXNativeTarget "iOSGroupProject" */;
 			buildPhases = (
+				31A052C9DC4139D06DAB4FDF /* [CP] Check Pods Manifest.lock */,
 				3F78EFFD1E8EAEF000091FBE /* Sources */,
 				3F78EFFE1E8EAEF000091FBE /* Frameworks */,
 				3F78EFFF1E8EAEF000091FBE /* Resources */,
+				05D4B8F80E1C565AF9F5F402 /* [CP] Embed Pods Frameworks */,
+				0FA11DCA501D9F2B128E38A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,23 +332,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F490C1E1EF94FA400A3F3C2 /* Calendar.storyboard in Resources */,
 				3F63174B1EE7528E00E12DF1 /* Info.plist in Resources */,
 				3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */,
 				3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */,
 				3F74DACA1EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 in Resources */,
-				3F1562FF1EC23B3E00303C60 /* BookSelection.storyboard in Resources */,
 				3F63174A1EE7528E00E12DF1 /* Images.xcassets in Resources */,
 				3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */,
 				3F6317491EE7528E00E12DF1 /* Main2.storyboard in Resources */,
 				3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */,
 				3F6317481EE7528E00E12DF1 /* LaunchScreen.xib in Resources */,
-				3FCEE8221EC9DE0D00BE725D /* tutorial.storyboard in Resources */,
 				3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */,
 				3F7338271ECC77DD00B0DB04 /* BookSaving.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05D4B8F80E1C565AF9F5F402 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSGroupProject/Pods-iOSGroupProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0FA11DCA501D9F2B128E38A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSGroupProject/Pods-iOSGroupProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31A052C9DC4139D06DAB4FDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F78EFFD1E8EAEF000091FBE /* Sources */ = {
@@ -326,6 +413,7 @@
 				3F1562FB1EBB563700303C60 /* BooksViewerController.swift in Sources */,
 				3F1729401EE58753000986DB /* SignatureController.swift in Sources */,
 				3F7338071ECB33E600B0DB04 /* BookTitleViewController.swift in Sources */,
+				3F8FC8C11EF98D86000ACD28 /* CustomCell.swift in Sources */,
 				3FCEE81C1EC9DDB700BE725D /* AvatarSelectionViewController.swift in Sources */,
 				3FCEE8281EC9DE3000BE725D /* WelcomeViewController.swift in Sources */,
 				3F1D07371EA798D8009A0A10 /* AchievementsViewController.swift in Sources */,
@@ -471,6 +559,7 @@
 		};
 		3F78F0141E8EAEF100091FBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1A247C72D785AB317AF08E /* Pods-iOSGroupProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -488,6 +577,7 @@
 		};
 		3F78F0151E8EAEF100091FBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0B86874D93F3D8CCF985052 /* Pods-iOSGroupProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

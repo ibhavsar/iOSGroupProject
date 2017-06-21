@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ak3-Qy-udt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ak3-Qy-udt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -235,7 +235,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lho-zf-sax">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home copy 1x" translatesAutoresizingMaskIntoConstraints="NO" id="Lho-zf-sax">
                                                     <rect key="frame" x="18" y="8" width="35" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -318,7 +318,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.92620444300000004" green="0.93612229820000004" blue="0.94110381600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="bld-de-qtF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="B00-bR-UIc"/>
+                                            <segue destination="ehJ-uf-mM0" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="7r4-m5-cDQ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="4o8-z9-e6m">
@@ -408,6 +408,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVv-f2-KV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="908" y="123.68815592203899"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="WqS-cT-0Tq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Calendar" id="ehJ-uf-mM0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0C-hV-5qw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="642"/>
         </scene>
         <!--Main2-->
         <scene sceneID="LFp-u1-JbB">
@@ -661,7 +669,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abQ-h1-P8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3552.8000000000002" y="735.38230884557731"/>
+            <point key="canvasLocation" x="3553" y="776"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="CHA-D5-Ri8">
@@ -742,24 +750,6 @@
             <point key="canvasLocation" x="2613.5999999999999" y="13.943028485757123"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="vxT-1T-2Wf">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bld-de-qtF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mTE-Z9-KOv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="E6d-FS-BQl" kind="relationship" relationship="rootViewController" id="B3J-UC-Lu8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m99-5l-i0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2613.5999999999999" y="735.38230884557731"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="Ych-O7-sXZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aOL-qo-yIR" sceneMemberID="viewController">
@@ -788,9 +778,10 @@
         <image name="Time Spent Reading Line" width="84" height="1"/>
         <image name="Time Spent Reading Rectangle" width="254" height="102"/>
         <image name="WhatsYourName" width="228" height="21"/>
+        <image name="home copy 1x" width="255" height="255"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WKq-cf-sEK"/>
-        <segue reference="Dip-PH-Nd7"/>
+        <segue reference="56w-iI-oRM"/>
     </inferredMetricsTieBreakers>
 </document>
