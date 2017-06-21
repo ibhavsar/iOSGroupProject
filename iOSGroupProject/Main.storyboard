@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ak3-Qy-udt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ak3-Qy-udt">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -383,7 +383,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="31v-r7-HoI" userLabel="header">
-                                <rect key="frame" x="0.0" y="64" width="414" height="153"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="152"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="Time Spent Reading Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="mZd-a2-bOu">
                                 <rect key="frame" x="20" y="318" width="374" height="136"/>
@@ -431,7 +431,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="urN-aQ-Oh4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="urN-aQ-Oh4">
                                 <rect key="frame" x="151" y="399" width="112" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -542,15 +542,15 @@
                                 <exclude reference="D5z-5g-pcK"/>
                                 <exclude reference="SlU-jZ-bcv"/>
                                 <exclude reference="Wdq-kp-A9w"/>
-                                <exclude reference="6GQ-59-g2k"/>
-                                <exclude reference="F8P-bn-lCI"/>
-                                <exclude reference="eez-2j-6bG"/>
                                 <exclude reference="AAA-Wx-dnn"/>
                                 <exclude reference="CvU-v3-CAe"/>
                                 <exclude reference="eGs-mA-OfR"/>
                                 <exclude reference="juw-WR-44g"/>
                                 <exclude reference="s4S-o0-Qmo"/>
                                 <exclude reference="v7Y-QP-NO1"/>
+                                <exclude reference="6GQ-59-g2k"/>
+                                <exclude reference="F8P-bn-lCI"/>
+                                <exclude reference="eez-2j-6bG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -562,11 +562,6 @@
                                 <include reference="Wdq-kp-A9w"/>
                                 <exclude reference="aZT-Mw-Gwa"/>
                                 <exclude reference="ej7-oq-8aS"/>
-                                <exclude reference="1HH-0N-NBV"/>
-                                <include reference="6GQ-59-g2k"/>
-                                <include reference="F8P-bn-lCI"/>
-                                <exclude reference="dFL-WM-18Y"/>
-                                <include reference="eez-2j-6bG"/>
                                 <include reference="AAA-Wx-dnn"/>
                                 <include reference="DHb-Tr-ggX"/>
                                 <exclude reference="DdC-QH-gYd"/>
@@ -581,6 +576,11 @@
                                 <include reference="juw-WR-44g"/>
                                 <include reference="s4S-o0-Qmo"/>
                                 <include reference="v7Y-QP-NO1"/>
+                                <exclude reference="1HH-0N-NBV"/>
+                                <include reference="6GQ-59-g2k"/>
+                                <include reference="F8P-bn-lCI"/>
+                                <exclude reference="dFL-WM-18Y"/>
+                                <include reference="eez-2j-6bG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -592,11 +592,6 @@
                                 <include reference="Wdq-kp-A9w"/>
                                 <exclude reference="aZT-Mw-Gwa"/>
                                 <exclude reference="ej7-oq-8aS"/>
-                                <exclude reference="1HH-0N-NBV"/>
-                                <include reference="6GQ-59-g2k"/>
-                                <include reference="F8P-bn-lCI"/>
-                                <exclude reference="dFL-WM-18Y"/>
-                                <include reference="eez-2j-6bG"/>
                                 <include reference="AAA-Wx-dnn"/>
                                 <include reference="DHb-Tr-ggX"/>
                                 <exclude reference="DdC-QH-gYd"/>
@@ -611,6 +606,11 @@
                                 <include reference="juw-WR-44g"/>
                                 <include reference="s4S-o0-Qmo"/>
                                 <include reference="v7Y-QP-NO1"/>
+                                <exclude reference="1HH-0N-NBV"/>
+                                <include reference="6GQ-59-g2k"/>
+                                <include reference="F8P-bn-lCI"/>
+                                <exclude reference="dFL-WM-18Y"/>
+                                <include reference="eez-2j-6bG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -665,31 +665,40 @@
                                 <rect key="frame" x="20" y="107" width="374" height="629"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="60" minimumInteritemSpacing="60" id="4xe-qd-WVG">
-                                    <size key="itemSize" width="120" height="120"/>
+                                    <size key="itemSize" width="170" height="185"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="achieve_collection_cell" id="tn6-tc-3xC" customClass="AchieveCollectionViewCell" customModule="iOSGroupProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <rect key="frame" x="102" y="0.0" width="170" height="185"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="185"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MLV-7c-SK6" userLabel="achieveProgressView">
-                                                    <rect key="frame" x="15" y="110" width="90" height="2"/>
+                                                    <rect key="frame" x="35" y="110" width="100" height="2"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="progressTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </progressView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qR6-rB-4Tz" userLabel="achieveImageView">
-                                                    <rect key="frame" x="15" y="0.0" width="90" height="90"/>
+                                                    <rect key="frame" x="35" y="0.0" width="100" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnJ-Th-eYh" userLabel="captionLabel">
+                                                    <rect key="frame" x="0.0" y="114" width="170" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <connections>
                                             <outlet property="AchieveImageView" destination="qR6-rB-4Tz" id="kOE-42-zeG"/>
+                                            <outlet property="captionLabel" destination="GnJ-Th-eYh" id="6Ve-mW-e9U"/>
+                                            <outlet property="progressView" destination="MLV-7c-SK6" id="xdt-ja-Ox5"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -703,7 +712,7 @@
                             <constraint firstItem="VeQ-UR-rf7" firstAttribute="top" secondItem="kfs-XA-hI2" secondAttribute="bottom" id="ucC-zQ-Qsq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="v2d-OO-jVr">
+                    <navigationItem key="navigationItem" title="Achievements" id="v2d-OO-jVr">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="LRe-yT-4rX"/>
                     </navigationItem>
                     <connections>
@@ -750,7 +759,29 @@
                     <view key="view" contentMode="scaleToFill" id="YgL-vb-aJB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me2-MP-iRn">
+                                <rect key="frame" x="0.0" y="102" width="414" height="567"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hello, this app was made by: Stephen, Maria, Ishan!">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="me2-MP-iRn" firstAttribute="leading" secondItem="YgL-vb-aJB" secondAttribute="leading" id="1PU-AW-gzS"/>
+                            <constraint firstItem="me2-MP-iRn" firstAttribute="top" secondItem="E6T-Jh-g8F" secondAttribute="bottom" constant="38" id="EHk-4L-9Mx"/>
+                            <constraint firstItem="me2-MP-iRn" firstAttribute="leading" secondItem="YgL-vb-aJB" secondAttribute="leading" id="ZJF-1e-ryc"/>
+                            <constraint firstAttribute="trailing" secondItem="me2-MP-iRn" secondAttribute="trailing" id="aD3-mq-ah7"/>
+                            <constraint firstItem="CKx-0Z-VXY" firstAttribute="top" secondItem="me2-MP-iRn" secondAttribute="bottom" constant="67" id="nKX-3s-50y"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ktA-Zc-oTL">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="xee-PB-mIi"/>
@@ -761,7 +792,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3M8-YX-9xd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3552.8000000000002" y="1436.1319340329835"/>
+            <point key="canvasLocation" x="3552.1739130434785" y="1435.5978260869567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zvd-Yz-8Or">

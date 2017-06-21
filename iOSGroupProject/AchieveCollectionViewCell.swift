@@ -10,6 +10,7 @@ import UIKit
 
 class AchieveCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var AchieveImageView: UIImageView!
-    
+   
+    @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var progressView: UIProgressView!
 }
