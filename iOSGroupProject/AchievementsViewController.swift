@@ -59,7 +59,7 @@ class AchievementsViewController: UIViewController, UICollectionViewDelegate, UI
                     numSigs = numSigs + 1
                     streak = 1
                     }
-                    if numSigss - prevSig == 0 {
+                    if numSigss - prevSig == 0 || (prevSig == 30 && numSigss == 1) || (prevSig == 31 && numSigss == 1){
                         streak = streak + 1
                         print("\(streak)")
                     }
