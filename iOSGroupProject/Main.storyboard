@@ -759,7 +759,29 @@
                     <view key="view" contentMode="scaleToFill" id="YgL-vb-aJB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me2-MP-iRn">
+                                <rect key="frame" x="0.0" y="102" width="414" height="567"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hello, this app was made by: Stephen, Maria, Ishan!">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="me2-MP-iRn" firstAttribute="leading" secondItem="YgL-vb-aJB" secondAttribute="leading" id="1PU-AW-gzS"/>
+                            <constraint firstItem="me2-MP-iRn" firstAttribute="top" secondItem="E6T-Jh-g8F" secondAttribute="bottom" constant="38" id="EHk-4L-9Mx"/>
+                            <constraint firstItem="me2-MP-iRn" firstAttribute="leading" secondItem="YgL-vb-aJB" secondAttribute="leading" id="ZJF-1e-ryc"/>
+                            <constraint firstAttribute="trailing" secondItem="me2-MP-iRn" secondAttribute="trailing" id="aD3-mq-ah7"/>
+                            <constraint firstItem="CKx-0Z-VXY" firstAttribute="top" secondItem="me2-MP-iRn" secondAttribute="bottom" constant="67" id="nKX-3s-50y"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ktA-Zc-oTL">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="xee-PB-mIi"/>
@@ -770,7 +792,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3M8-YX-9xd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3552.8000000000002" y="1436.1319340329835"/>
+            <point key="canvasLocation" x="3552.1739130434785" y="1435.5978260869567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zvd-Yz-8Or">
