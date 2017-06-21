@@ -17,6 +17,7 @@
 		3F1D07371EA798D8009A0A10 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */; };
 		3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */; };
 		3F1D073B1EA798EC009A0A10 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */; };
+		3F1DC3261EEE3157007E1300 /* AchieveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1DC3251EEE3157007E1300 /* AchieveCollectionViewCell.swift */; };
 		3F490C1E1EF94FA400A3F3C2 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F490C1D1EF94FA400A3F3C2 /* Calendar.storyboard */; };
 		3F52DE661EA8729C00883FAF /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F52DE651EA8729C00883FAF /* MenuController.swift */; };
 		3F6317481EE7528E00E12DF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F63173D1EE7528E00E12DF1 /* LaunchScreen.xib */; };
@@ -38,6 +39,7 @@
 		3F78F0071E8EAEF100091FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F0061E8EAEF100091FBE /* ViewController.swift */; };
 		3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F00B1E8EAEF100091FBE /* Assets.xcassets */; };
 		3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F00D1E8EAEF100091FBE /* LaunchScreen.storyboard */; };
+		3F86779A1EF8058700ECD3FC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8677991EF8058700ECD3FC /* WelcomeViewController.swift */; };
 		3F8FC8C11EF98D86000ACD28 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8FC8C01EF98D86000ACD28 /* CustomCell.swift */; };
 		3FA5E9861ECDD07000390202 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA5E9851ECDD07000390202 /* PictureViewController.swift */; };
 		3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCEE8171EC9DDA400BE725D /* Avatar.storyboard */; };
@@ -64,6 +66,7 @@
 		3F1D07361EA798D8009A0A10 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		3F1DC3251EEE3157007E1300 /* AchieveCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchieveCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F490C1D1EF94FA400A3F3C2 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		3F52DE651EA8729C00883FAF /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		3F63173E1EE7528E00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		3F78F00B1E8EAEF100091FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F78F00E1E8EAEF100091FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F78F0101E8EAEF100091FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8677991EF8058700ECD3FC /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3F8FC8C01EF98D86000ACD28 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		3FA5E9851ECDD07000390202 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		3FCEE8171EC9DDA400BE725D /* Avatar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Avatar.storyboard; path = ../Avatar.storyboard; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 		3FCEE82E1EC9E34700BE725D /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				3F8677991EF8058700ECD3FC /* WelcomeViewController.swift */,
 			);
 			name = Tutorial;
 			sourceTree = "<group>";
