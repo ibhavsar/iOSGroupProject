@@ -9,12 +9,10 @@
 import UIKit
 import CoreData
 
-var bookb: Int? = nil
-    
 class BookScreenController: UIViewController {
 
     var books: [NSManagedObject] = []
-    
+    var book: Int? = nil
 
     @IBOutlet weak var imageView: UIImageView!
     
@@ -31,13 +29,7 @@ class BookScreenController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        
-        if bookb == nil
+        if book == nil
         {
             openBookSelector()
         }
@@ -45,13 +37,13 @@ class BookScreenController: UIViewController {
         {
             getData()
             
-            if bookb! < books.count
+            if book! < books.count
             {
-                ratingView.rating = books[bookb!].value(forKey: "rating") as! Float
+                ratingView.rating = books[book!].value(forKey: "rating") as! Float
                 
                 updateTimeRead()
                 
-                titleLabel.text = books[bookb!].value(forKey: "title") as? String
+                titleLabel.text = books[book!].value(forKey: "title") as? String
             }
             else
             {
@@ -70,21 +62,22 @@ class BookScreenController: UIViewController {
         
         getData()
         
-        if bookb != nil
+        if book != nil
         {
-            if bookb! < books.count
+            if book! < books.count
             {
-                ratingView.rating = books[bookb!].value(forKey: "rating") as! Float
+                ratingView.rating = books[book!].value(forKey: "rating") as! Float
                 
                 updateTimeRead()
                 
-                titleLabel.text = books[bookb!].value(forKey: "title") as? String
+                titleLabel.text = books[book!].value(forKey: "title") as? String
                 
-                let pages = books[bookb!].value(forKey: "pages")!
+                let pages = books[book!].value(forKey: "pages")!
+                let pagesRead = books[book!].value(forKey: "pagesRead")!
                 
-                Pages.text = "000/" + String(describing: pages)
+                Pages.text = String(describing: pagesRead) + "/" + String(describing: pages)
                 
-                let imageData = books[bookb!].value(forKey: "image") as? NSData
+                let imageData = books[book!].value(forKey: "image") as? NSData
                 
                 if imageData != nil
                 {
@@ -108,25 +101,33 @@ class BookScreenController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        if bookb != nil
+        if book != nil
         {
             saveRating()
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+    }
+    
     @IBAction func openTimerPage(_ sender: Any) {
-        saveRating()
-        
-        let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
-        let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "TimerPage") as? TimerPageController
-        openedTimerPage?.book = bookb!
-        openedTimerPage?.modalPresentationStyle = .popover
-        
-        let popoverController = openedTimerPage?.popoverPresentationController
-        popoverController?.sourceView = sender as? UIView
-        popoverController?.permittedArrowDirections = .any
-        
-        present(openedTimerPage!, animated: true, completion: nil)
+        if book != nil
+        {
+            saveRating()
+            
+            let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+            let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "TimerPage") as? TimerPageController
+            openedTimerPage?.book = book!
+            
+            self.revealViewController().setFront(openedTimerPage, animated: true)
+        }
     }
     
     @IBAction func openBooksScreen(_ sender: Any) {
@@ -157,7 +158,6 @@ class BookScreenController: UIViewController {
     }
     
     func saveRating() {
-        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
                 return
         }
@@ -165,9 +165,9 @@ class BookScreenController: UIViewController {
         // 1
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        if bookb! < books.count
+        if book! < books.count
         {
-            books[bookb!].setValue(ratingView.rating, forKey: "rating")
+            books[book!].setValue(ratingView.rating, forKey: "rating")
             
             do {
                 try managedContext.save()
@@ -197,9 +197,9 @@ class BookScreenController: UIViewController {
     
     func updateTimeRead()
     {
-        if bookb! < books.count
+        if book! < books.count
         {
-            let time = books[bookb!].value(forKey: "timeRead") as! UIntMax
+            let time = books[book!].value(forKey: "timeRead") as! UIntMax
             
             timeTotalRead.text = (((time/3600) < 10) ?  ("0" + String(time/3600)) : (String(time/3600))) + ":" + ((((time % 3600) / 60) < 10) ?  ("0" + String((time % 3600) / 60)) : (String((time % 3600) / 60))) + ":" + ((((time % 3600) % 60) < 10) ?  ("0" + String((time % 3600) % 60)) : (String((time % 3600) % 60)))
         }
@@ -215,15 +215,7 @@ class BookScreenController: UIViewController {
         
         let bookSelection = thisStoryboard.instantiateViewController(withIdentifier: "BookSelection") as? BooksViewerController
         
-        bookSelection?.modalPresentationStyle = .popover
-        
-        let popoverController = bookSelection?.popoverPresentationController
-        
-        popoverController?.sourceView = self.view as UIView
-        
-        popoverController?.permittedArrowDirections = .any
-        
-        present(bookSelection!, animated: true, completion: nil)
+        self.revealViewController().pushFrontViewController(bookSelection, animated: true)
     }
     
     /*

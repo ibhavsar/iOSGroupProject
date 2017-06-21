@@ -52,8 +52,12 @@ class SignatureController: UIViewController {
         
         if !didChangeTime
         {
-            print("hi")
             timeDif = totalTime - time
+        }
+        
+        if pages > books[book].value(forKeyPath: "pages") as! Int
+        {
+            pages = books[book].value(forKeyPath: "pages") as! Int
         }
         
         timeRead.text = "Time Read: " + (((timeDif/3600) < 10) ?  ("0" + String(timeDif/3600)) : (String(timeDif/3600))) + ":" + ((((timeDif % 3600) / 60) < 10) ?  ("0" + String((timeDif % 3600) / 60)) : (String((timeDif % 3600) / 60))) + ":" + ((((timeDif % 3600) % 60) < 10) ?  ("0" + String((timeDif % 3600) % 60)) : (String((timeDif % 3600) % 60)))
@@ -189,6 +193,14 @@ class SignatureController: UIViewController {
                 signatures[signature].setValue(imageData, forKey: "signatureImage")
             }
             
+            let date = Date()
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.year, .month, .day], from: date)
+            
+            signatures[signature].setValue(components.day, forKey: "day")
+            signatures[signature].setValue(components.month, forKey: "month")
+            signatures[signature].setValue(components.year, forKey: "year")
+            
             do {
                 try managedContext.save()
             } catch let error as NSError {
@@ -216,6 +228,8 @@ class SignatureController: UIViewController {
             let components = calendar.dateComponents([.year, .month, .day], from: date)
             
             newSignature.setValue(components.day, forKey: "day")
+            newSignature.setValue(components.month, forKey: "month")
+            newSignature.setValue(components.year, forKey: "year")
             
             // 4
             do {
@@ -240,7 +254,12 @@ class SignatureController: UIViewController {
         {
             books[book].setValue((totalTime), forKey: "lastTimeRead")
             totalTime += books[book].value(forKey: "timeRead") as! UIntMax
-            books[book].setValue((totalTime - time), forKey: "timeRead")
+            var timeDif: UIntMax = time
+            if !didChangeTime
+            {
+                timeDif = totalTime - time
+            }
+            books[book].setValue(timeDif, forKey: "timeRead")
             books[book].setValue(pages, forKey: "pagesRead")
             
             do {
@@ -296,13 +315,24 @@ class SignatureController: UIViewController {
     @IBAction func `continue`(_ sender: Any) {
         save()
         saveTimeDone()
-        self.presentingViewController?.dismiss(animated: false, completion: nil)
-        self.presentingViewController?.dismiss(animated: false, completion: nil)
-        self.dismiss(animated: false, completion: nil)
+        let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+        
+        let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookNavController")
+        
+        (bookSaving.childViewControllers[0] as! BookScreenController).book = book
+        
+        self.revealViewController().setFront(bookSaving, animated: true)
     }
     
     @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+        let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "PagesRead") as? PagesReadController
+        
+        openedTimerPage?.book = book
+        openedTimerPage?.time = time
+        openedTimerPage?.totalTime = totalTime
+        
+        self.revealViewController().setFront(openedTimerPage, animated: true)
     }
     
     /*

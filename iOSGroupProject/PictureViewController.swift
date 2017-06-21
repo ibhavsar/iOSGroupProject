@@ -55,26 +55,25 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
             
             let tutoriall = thisStoryboard.instantiateViewController(withIdentifier: "tutor") as? TutorialViewController
             
-            let popoverController = tutoriall?.popoverPresentationController
-            
-            popoverController?.sourceView = self.view as UIView
-            
-            popoverController?.permittedArrowDirections = .any
-            
-            present(tutoriall!, animated: true, completion: nil)
+            self.revealViewController().setFront(tutoriall, animated: true)
   
         }
         else {
         
-            self.presentingViewController?.dismiss(animated: false, completion: nil)
-            self.presentingViewController?.dismiss(animated: false, completion: nil)
+            let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+            let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookNavController")
             
-            bookb = book
+            (bookSaving.childViewControllers[0] as! BookScreenController).book = book
+            self.revealViewController().setFront(bookSaving, animated: true)
         }
     }
     
     @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
+        
+        let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookSave") as? BookTitleViewController
+        
+        self.revealViewController().setFront(bookSaving, animated: true)
     }
     
     func openPhoto()
