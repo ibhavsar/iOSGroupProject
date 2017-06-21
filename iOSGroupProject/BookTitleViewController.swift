@@ -60,19 +60,12 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
         
         let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "TakePic") as? PictureViewController
         
-        bookSaving?.modalPresentationStyle = .popover
         bookSaving?.goTutorial = tutorial
         bookSaving?.bookTitle = bookTitle.text!
         bookSaving?.numberOfPages = Int(numberOfPages.text!)!
         bookSaving?.authorsName = authorName.text!
         
-        let popoverController = bookSaving?.popoverPresentationController
-        
-        popoverController?.sourceView = self.view as UIView
-        
-        popoverController?.permittedArrowDirections = .any
-        
-        present(bookSaving!, animated: true, completion: nil)
+        self.revealViewController().setFront(bookSaving, animated: true)
     }
     
     func keyboardWillShow(notification: NSNotification) {
@@ -95,8 +88,9 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func back(_ sender: Any) {
-        (self.presentingViewController as! BooksViewerController).newBook = false
-        self.dismiss(animated: true, completion: nil)
+        let thisStoryboard = UIStoryboard(name: "BookScreen", bundle: nil)
+        let openedTimerPage = thisStoryboard.instantiateViewController(withIdentifier: "BookSelection") as? BooksViewerController
+        self.revealViewController().setFront(openedTimerPage, animated: true)
     }
     
     /*
