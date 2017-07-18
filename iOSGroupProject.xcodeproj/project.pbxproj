@@ -18,7 +18,6 @@
 		3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */; };
 		3F1D073B1EA798EC009A0A10 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */; };
 		3F1DC3261EEE3157007E1300 /* AchieveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1DC3251EEE3157007E1300 /* AchieveCollectionViewCell.swift */; };
-		3F490C1E1EF94FA400A3F3C2 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F490C1D1EF94FA400A3F3C2 /* Calendar.storyboard */; };
 		3F52DE661EA8729C00883FAF /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F52DE651EA8729C00883FAF /* MenuController.swift */; };
 		3F6317481EE7528E00E12DF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F63173D1EE7528E00E12DF1 /* LaunchScreen.xib */; };
 		3F6317491EE7528E00E12DF1 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F63173F1EE7528E00E12DF1 /* Main2.storyboard */; };
@@ -29,7 +28,6 @@
 		3F63174E1EE7528E00E12DF1 /* TodoSchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317451EE7528E00E12DF1 /* TodoSchedulingViewController.swift */; };
 		3F63174F1EE7528E00E12DF1 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6317461EE7528E00E12DF1 /* TodoTableViewController.swift */; };
 		3F7338071ECB33E600B0DB04 /* BookTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7338061ECB33E600B0DB04 /* BookTitleViewController.swift */; };
-		3F7338271ECC77DD00B0DB04 /* BookSaving.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7338261ECC77DD00B0DB04 /* BookSaving.storyboard */; };
 		3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F74DAC01EAE32230074A729 /* BookScreen.storyboard */; };
 		3F74DAC51EAE32230074A729 /* BookScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC11EAE32230074A729 /* BookScreenController.swift */; };
 		3F74DAC61EAE32230074A729 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74DAC21EAE32230074A729 /* RatingView.swift */; };
@@ -40,16 +38,15 @@
 		3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F00B1E8EAEF100091FBE /* Assets.xcassets */; };
 		3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F00D1E8EAEF100091FBE /* LaunchScreen.storyboard */; };
 		3F86779A1EF8058700ECD3FC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8677991EF8058700ECD3FC /* WelcomeViewController.swift */; };
-		3F8FC8C11EF98D86000ACD28 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8FC8C01EF98D86000ACD28 /* CustomCell.swift */; };
 		3FA5E9861ECDD07000390202 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA5E9851ECDD07000390202 /* PictureViewController.swift */; };
-		3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCEE8171EC9DDA400BE725D /* Avatar.storyboard */; };
-		3FCEE81A1EC9DDAE00BE725D /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE8191EC9DDAE00BE725D /* AvatarCollectionViewCell.swift */; };
-		3FCEE81C1EC9DDB700BE725D /* AvatarSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE81B1EC9DDB700BE725D /* AvatarSelectionViewController.swift */; };
-		3FCEE81E1EC9DDC600BE725D /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE81D1EC9DDC600BE725D /* AvatarViewController.swift */; };
-		3FCEE8201EC9DDF200BE725D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */; };
 		3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCEE8291EC9E0DB00BE725D /* Main.storyboard */; };
 		3FE6BB351EE78C2400231940 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6BB341EE78C2400231940 /* TutorialViewController.swift */; };
-		C2704AC5D2760375DA73AEBD /* Pods_iOSGroupProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE210B3E1C550A9EEAD1457 /* Pods_iOSGroupProject.framework */; };
+		4A715AD41F1DACD4006B6F09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A715AD31F1DACD4006B6F09 /* HomeViewController.swift */; };
+		4A715AD91F1DACEF006B6F09 /* Avatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A715AD51F1DACEF006B6F09 /* Avatar.storyboard */; };
+		4A715ADA1F1DACEF006B6F09 /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A715AD61F1DACEF006B6F09 /* AvatarCollectionViewCell.swift */; };
+		4A715ADB1F1DACEF006B6F09 /* AvatarSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A715AD71F1DACEF006B6F09 /* AvatarSelectionViewController.swift */; };
+		4A715ADC1F1DACEF006B6F09 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A715AD81F1DACEF006B6F09 /* AvatarViewController.swift */; };
+		4A715ADE1F1DAD05006B6F09 /* BookSaving.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A715ADD1F1DAD05006B6F09 /* BookSaving.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +64,6 @@
 		3F1D07381EA798E0009A0A10 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3F1D073A1EA798EC009A0A10 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		3F1DC3251EEE3157007E1300 /* AchieveCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchieveCollectionViewCell.swift; sourceTree = "<group>"; };
-		3F490C1D1EF94FA400A3F3C2 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		3F52DE651EA8729C00883FAF /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		3F63173E1EE7528E00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3F6317401EE7528E00E12DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
@@ -78,31 +74,27 @@
 		3F6317451EE7528E00E12DF1 /* TodoSchedulingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoSchedulingViewController.swift; sourceTree = "<group>"; };
 		3F6317461EE7528E00E12DF1 /* TodoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		3F7338061ECB33E600B0DB04 /* BookTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTitleViewController.swift; sourceTree = "<group>"; };
-		3F7338261ECC77DD00B0DB04 /* BookSaving.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BookSaving.storyboard; path = ../BookSaving.storyboard; sourceTree = "<group>"; };
 		3F74DAC01EAE32230074A729 /* BookScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookScreen.storyboard; sourceTree = "<group>"; };
 		3F74DAC11EAE32230074A729 /* BookScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookScreenController.swift; sourceTree = "<group>"; };
 		3F74DAC21EAE32230074A729 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		3F74DAC31EAE32230074A729 /* TimerPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerPageController.swift; sourceTree = "<group>"; };
 		3F74DAC91EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Annoying_Alarm_Clock.mp3; sourceTree = "<group>"; };
-		3F78F0011E8EAEF100091FBE /* iOSGroupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSGroupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F78F0041E8EAEF100091FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F78F0061E8EAEF100091FBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F78F00B1E8EAEF100091FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F78F00E1E8EAEF100091FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F78F0101E8EAEF100091FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F8677991EF8058700ECD3FC /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		3F8FC8C01EF98D86000ACD28 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		3FA5E9851ECDD07000390202 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
-		3FCEE8171EC9DDA400BE725D /* Avatar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Avatar.storyboard; path = ../Avatar.storyboard; sourceTree = "<group>"; };
-		3FCEE8191EC9DDAE00BE725D /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarCollectionViewCell.swift; path = ../AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
-		3FCEE81B1EC9DDB700BE725D /* AvatarSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarSelectionViewController.swift; path = ../AvatarSelectionViewController.swift; sourceTree = "<group>"; };
-		3FCEE81D1EC9DDC600BE725D /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarViewController.swift; path = ../AvatarViewController.swift; sourceTree = "<group>"; };
-		3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		3FCEE8291EC9E0DB00BE725D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3FE6BB341EE78C2400231940 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		7CE210B3E1C550A9EEAD1457 /* Pods_iOSGroupProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSGroupProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0B86874D93F3D8CCF985052 /* Pods-iOSGroupProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSGroupProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSGroupProject/Pods-iOSGroupProject.release.xcconfig"; sourceTree = "<group>"; };
-		DB1A247C72D785AB317AF08E /* Pods-iOSGroupProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSGroupProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSGroupProject/Pods-iOSGroupProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4A715AD21F1DAC92006B6F09 /* iOSGroupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSGroupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A715AD31F1DACD4006B6F09 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4A715AD51F1DACEF006B6F09 /* Avatar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Avatar.storyboard; sourceTree = "<group>"; };
+		4A715AD61F1DACEF006B6F09 /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
+		4A715AD71F1DACEF006B6F09 /* AvatarSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarSelectionViewController.swift; sourceTree = "<group>"; };
+		4A715AD81F1DACEF006B6F09 /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		4A715ADD1F1DAD05006B6F09 /* BookSaving.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookSaving.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,22 +102,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2704AC5D2760375DA73AEBD /* Pods_iOSGroupProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3272A97587FB84D239634DAE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DB1A247C72D785AB317AF08E /* Pods-iOSGroupProject.debug.xcconfig */,
-				D0B86874D93F3D8CCF985052 /* Pods-iOSGroupProject.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		3F1D07311EA79087009A0A10 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,24 +118,7 @@
 			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
-		3F490C1F1EF951E300A3F3C2 /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				3F8FC8C01EF98D86000ACD28 /* CustomCell.swift */,
-				3F490C1D1EF94FA400A3F3C2 /* Calendar.storyboard */,
-			);
-			name = Calendar;
-			sourceTree = "<group>";
-		};
-		3F63173A1EE7527A00E12DF1 /* Local Notifications */ = {
-			isa = PBXGroup;
-			children = (
-				3F63173B1EE7528E00E12DF1 /* LocalNotifications */,
-			);
-			name = "Local Notifications";
-			sourceTree = "<group>";
-		};
-		3F63173B1EE7528E00E12DF1 /* LocalNotifications */ = {
+		3F63173B1EE7528E00E12DF1 /* Local Notifications */ = {
 			isa = PBXGroup;
 			children = (
 				3F63173D1EE7528E00E12DF1 /* LaunchScreen.xib */,
@@ -165,7 +130,7 @@
 				3F6317451EE7528E00E12DF1 /* TodoSchedulingViewController.swift */,
 				3F6317461EE7528E00E12DF1 /* TodoTableViewController.swift */,
 			);
-			name = LocalNotifications;
+			name = "Local Notifications";
 			path = LocalNotificationsTutorial;
 			sourceTree = "<group>";
 		};
@@ -173,8 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				3F7338061ECB33E600B0DB04 /* BookTitleViewController.swift */,
-				3F7338261ECC77DD00B0DB04 /* BookSaving.storyboard */,
 				3FA5E9851ECDD07000390202 /* PictureViewController.swift */,
+				4A715ADD1F1DAD05006B6F09 /* BookSaving.storyboard */,
 				3FE6BB341EE78C2400231940 /* TutorialViewController.swift */,
 			);
 			name = "Book Saving";
@@ -200,25 +165,14 @@
 			isa = PBXGroup;
 			children = (
 				3F78F0031E8EAEF100091FBE /* iOSGroupProject */,
-				3272A97587FB84D239634DAE /* Pods */,
-				6A14520A87889C78906CC278 /* Frameworks */,
+				4A715AD21F1DAC92006B6F09 /* iOSGroupProject.app */,
 			);
-			sourceTree = "<group>";
-		};
-		3F78F0021E8EAEF100091FBE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3F78F0011E8EAEF100091FBE /* iOSGroupProject.app */,
-			);
-			name = Products;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		3F78F0031E8EAEF100091FBE /* iOSGroupProject */ = {
 			isa = PBXGroup;
 			children = (
-				3F490C1F1EF951E300A3F3C2 /* Calendar */,
-				3F63173A1EE7527A00E12DF1 /* Local Notifications */,
+				3F63173B1EE7528E00E12DF1 /* Local Notifications */,
 				3F74DAC81EAE32400074A729 /* Book Screen */,
 				3F6496F31EF41B1E00580D05 /* Book Saving */,
 				3F1D07311EA79087009A0A10 /* SWRevealViewController */,
@@ -226,8 +180,8 @@
 				3F0A693D1EB3950500846E35 /* CoreData.xcdatamodeld */,
 				3F78F0061E8EAEF100091FBE /* ViewController.swift */,
 				3FCEE82D1EC9E32A00BE725D /* Avatar */,
-				3FCEE81F1EC9DDF200BE725D /* HomeViewController.swift */,
-				3FCEE82E1EC9E34700BE725D /* Tutorial */,
+				4A715AD31F1DACD4006B6F09 /* HomeViewController.swift */,
+				3F8677991EF8058700ECD3FC /* WelcomeViewController.swift */,
 				3FCEE8291EC9E0DB00BE725D /* Main.storyboard */,
 				3F52DE651EA8729C00883FAF /* MenuController.swift */,
 				3F1D07341EA798C8009A0A10 /* LibraryViewController.swift */,
@@ -238,7 +192,6 @@
 				3F78F00D1E8EAEF100091FBE /* LaunchScreen.storyboard */,
 				3F78F0101E8EAEF100091FBE /* Info.plist */,
 				3F1D072C1EA79079009A0A10 /* iOSGroupProject-Bridging-Header.h */,
-				3F78F0021E8EAEF100091FBE /* Products */,
 			);
 			path = iOSGroupProject;
 			sourceTree = "<group>";
@@ -255,28 +208,12 @@
 		3FCEE82D1EC9E32A00BE725D /* Avatar */ = {
 			isa = PBXGroup;
 			children = (
-				3FCEE8191EC9DDAE00BE725D /* AvatarCollectionViewCell.swift */,
-				3FCEE81D1EC9DDC600BE725D /* AvatarViewController.swift */,
-				3FCEE81B1EC9DDB700BE725D /* AvatarSelectionViewController.swift */,
-				3FCEE8171EC9DDA400BE725D /* Avatar.storyboard */,
+				4A715AD51F1DACEF006B6F09 /* Avatar.storyboard */,
+				4A715AD61F1DACEF006B6F09 /* AvatarCollectionViewCell.swift */,
+				4A715AD71F1DACEF006B6F09 /* AvatarSelectionViewController.swift */,
+				4A715AD81F1DACEF006B6F09 /* AvatarViewController.swift */,
 			);
 			name = Avatar;
-			sourceTree = "<group>";
-		};
-		3FCEE82E1EC9E34700BE725D /* Tutorial */ = {
-			isa = PBXGroup;
-			children = (
-				3F8677991EF8058700ECD3FC /* WelcomeViewController.swift */,
-			);
-			name = Tutorial;
-			sourceTree = "<group>";
-		};
-		6A14520A87889C78906CC278 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7CE210B3E1C550A9EEAD1457 /* Pods_iOSGroupProject.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,12 +223,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F78F0131E8EAEF100091FBE /* Build configuration list for PBXNativeTarget "iOSGroupProject" */;
 			buildPhases = (
-				31A052C9DC4139D06DAB4FDF /* [CP] Check Pods Manifest.lock */,
 				3F78EFFD1E8EAEF000091FBE /* Sources */,
 				3F78EFFE1E8EAEF000091FBE /* Frameworks */,
 				3F78EFFF1E8EAEF000091FBE /* Resources */,
-				05D4B8F80E1C565AF9F5F402 /* [CP] Embed Pods Frameworks */,
-				0FA11DCA501D9F2B128E38A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,7 +233,7 @@
 			);
 			name = iOSGroupProject;
 			productName = iOSGroupProject;
-			productReference = 3F78F0011E8EAEF100091FBE /* iOSGroupProject.app */;
+			productReference = 4A715AD21F1DAC92006B6F09 /* iOSGroupProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -329,7 +263,7 @@
 				Base,
 			);
 			mainGroup = 3F78EFF81E8EAEF000091FBE;
-			productRefGroup = 3F78F0021E8EAEF100091FBE /* Products */;
+			productRefGroup = 3F78EFF81E8EAEF000091FBE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -343,70 +277,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F490C1E1EF94FA400A3F3C2 /* Calendar.storyboard in Resources */,
+				4A715ADE1F1DAD05006B6F09 /* BookSaving.storyboard in Resources */,
 				3F63174B1EE7528E00E12DF1 /* Info.plist in Resources */,
 				3F78F00F1E8EAEF100091FBE /* LaunchScreen.storyboard in Resources */,
 				3F78F00C1E8EAEF100091FBE /* Assets.xcassets in Resources */,
 				3F74DACA1EAF86E00074A729 /* Annoying_Alarm_Clock.mp3 in Resources */,
 				3F63174A1EE7528E00E12DF1 /* Images.xcassets in Resources */,
-				3FCEE8181EC9DDA400BE725D /* Avatar.storyboard in Resources */,
 				3F6317491EE7528E00E12DF1 /* Main2.storyboard in Resources */,
+				4A715AD91F1DACEF006B6F09 /* Avatar.storyboard in Resources */,
 				3FCEE82A1EC9E0DB00BE725D /* Main.storyboard in Resources */,
 				3F6317481EE7528E00E12DF1 /* LaunchScreen.xib in Resources */,
 				3F74DAC41EAE32230074A729 /* BookScreen.storyboard in Resources */,
-				3F7338271ECC77DD00B0DB04 /* BookSaving.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		05D4B8F80E1C565AF9F5F402 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSGroupProject/Pods-iOSGroupProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0FA11DCA501D9F2B128E38A5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSGroupProject/Pods-iOSGroupProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		31A052C9DC4139D06DAB4FDF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F78EFFD1E8EAEF000091FBE /* Sources */ = {
@@ -419,30 +304,29 @@
 				3FA5E9861ECDD07000390202 /* PictureViewController.swift in Sources */,
 				3F74DAC51EAE32230074A729 /* BookScreenController.swift in Sources */,
 				3F1729461EE9DC26000986DB /* PagesReadController.swift in Sources */,
-				3FCEE8201EC9DDF200BE725D /* HomeViewController.swift in Sources */,
 				3F63174E1EE7528E00E12DF1 /* TodoSchedulingViewController.swift in Sources */,
 				3F1562FB1EBB563700303C60 /* BooksViewerController.swift in Sources */,
 				3F1729401EE58753000986DB /* SignatureController.swift in Sources */,
 				3F7338071ECB33E600B0DB04 /* BookTitleViewController.swift in Sources */,
-				3F8FC8C11EF98D86000ACD28 /* CustomCell.swift in Sources */,
-				3FCEE81C1EC9DDB700BE725D /* AvatarSelectionViewController.swift in Sources */,
 				3F1D07371EA798D8009A0A10 /* AchievementsViewController.swift in Sources */,
-				3FCEE81E1EC9DDC600BE725D /* AvatarViewController.swift in Sources */,
 				3F0A693F1EB3950500846E35 /* CoreData.xcdatamodeld in Sources */,
 				3F52DE661EA8729C00883FAF /* MenuController.swift in Sources */,
 				3F63174D1EE7528E00E12DF1 /* TodoList.swift in Sources */,
 				3F78F0071E8EAEF100091FBE /* ViewController.swift in Sources */,
 				3F1D07351EA798C8009A0A10 /* LibraryViewController.swift in Sources */,
 				3F74DAC71EAE32230074A729 /* TimerPageController.swift in Sources */,
+				4A715ADC1F1DACEF006B6F09 /* AvatarViewController.swift in Sources */,
+				4A715ADB1F1DACEF006B6F09 /* AvatarSelectionViewController.swift in Sources */,
+				4A715AD41F1DACD4006B6F09 /* HomeViewController.swift in Sources */,
 				3F86779A1EF8058700ECD3FC /* WelcomeViewController.swift in Sources */,
 				3F1D073B1EA798EC009A0A10 /* CreditsViewController.swift in Sources */,
 				3F78F0051E8EAEF100091FBE /* AppDelegate.swift in Sources */,
+				4A715ADA1F1DACEF006B6F09 /* AvatarCollectionViewCell.swift in Sources */,
 				3F1D07301EA7907A009A0A10 /* SWRevealViewController.m in Sources */,
 				3F1562FD1EBB593400303C60 /* BookViewCell.swift in Sources */,
 				3F1D07391EA798E0009A0A10 /* CalendarViewController.swift in Sources */,
 				3FE6BB351EE78C2400231940 /* TutorialViewController.swift in Sources */,
 				3F1DC3261EEE3157007E1300 /* AchieveCollectionViewCell.swift in Sources */,
-				3FCEE81A1EC9DDAE00BE725D /* AvatarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +455,6 @@
 		};
 		3F78F0141E8EAEF100091FBE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB1A247C72D785AB317AF08E /* Pods-iOSGroupProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -589,7 +472,6 @@
 		};
 		3F78F0151E8EAEF100091FBE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0B86874D93F3D8CCF985052 /* Pods-iOSGroupProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
