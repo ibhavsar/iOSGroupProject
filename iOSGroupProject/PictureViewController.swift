@@ -53,9 +53,9 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
         if  goTutorial == true {
             let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
             
-            let tutoriall = thisStoryboard.instantiateViewController(withIdentifier: "tutor") as? TutorialViewController
+            let tutorial = thisStoryboard.instantiateViewController(withIdentifier: "tutor") as? TutorialViewController
             
-            self.revealViewController().setFront(tutoriall, animated: true)
+            self.present(tutorial!, animated: true, completion: nil)
   
         }
         else {
@@ -69,11 +69,23 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
     }
     
     @IBAction func back(_ sender: Any) {
-        let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
-        
-        let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookSave") as? BookTitleViewController
-        
-        self.revealViewController().setFront(bookSaving, animated: true)
+        if goTutorial == false
+        {
+            let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
+            
+            let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookSave") as? BookTitleViewController
+            
+            self.revealViewController().setFront(bookSaving, animated: true)
+        }
+        else
+        {
+            let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
+            let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookSave") as? BookTitleViewController
+            
+            bookSaving?.tutorial = goTutorial
+            
+            self.present(bookSaving!, animated: true, completion: nil)
+        }
     }
     
     func openPhoto()

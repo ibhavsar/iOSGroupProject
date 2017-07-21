@@ -83,8 +83,7 @@ var userName = ""
         }
         
         // 1
-        let managedContext =
-            appDelegate.persistentContainer.viewContext
+        let managedContext = appDelegate.persistentContainer.viewContext
         if !names.isEmpty
         {
             names[0].setValue(name, forKey: "name")
@@ -116,19 +115,27 @@ var userName = ""
     @IBAction func setCounter(_ sender: Any) { // opens up tutorial
         tutorialCount = true
         let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
-        
         let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookSave") as? BookTitleViewController
-
+        
         bookSaving?.tutorial = tutorialCount
-        bookSaving?.modalPresentationStyle = .popover
         
-        let popoverController = bookSaving?.popoverPresentationController
+        self.present(bookSaving!, animated: true, completion: nil)
         
-        popoverController?.sourceView = self.view as UIView
+        //let thisStoryboard = UIStoryboard(name: "BookSaving", bundle: nil)
         
-        popoverController?.permittedArrowDirections = .any
+        //let bookSaving = thisStoryboard.instantiateViewController(withIdentifier: "BookSave") as? BookTitleViewController
+
+        //bookSaving?.tutorial = tutorialCount
+        //bookSaving?.modalPresentationStyle = .popover
         
-        present(bookSaving!, animated: true, completion: nil)    }
+        //let popoverController = bookSaving?.popoverPresentationController
+        
+        //popoverController?.sourceView = self.view as UIView
+        
+        //popoverController?.permittedArrowDirections = .any
+        
+        //present(bookSaving!, animated: true, completion: nil)
+    }
    
     @IBAction func finished(_ sender: Any)
     {

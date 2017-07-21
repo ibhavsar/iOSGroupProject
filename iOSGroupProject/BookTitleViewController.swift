@@ -25,6 +25,11 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
+        if tutorial == true {
+            backButton.isEnabled = false
+            backButton.isHidden = true
+        }
+        
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
@@ -65,7 +70,14 @@ class BookTitleViewController: UIViewController, UITextFieldDelegate {
         bookSaving?.numberOfPages = Int(numberOfPages.text!)!
         bookSaving?.authorsName = authorName.text!
         
-        self.revealViewController().setFront(bookSaving, animated: true)
+        if tutorial == false
+        {
+            self.revealViewController().setFront(bookSaving, animated: true)
+        }
+        else
+        {
+            self.present(bookSaving!, animated: true, completion: nil)
+        }
     }
     
     func keyboardWillShow(notification: NSNotification) {
